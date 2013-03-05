@@ -1,0 +1,226 @@
+\hypertarget{structfractal}{\section{\-Référence de la structure fractal}
+\label{structfractal}\index{fractal@{fractal}}
+}
+
+
+{\ttfamily \#include $<$fconfig.\-h$>$}
+
+\subsection*{\-Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848b}{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E} \hyperlink{structfractal_af8297a3673f15a8aa61272bdc0377277}{type}
+\item 
+unsigned int \hyperlink{structfractal_a2cbfae43b5e12a3c427c241a46145a31}{width}
+\item 
+unsigned int \hyperlink{structfractal_a626e83cacaf19a85207e16fef9b3ff3d}{height}
+\item 
+double \hyperlink{structfractal_a524c6cac28c27976fe7b528733ee73cb}{scale}
+\item 
+unsigned int \hyperlink{structfractal_a71301ffefb1b8cb6c949575fb36788dd}{iter}
+\item 
+\hyperlink{structR2vec}{\-R2vec} \hyperlink{structfractal_a272b847ecd0537826d7ecb8e9ca3e4d5}{position}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>struct \hyperlink{structfractal}{fractal} $\ast$ \hyperlink{structfractal_a189b545deaac65ca9c6ea04f7312a3f1}{julia}\\
+\>\} \hyperlink{structfractal_a6fcb083ec5b53d1f1ef8faf808370bb8}{mbrot}\\
+\>struct \{\\
+\>\>\hyperlink{structR2vec}{R2vec} \hyperlink{structfractal_ae5d135f6f99883eba1e2fea9047791f6}{c}\\
+\>\>struct \hyperlink{structfractal}{fractal} $\ast$ \hyperlink{structfractal_a7c67058fed930d6a3f3500e170cb5fd0}{mbrot}\\
+\>\} \hyperlink{structfractal_acfb4375b60967279197211d47eed0b0b}{julia}\\
+\>struct \{\\
+\>\>unsigned int \hyperlink{structfractal_aba2914c84dcc1a96c49e4b91aade9d7f}{num\_tr}\\
+\>\>struct {\bfseries ifs\_tr} \{\\
+\>\>\>union \{\\
+\>\>\>\>double \hyperlink{structfractal_a2bb7ce1b69821aa883daf27d16df4ba5}{tr} \mbox{[}7\mbox{]}\\
+\>\>\>\>struct \{\\
+\>\>\>\>\>double \hyperlink{structfractal_a9f41ac4812a14dde576142eaba71141f}{xx}\\
+\>\>\>\>\>double \hyperlink{structfractal_a5f558e90d4bc7b85f758e2f4e7b76fff}{xy}\\
+\>\>\>\>\>double \hyperlink{structfractal_a25f9bab7277ce8cb9272a6e1ba1695f8}{x}\\
+\>\>\>\>\>double \hyperlink{structfractal_aa52f4f35e4bd516179706f318397218a}{yx}\\
+\>\>\>\>\>double \hyperlink{structfractal_abbf9466acf8986903f74754be308eb36}{yy}\\
+\>\>\>\>\>double \hyperlink{structfractal_a4bd6ee4742f683f13141f31c2d3799b7}{y}\\
+\>\>\>\>\>double \hyperlink{structfractal_a1de23626083977b508881c41a4122b4e}{proba}\\
+\>\>\>\>\} \\
+\>\>\>\} \\
+\>\>\} \hyperlink{structfractal_ae239bfe9dc0e33b2ff7a615fff6104e4}{tr}\\
+\>\} \hyperlink{structfractal_aa5cabd8d230694e71c055bdffb4031de}{ifs}\\
+\>struct \{\\
+\>\>enum \hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977}{FLAME\_PROBA\_TYPE} \hyperlink{structfractal_a9b098f5eee05e57395a2f389b76c5fd2}{proba\_type}\\
+\>\>unsigned int \hyperlink{structfractal_aad5ae2034ecfc02aadbaed943874ae5e}{min\_num\_tr}\\
+\>\>unsigned int \hyperlink{structfractal_a7f9433a0d1498384124c12e68b02935f}{max\_num\_tr}\\
+\>\>unsigned int \hyperlink{structfractal_aba2914c84dcc1a96c49e4b91aade9d7f}{num\_tr}\\
+\>\>struct {\bfseries flame\_tr} \{\\
+\>\>\>int \hyperlink{structfractal_aae0e0d9ca8a4c89eb27abe85a3b7577c}{rand\_col}\\
+\>\>\>int \hyperlink{structfractal_a955d2d4ebadac5d75dbeff34da5fce5c}{rand\_tr}\\
+\>\>\>union \{\\
+\>\>\>\>double \hyperlink{structfractal_a2bb7ce1b69821aa883daf27d16df4ba5}{tr} \mbox{[}10\mbox{]}\\
+\>\>\>\>struct \{\\
+\>\>\>\>\>double \hyperlink{structfractal_a9f41ac4812a14dde576142eaba71141f}{xx}\\
+\>\>\>\>\>double \hyperlink{structfractal_a5f558e90d4bc7b85f758e2f4e7b76fff}{xy}\\
+\>\>\>\>\>double \hyperlink{structfractal_a25f9bab7277ce8cb9272a6e1ba1695f8}{x}\\
+\>\>\>\>\>double \hyperlink{structfractal_aa52f4f35e4bd516179706f318397218a}{yx}\\
+\>\>\>\>\>double \hyperlink{structfractal_abbf9466acf8986903f74754be308eb36}{yy}\\
+\>\>\>\>\>double \hyperlink{structfractal_a4bd6ee4742f683f13141f31c2d3799b7}{y}\\
+\>\>\>\>\>double \hyperlink{structfractal_a1de23626083977b508881c41a4122b4e}{proba}\\
+\>\>\>\>\>double \hyperlink{structfractal_a8857f2ca6e663d4f4ab3e5adbaf4e754}{r}\\
+\>\>\>\>\>double \hyperlink{structfractal_a374d90c27c06107482bba4ee7ada55da}{g}\\
+\>\>\>\>\>double \hyperlink{structfractal_a0a85246deca0ebcb11e689009da9aeb0}{b}\\
+\>\>\>\>\} \\
+\>\>\>\} \\
+\>\>\} \hyperlink{structfractal_a45a93c39e3799fa37101b4125a3d60a6}{tr}\\
+\>\>unsigned int \hyperlink{structfractal_a652c1e196aac08e7eec76ce1227eabb8}{min\_num\_alg}\\
+\>\>unsigned int \hyperlink{structfractal_a23841183bcd072030d0c0ff578fa7b5f}{max\_num\_alg}\\
+\>\>unsigned int \hyperlink{structfractal_ac81d19a3ae4242701ac2625d3a231f38}{num\_alg}\\
+\>\>unsigned int $\ast$ \hyperlink{structfractal_aa05f91d00df1a44d26b3202e31f92f7d}{alg\_id\_list}\\
+\>\>unsigned int $\ast$ \hyperlink{structfractal_a05967489e9dede83bae6bae463eaec7b}{alg\_id\_list2}\\
+\>\>unsigned int \hyperlink{structfractal_a770c93bc56d64afc5efca2d0656705c9}{current\_iter}\\
+\>\>struct {\bfseries flame\_dot\_t} \{\\
+\>\>\>\hyperlink{structR2vec}{R2vec} \hyperlink{structfractal_a272b847ecd0537826d7ecb8e9ca3e4d5}{position}\\
+\>\>\>Uint8 \hyperlink{structfractal_a034aa6fa38b6fc624492780aae4f5cd1}{color} \mbox{[}3\mbox{]}\\
+\>\>\} \hyperlink{structfractal_a6f7fe414337c558f2e1777893e2151b6}{dots}\\
+\>\>Uint8 \hyperlink{structfractal_ab39f039db5c5ec9e5065093683f39a36}{current\_color} \mbox{[}3\mbox{]}\\
+\>\>\hyperlink{structR2vec}{R2vec} \hyperlink{structfractal_a70078b8c8918be78879323adf35e36c4}{current\_position}\\
+\>\} \hyperlink{structfractal_a0429a28ac6af0cba0dace7328b2116d6}{flame}\\
+\} \hyperlink{structfractal_aaf3b25a8725d05106ece6bc318fb8620}{param}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des champs}
+\hypertarget{structfractal_aa05f91d00df1a44d26b3202e31f92f7d}{\index{fractal@{fractal}!alg\-\_\-id\-\_\-list@{alg\-\_\-id\-\_\-list}}
+\index{alg\-\_\-id\-\_\-list@{alg\-\_\-id\-\_\-list}!fractal@{fractal}}
+\subsubsection[{alg\-\_\-id\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ {\bf fractal\-::alg\-\_\-id\-\_\-list}}}\label{structfractal_aa05f91d00df1a44d26b3202e31f92f7d}
+\hypertarget{structfractal_a05967489e9dede83bae6bae463eaec7b}{\index{fractal@{fractal}!alg\-\_\-id\-\_\-list2@{alg\-\_\-id\-\_\-list2}}
+\index{alg\-\_\-id\-\_\-list2@{alg\-\_\-id\-\_\-list2}!fractal@{fractal}}
+\subsubsection[{alg\-\_\-id\-\_\-list2}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int$\ast$ {\bf fractal\-::alg\-\_\-id\-\_\-list2}}}\label{structfractal_a05967489e9dede83bae6bae463eaec7b}
+\hypertarget{structfractal_a0a85246deca0ebcb11e689009da9aeb0}{\index{fractal@{fractal}!b@{b}}
+\index{b@{b}!fractal@{fractal}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::b}}}\label{structfractal_a0a85246deca0ebcb11e689009da9aeb0}
+\hypertarget{structfractal_ae5d135f6f99883eba1e2fea9047791f6}{\index{fractal@{fractal}!c@{c}}
+\index{c@{c}!fractal@{fractal}}
+\subsubsection[{c}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-R2vec} {\bf fractal\-::c}}}\label{structfractal_ae5d135f6f99883eba1e2fea9047791f6}
+\hypertarget{structfractal_a034aa6fa38b6fc624492780aae4f5cd1}{\index{fractal@{fractal}!color@{color}}
+\index{color@{color}!fractal@{fractal}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}\-Uint8 {\bf fractal\-::color}\mbox{[}3\mbox{]}}}\label{structfractal_a034aa6fa38b6fc624492780aae4f5cd1}
+\hypertarget{structfractal_ab39f039db5c5ec9e5065093683f39a36}{\index{fractal@{fractal}!current\-\_\-color@{current\-\_\-color}}
+\index{current\-\_\-color@{current\-\_\-color}!fractal@{fractal}}
+\subsubsection[{current\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}\-Uint8 {\bf fractal\-::current\-\_\-color}\mbox{[}3\mbox{]}}}\label{structfractal_ab39f039db5c5ec9e5065093683f39a36}
+\hypertarget{structfractal_a770c93bc56d64afc5efca2d0656705c9}{\index{fractal@{fractal}!current\-\_\-iter@{current\-\_\-iter}}
+\index{current\-\_\-iter@{current\-\_\-iter}!fractal@{fractal}}
+\subsubsection[{current\-\_\-iter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::current\-\_\-iter}}}\label{structfractal_a770c93bc56d64afc5efca2d0656705c9}
+\hypertarget{structfractal_a70078b8c8918be78879323adf35e36c4}{\index{fractal@{fractal}!current\-\_\-position@{current\-\_\-position}}
+\index{current\-\_\-position@{current\-\_\-position}!fractal@{fractal}}
+\subsubsection[{current\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-R2vec} {\bf fractal\-::current\-\_\-position}}}\label{structfractal_a70078b8c8918be78879323adf35e36c4}
+\hypertarget{structfractal_a6f7fe414337c558f2e1777893e2151b6}{\index{fractal@{fractal}!dots@{dots}}
+\index{dots@{dots}!fractal@{fractal}}
+\subsubsection[{dots}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::{\bf flame\-\_\-dot\-\_\-t}$\ast$  {\bf fractal\-::dots}}}\label{structfractal_a6f7fe414337c558f2e1777893e2151b6}
+\hypertarget{structfractal_a0429a28ac6af0cba0dace7328b2116d6}{\index{fractal@{fractal}!flame@{flame}}
+\index{flame@{flame}!fractal@{fractal}}
+\subsubsection[{flame}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   {\bf fractal\-::flame}}}\label{structfractal_a0429a28ac6af0cba0dace7328b2116d6}
+\hypertarget{structfractal_a374d90c27c06107482bba4ee7ada55da}{\index{fractal@{fractal}!g@{g}}
+\index{g@{g}!fractal@{fractal}}
+\subsubsection[{g}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::g}}}\label{structfractal_a374d90c27c06107482bba4ee7ada55da}
+\hypertarget{structfractal_a626e83cacaf19a85207e16fef9b3ff3d}{\index{fractal@{fractal}!height@{height}}
+\index{height@{height}!fractal@{fractal}}
+\subsubsection[{height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::height}}}\label{structfractal_a626e83cacaf19a85207e16fef9b3ff3d}
+\hypertarget{structfractal_aa5cabd8d230694e71c055bdffb4031de}{\index{fractal@{fractal}!ifs@{ifs}}
+\index{ifs@{ifs}!fractal@{fractal}}
+\subsubsection[{ifs}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   {\bf fractal\-::ifs}}}\label{structfractal_aa5cabd8d230694e71c055bdffb4031de}
+\hypertarget{structfractal_a71301ffefb1b8cb6c949575fb36788dd}{\index{fractal@{fractal}!iter@{iter}}
+\index{iter@{iter}!fractal@{fractal}}
+\subsubsection[{iter}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::iter}}}\label{structfractal_a71301ffefb1b8cb6c949575fb36788dd}
+\hypertarget{structfractal_a189b545deaac65ca9c6ea04f7312a3f1}{\index{fractal@{fractal}!julia@{julia}}
+\index{julia@{julia}!fractal@{fractal}}
+\subsubsection[{julia}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf fractal}$\ast$ {\bf fractal\-::julia}}}\label{structfractal_a189b545deaac65ca9c6ea04f7312a3f1}
+\hypertarget{structfractal_acfb4375b60967279197211d47eed0b0b}{\index{fractal@{fractal}!julia@{julia}}
+\index{julia@{julia}!fractal@{fractal}}
+\subsubsection[{julia}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   {\bf fractal\-::julia}}}\label{structfractal_acfb4375b60967279197211d47eed0b0b}
+\hypertarget{structfractal_a23841183bcd072030d0c0ff578fa7b5f}{\index{fractal@{fractal}!max\-\_\-num\-\_\-alg@{max\-\_\-num\-\_\-alg}}
+\index{max\-\_\-num\-\_\-alg@{max\-\_\-num\-\_\-alg}!fractal@{fractal}}
+\subsubsection[{max\-\_\-num\-\_\-alg}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::max\-\_\-num\-\_\-alg}}}\label{structfractal_a23841183bcd072030d0c0ff578fa7b5f}
+\hypertarget{structfractal_a7f9433a0d1498384124c12e68b02935f}{\index{fractal@{fractal}!max\-\_\-num\-\_\-tr@{max\-\_\-num\-\_\-tr}}
+\index{max\-\_\-num\-\_\-tr@{max\-\_\-num\-\_\-tr}!fractal@{fractal}}
+\subsubsection[{max\-\_\-num\-\_\-tr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::max\-\_\-num\-\_\-tr}}}\label{structfractal_a7f9433a0d1498384124c12e68b02935f}
+\hypertarget{structfractal_a6fcb083ec5b53d1f1ef8faf808370bb8}{\index{fractal@{fractal}!mbrot@{mbrot}}
+\index{mbrot@{mbrot}!fractal@{fractal}}
+\subsubsection[{mbrot}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   {\bf fractal\-::mbrot}}}\label{structfractal_a6fcb083ec5b53d1f1ef8faf808370bb8}
+\hypertarget{structfractal_a7c67058fed930d6a3f3500e170cb5fd0}{\index{fractal@{fractal}!mbrot@{mbrot}}
+\index{mbrot@{mbrot}!fractal@{fractal}}
+\subsubsection[{mbrot}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf fractal}$\ast$ {\bf fractal\-::mbrot}}}\label{structfractal_a7c67058fed930d6a3f3500e170cb5fd0}
+\hypertarget{structfractal_a652c1e196aac08e7eec76ce1227eabb8}{\index{fractal@{fractal}!min\-\_\-num\-\_\-alg@{min\-\_\-num\-\_\-alg}}
+\index{min\-\_\-num\-\_\-alg@{min\-\_\-num\-\_\-alg}!fractal@{fractal}}
+\subsubsection[{min\-\_\-num\-\_\-alg}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::min\-\_\-num\-\_\-alg}}}\label{structfractal_a652c1e196aac08e7eec76ce1227eabb8}
+\hypertarget{structfractal_aad5ae2034ecfc02aadbaed943874ae5e}{\index{fractal@{fractal}!min\-\_\-num\-\_\-tr@{min\-\_\-num\-\_\-tr}}
+\index{min\-\_\-num\-\_\-tr@{min\-\_\-num\-\_\-tr}!fractal@{fractal}}
+\subsubsection[{min\-\_\-num\-\_\-tr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::min\-\_\-num\-\_\-tr}}}\label{structfractal_aad5ae2034ecfc02aadbaed943874ae5e}
+\hypertarget{structfractal_ac81d19a3ae4242701ac2625d3a231f38}{\index{fractal@{fractal}!num\-\_\-alg@{num\-\_\-alg}}
+\index{num\-\_\-alg@{num\-\_\-alg}!fractal@{fractal}}
+\subsubsection[{num\-\_\-alg}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::num\-\_\-alg}}}\label{structfractal_ac81d19a3ae4242701ac2625d3a231f38}
+\hypertarget{structfractal_aba2914c84dcc1a96c49e4b91aade9d7f}{\index{fractal@{fractal}!num\-\_\-tr@{num\-\_\-tr}}
+\index{num\-\_\-tr@{num\-\_\-tr}!fractal@{fractal}}
+\subsubsection[{num\-\_\-tr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::num\-\_\-tr}}}\label{structfractal_aba2914c84dcc1a96c49e4b91aade9d7f}
+\hypertarget{structfractal_aaf3b25a8725d05106ece6bc318fb8620}{\index{fractal@{fractal}!param@{param}}
+\index{param@{param}!fractal@{fractal}}
+\subsubsection[{param}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   {\bf fractal\-::param}}}\label{structfractal_aaf3b25a8725d05106ece6bc318fb8620}
+\hypertarget{structfractal_a272b847ecd0537826d7ecb8e9ca3e4d5}{\index{fractal@{fractal}!position@{position}}
+\index{position@{position}!fractal@{fractal}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-R2vec} {\bf fractal\-::position}}}\label{structfractal_a272b847ecd0537826d7ecb8e9ca3e4d5}
+\hypertarget{structfractal_a1de23626083977b508881c41a4122b4e}{\index{fractal@{fractal}!proba@{proba}}
+\index{proba@{proba}!fractal@{fractal}}
+\subsubsection[{proba}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::proba}}}\label{structfractal_a1de23626083977b508881c41a4122b4e}
+\hypertarget{structfractal_a9b098f5eee05e57395a2f389b76c5fd2}{\index{fractal@{fractal}!proba\-\_\-type@{proba\-\_\-type}}
+\index{proba\-\_\-type@{proba\-\_\-type}!fractal@{fractal}}
+\subsubsection[{proba\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E} {\bf fractal\-::proba\-\_\-type}}}\label{structfractal_a9b098f5eee05e57395a2f389b76c5fd2}
+\hypertarget{structfractal_a8857f2ca6e663d4f4ab3e5adbaf4e754}{\index{fractal@{fractal}!r@{r}}
+\index{r@{r}!fractal@{fractal}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::r}}}\label{structfractal_a8857f2ca6e663d4f4ab3e5adbaf4e754}
+\hypertarget{structfractal_aae0e0d9ca8a4c89eb27abe85a3b7577c}{\index{fractal@{fractal}!rand\-\_\-col@{rand\-\_\-col}}
+\index{rand\-\_\-col@{rand\-\_\-col}!fractal@{fractal}}
+\subsubsection[{rand\-\_\-col}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf fractal\-::rand\-\_\-col}}}\label{structfractal_aae0e0d9ca8a4c89eb27abe85a3b7577c}
+\hypertarget{structfractal_a955d2d4ebadac5d75dbeff34da5fce5c}{\index{fractal@{fractal}!rand\-\_\-tr@{rand\-\_\-tr}}
+\index{rand\-\_\-tr@{rand\-\_\-tr}!fractal@{fractal}}
+\subsubsection[{rand\-\_\-tr}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf fractal\-::rand\-\_\-tr}}}\label{structfractal_a955d2d4ebadac5d75dbeff34da5fce5c}
+\hypertarget{structfractal_a524c6cac28c27976fe7b528733ee73cb}{\index{fractal@{fractal}!scale@{scale}}
+\index{scale@{scale}!fractal@{fractal}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::scale}}}\label{structfractal_a524c6cac28c27976fe7b528733ee73cb}
+\hypertarget{structfractal_a2bb7ce1b69821aa883daf27d16df4ba5}{\index{fractal@{fractal}!tr@{tr}}
+\index{tr@{tr}!fractal@{fractal}}
+\subsubsection[{tr}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::tr}\mbox{[}10\mbox{]}}}\label{structfractal_a2bb7ce1b69821aa883daf27d16df4ba5}
+\hypertarget{structfractal_ae239bfe9dc0e33b2ff7a615fff6104e4}{\index{fractal@{fractal}!tr@{tr}}
+\index{tr@{tr}!fractal@{fractal}}
+\subsubsection[{tr}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::ifs\-\_\-tr$\ast$  {\bf fractal\-::tr}}}\label{structfractal_ae239bfe9dc0e33b2ff7a615fff6104e4}
+\hypertarget{structfractal_a45a93c39e3799fa37101b4125a3d60a6}{\index{fractal@{fractal}!tr@{tr}}
+\index{tr@{tr}!fractal@{fractal}}
+\subsubsection[{tr}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::flame\-\_\-tr$\ast$  {\bf fractal\-::tr}}}\label{structfractal_a45a93c39e3799fa37101b4125a3d60a6}
+\hypertarget{structfractal_af8297a3673f15a8aa61272bdc0377277}{\index{fractal@{fractal}!type@{type}}
+\index{type@{type}!fractal@{fractal}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E} {\bf fractal\-::type}}}\label{structfractal_af8297a3673f15a8aa61272bdc0377277}
+\hypertarget{structfractal_a2cbfae43b5e12a3c427c241a46145a31}{\index{fractal@{fractal}!width@{width}}
+\index{width@{width}!fractal@{fractal}}
+\subsubsection[{width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf fractal\-::width}}}\label{structfractal_a2cbfae43b5e12a3c427c241a46145a31}
+\hypertarget{structfractal_a25f9bab7277ce8cb9272a6e1ba1695f8}{\index{fractal@{fractal}!x@{x}}
+\index{x@{x}!fractal@{fractal}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::x}}}\label{structfractal_a25f9bab7277ce8cb9272a6e1ba1695f8}
+\hypertarget{structfractal_a9f41ac4812a14dde576142eaba71141f}{\index{fractal@{fractal}!xx@{xx}}
+\index{xx@{xx}!fractal@{fractal}}
+\subsubsection[{xx}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::xx}}}\label{structfractal_a9f41ac4812a14dde576142eaba71141f}
+\hypertarget{structfractal_a5f558e90d4bc7b85f758e2f4e7b76fff}{\index{fractal@{fractal}!xy@{xy}}
+\index{xy@{xy}!fractal@{fractal}}
+\subsubsection[{xy}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::xy}}}\label{structfractal_a5f558e90d4bc7b85f758e2f4e7b76fff}
+\hypertarget{structfractal_a4bd6ee4742f683f13141f31c2d3799b7}{\index{fractal@{fractal}!y@{y}}
+\index{y@{y}!fractal@{fractal}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::y}}}\label{structfractal_a4bd6ee4742f683f13141f31c2d3799b7}
+\hypertarget{structfractal_aa52f4f35e4bd516179706f318397218a}{\index{fractal@{fractal}!yx@{yx}}
+\index{yx@{yx}!fractal@{fractal}}
+\subsubsection[{yx}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::yx}}}\label{structfractal_aa52f4f35e4bd516179706f318397218a}
+\hypertarget{structfractal_abbf9466acf8986903f74754be308eb36}{\index{fractal@{fractal}!yy@{yy}}
+\index{yy@{yy}!fractal@{fractal}}
+\subsubsection[{yy}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf fractal\-::yy}}}\label{structfractal_abbf9466acf8986903f74754be308eb36}
+
+
+\-La documentation de cette structure a été générée à partir du fichier suivant \-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fconfig_8h}{fconfig.\-h}\end{DoxyCompactItemize}

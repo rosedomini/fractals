@@ -1,0 +1,34 @@
+#!/usr/local/bin/ruby
+#coding:utf-8
+begin
+
+=begin
+a = File.read("genconf.algorithms.txt").split(?\n)
+
+`mkdir #{t = Time.now.to_f}`
+a.each_with_index{|a, i|
+	f = File.open("#{t}/flame.v#{i.to_s.rjust(2, '0')}-#{a}.fractal", 'w+')
+	f.puts "type Flame
+size 1200 675
+scale 0.33
+num_iter 0
+position 0.0 0.0
+proba_type uniform
+rand_transform 3 10
+add_algorithm #{a.downcase}\n"
+	f.close
+}
+=end
+
+["escape-time", "flame.single", "IFS", "IFS.flame", "flame.complex"].each{|fo|
+	File.open("series.#{fo}.fractal", 'w+') do |f|
+		f.puts "type series"
+		f.puts "base_path ../conf/#{fo}"
+		Dir["#{fo}/*.fractal"].sort.each{|fn|
+			f.puts fn[(fo.size+1)..-1]
+		}
+	end
+}
+
+rescue Exception; puts $!
+ensure; puts "\nDone.\n"; gets end

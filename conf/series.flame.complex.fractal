@@ -1,0 +1,9 @@
+type series
+base_path ../conf/flame.complex
+flame.multiple.Random1.fractal
+flame.multiple.Random2.fractal
+flame.multiple.Random3.fractal
+flame.multiple.Random4.fractal
+flame.multiple.Random5.fractal
+flame.single.Random1.fractal
+flame.single.Random2.fractal

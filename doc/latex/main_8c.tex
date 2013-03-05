@@ -1,0 +1,86 @@
+\hypertarget{main_8c}{\section{\-Référence du fichier main.\-c}
+\label{main_8c}\index{main.\-c@{main.\-c}}
+}
+{\ttfamily \#include \char`\"{}main.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\item 
+\-S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{main_8c_a991bb76e99c7c25ffba62093cbba6d53}{init\-Video} (int w, int h, int fullscreen)
+\item 
+void \hyperlink{main_8c_a5b7b03ae878dfd01ed9ce735415eb432}{display\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$screen)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{main_8c_a70e23515e090f7febd25fca01973067d}{mouse\-\_\-x} = 0
+\item 
+unsigned int \hyperlink{main_8c_aa726b88fcdc39883977486d0245d4e74}{mouse\-\_\-y} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{main_8c_a5b7b03ae878dfd01ed9ce735415eb432}{\index{main.\-c@{main.\-c}!display\-\_\-fractal@{display\-\_\-fractal}}
+\index{display\-\_\-fractal@{display\-\_\-fractal}!main.c@{main.\-c}}
+\subsubsection[{display\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf display\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a5b7b03ae878dfd01ed9ce735415eb432}
+\-On affiche une fractale sur la fenêtre avec un titre correspondant
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & objet de la fractale à déssiner \\
+\hline
+{\em screen} & surface où déssiner (l'écran) \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_a991bb76e99c7c25ffba62093cbba6d53}{\index{main.\-c@{main.\-c}!init\-Video@{init\-Video}}
+\index{init\-Video@{init\-Video}!main.c@{main.\-c}}
+\subsubsection[{init\-Video}]{\setlength{\rightskip}{0pt plus 5cm}\-S\-D\-L\-\_\-\-Surface$\ast$ {\bf init\-Video} (
+\begin{DoxyParamCaption}
+\item[{int}]{w, }
+\item[{int}]{h, }
+\item[{int}]{fullscreen}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a991bb76e99c7c25ffba62093cbba6d53}
+\-Initialise la vidéo
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em w} & largeur en pixels de la fenêtre à afficher \\
+\hline
+{\em h} & hauteur en pixels de la fenêtre à afficher \\
+\hline
+{\em fullscreen} & bool déterminant si on affiche la vidéo en plein écran ou non (fonction désactivée par manque de compatibilité avec certaines systèmes ou certaines résolutions d'écran) \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf main} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+\-Programme principal
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em argc} & nombre de paramètres \\
+\hline
+{\em argv} & paramètres \-Seul le premier est utilisé \-: l'emplacement absolu ou relatif d'un fichier de configuration compatible \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des variables}
+\hypertarget{main_8c_a70e23515e090f7febd25fca01973067d}{\index{main.\-c@{main.\-c}!mouse\-\_\-x@{mouse\-\_\-x}}
+\index{mouse\-\_\-x@{mouse\-\_\-x}!main.c@{main.\-c}}
+\subsubsection[{mouse\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf mouse\-\_\-x} = 0}}\label{main_8c_a70e23515e090f7febd25fca01973067d}
+\hypertarget{main_8c_aa726b88fcdc39883977486d0245d4e74}{\index{main.\-c@{main.\-c}!mouse\-\_\-y@{mouse\-\_\-y}}
+\index{mouse\-\_\-y@{mouse\-\_\-y}!main.c@{main.\-c}}
+\subsubsection[{mouse\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf mouse\-\_\-y} = 0}}\label{main_8c_aa726b88fcdc39883977486d0245d4e74}

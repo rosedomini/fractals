@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+
+body {
+	max-width: 800px;
+}
+
+</style>
+<script type="text/javascript">
+
+var etape = 1;
+var etape_suivante;
+var type;
+var largeur;
+var position_x;
+var julia_c_x;
+var ask_num_iter = {
+	"Mandelbrot": "Entrez le nombre d'iérations maximal par pixel :",
+	"Julia": "Entrez le nombre d'iérations maximal par pixel :",
+	"IFS": "Entrez le nombre total d'itérations, ou 0 pour qu'il soit calculé par la formule min(max(hauteur, largeur)³, 8000000). Le nombre ne sera pas recalculé lors d'un éventuel redimensionnement de la fenêtre.",
+	"Flame": "Entrez le nombre total d'itérations, ou 0 pour qu'il soit calculé par la formule min(max(hauteur, largeur)³, 8000000). Le nombre ne sera pas recalculé lors d'un éventuel redimensionnement de la fenêtre."
+};
+var num_iter_recommande = {
+	"Mandelbrot": "255",
+	"Julia": "255",
+	"IFS": "0",
+	"Flame": "0",
+};
+var position_x_recommande = {
+	"Mandelbrot": "-0.7000000000",
+	"Julia": "0.0000000000",
+	"IFS": "0.0000000000",
+	"Flame": "0.0000000000",
+};
+var position_y_recommande = {
+	"Mandelbrot": "0.0000000000",
+	"Julia": "0.0000000000",
+	"IFS": "0.0000000000",
+	"Flame": "0.0000000000",
+};
+var etape_caracteristique = {
+	"Mandelbrot": 1000,
+	"Julia": 200,
+	"IFS": 300,
+	"Flame": 400,
+};
+var transformations_ifs = {
+	"Sierpinski triangle":
+ 'add_transform  0.5 0 0 0.5 0 0 0.3333333333\n'
++'add_transform  0.5 0 0 0.5 0.5 0 0.3333333333\n'
++'add_transform  0.5 0 0 0.5 0.25 0.5 0.3333333333',
+
+	"Sierpinski triangle slant":
+ 'add_transform  0.5 0 0 0.5 0 0 0.3333333333\n'
++'add_transform  0.5 0 0 0.5 0 0.5 0.3333333333\n'
++'add_transform  0.5 0 0 0.5 0.5 0.5 0.3333333333',
+
+	"Dragon":
+ 'add_transform  0.824074 0.281482 -1.88229 -0.212346 0.864198 -0.110607 0.787473\n'
++'add_transform  0.078827 0.520988 2.785360 -0.463889 -0.377778 8.095795 0.212527',
+
+	"Fern":
+ 'add_transform  0 0 0 0 0.16 0 0.01\n'
++'add_transform  0.85 0.04 0 -0.04 0.85 1.0 0.85\n'
++'add_transform  0.2 -0.25 0 0.23 0.22 0.8 0.07\n'
++'add_transform  -0.15 0.28 0 0.26 0.24 0 0.09',
+
+	"Fern 2":
+ 'add_transform  0 0 0 0 0.16 0 0.01\n'
++'add_transform  0.2 -0.26 0 0.23 0.22 1.6 0.08\n'
++'add_transform  -0.15 0.28 0 0.26 0.24 0.44 0.08\n'
++'add_transform  0.75 0.04 0 -0.04 0.85 1.6 0.74',
+
+	"tree":
+ 'add_transform  0 0 0 0 0.50 0 0.05\n'
++'add_transform  0.42 -0.42 0 0.42 0.42 0.4 0.4\n'
++'add_transform  0.42 0.42 0 -0.42 0.42 0.4 0.4\n'
++'add_transform  0.1 0 0 0 0.1 0.4 0.15\n',
+
+	"talon":
+ 'add_transform  0.7 0.2 0 -0.2 0.7 1.0 0.5\n'
++'add_transform  0 -0.6 1.0 0.6 0 -0.6 0.5\n',
+
+	"floor":
+ 'add_transform  0 -0.5 -0.5 0.5 0 0 0.3333333333\n'
++'add_transform  0.5 0 0 0 0.5 0.25 0.3333333333\n'
++'add_transform  0 0.5 0.5 -0.5 0 0 0.3333333333\n',
+
+};
+series_example = "\n"
++"exemple1\n"
++"exemple2.txt\n"
++"exemple3.fractal\n"
++"IFS/IFS1.fractal\n";
+
+function configurer()
+{
+	if(etape == 1)
+		demander(
+ '<p>Que souhaitez-vous faire ?</p>'
++'<a href="javascript:repondre(\'Mandelbrot\', 2)">Afficher l\'ensemble de Mandelbrot</a><br>'
++'<a href="javascript:repondre(\'Julia\', 2)">Afficher un ensemble de Julia</a><br>'
++'<a href="javascript:repondre(\'IFS\', 2)">Afficher une fractale de type IFS</a> (Iterated Function System, L-systèmes inclues)<br>'
++'<a href="javascript:repondre(\'Flame\', 2)">Afficher une fractale de type flamme</a><br>'
++'<a href="javascript:repondre(\'series\', 500)">Afficher une série de fractales dans laquelle naviguer</a><br>'
+		);
+	if(etape == 2)
+		demander(
+ '<p>Entrer la largeur de l\'image à générer (nombre de pixels) :</p>',
+			"1200",
+			4
+		);
+	if(etape == 4)
+		demander(
+ '<p>Entrer la <b>hauteur</b> de l\'image à générer :</p>',
+			Math.round(parseInt(largeur)*9/16)+"",
+			5
+		);
+	if(etape == 5)
+		demander(
+ '<p>Entrer l\'échelle de l\'image à générer :</p>',
+			"1.0000000000",
+			6
+		);
+	if(etape == 6)
+		demander(
+ '<p>'+ask_num_iter[type]+'</p>',
+			num_iter_recommande[type],
+			7
+		);
+	if(etape == 7)
+		demander(
+ '<p>Entrer une position sur l\'axe horizontal du plan (positive ou négative). Le centre de l\'image à afficher correspondra à cette position.</p>',
+			position_x_recommande[type],
+			8
+		);
+	if(etape == 8)
+		demander(
+ '<p>Entrer une position sur l\'axe <b>vertical</b> du plan. Le centre de l\'image à afficher correspondra à cette position.</p>',
+			position_y_recommande[type],
+			etape_caracteristique[type]
+		);
+	if(etape == 200) // Julia
+		demander(
+ '<p>Entrer la partie réelle de la constante de Julia à utiliser :</p>',
+			"0.0962098351",
+			201
+		);
+	if(etape == 201)
+		demander(
+ '<p>Entrer la partie <b>imaginaire</b> de la constante de Julia à utiliser :</p>',
+			"-0.6196444742",
+			1000
+		);
+	if(etape == 300)
+		demander(
+ '<h2>Iterated Function System</h2>'
++'<p>Configuration des différentes transformations et leurs coefficients... </p>'
++'<p>Dans notre algorithme, on effectue à chaque itération une transformation sur les valeurs d\'une position du plan (généralement entre -1-i et 1+i). On définit pour chaque transformation : <b>7 coefficients</b>, donnés dans l\'ordre suivant :</p>'
++'<pre>a b c d e f p</pre>'
++'<p>Qui permettent l\'opération suivante :</p>'
++'<pre>x_transformé = a*x + b*y + c\ny_transformé = d*x + e*y + f</pre>'
++'<p>On n\'effectue qu\'une transformation par itération, et elle est choisie au hasard. On a donc `<b><i>p</i></b>`, la probabilité que la transformation soit choisie. Le programme divisera toutes les probabilités par leur somme car elles correspondent à tous les évènements élémentaires de notre espace probabilisable. Elles peuvent être égales (uniformisées) ou différentes.</p>'
++'<p>On choisira premièrement un des exemples ci-dessous, les coefficients pouvant être modifiés par la suite dans la zone de texte.</p>'
++'<a href="javascript:repondre(\'Dragon\', 1000)">Dragon</a><br>'
++'<a href="javascript:repondre(\'Sierpinski triangle\', 1000)">Triangle de Sierpinski</a><br>'
++'<a href="javascript:repondre(\'Sierpinski triangle slant\', 1000)">Triangle de Sierpinski (en biais)</a><br>'
++'<a href="javascript:repondre(\'Fern\', 1000)">Fougère</a><br>'
++'<a href="javascript:repondre(\'Fern 2\', 1000)">Fougère (2)</a><br>'
++'<a href="javascript:repondre(\'tree\', 1000)">(arbre)</a><br>'
++'<a href="javascript:repondre(\'talon\', 1000)">(talon)</a><br>'
++'<a href="javascript:repondre(\'floor\', 1000)">(floor)</a><br>'
+		);
+	if(etape == 400)
+		demander(
+ '<h2>Flame Algorithm</h2>'
++'<p>Configuration des différentes transformations et de leurs coefficients... </p>'
++'<p>Dans notre algorithme, on effectue à chaque itération une transformation sur les valeurs d\'une position du plan (généralement entre -1-i et 1+i). On définit pour chaque transformation : <b>10 coefficients</b>, donnés dans l\'ordre suivant :</p>'
++'<pre>add_flame_transform a b c d e f p, r g b</pre>'
++'<p>On peut aussi choisir des coefficients aléatoires :</p>'
++'<pre>add_flame_transform random, random\n'
++'add_flame_transform random, r g b\n'
++'add_flame_transform a b c d e f p, random</pre>'
++'<p>Qui permettent l\'opération suivante :</p>'
++'<pre>x_transformé = a*x + b*y + c\ny_transformé = d*x + e*y + f</pre>'
++'<pre>nouvelle_couleur = moyenne(ancienne_couleur, coefficient_couleur)</pre>'
++'<p>`<b><i>r</i></b>`, `<b><i>g</i></b>`, et `<b><i>b</i></b>` sont des nombres entre 0 et 1 correspondant à des niveaux de couleur (rouge, vert, bleu).</p>'
++'<p>On n\'effectue qu\'une transformation de ce type par itération, et elle est choisie au hasard. On a donc `<b><i>p</i></b>`, la probabilité que la transformation soit choisie. Le programme divisera toutes les probabilités par leur somme car elles correspondent à tous les évènements élémentaires de notre espace probabilisable. Elles peuvent être égales (uniformisées) ou différentes.</p>'
++'<p>Après chaque transformation, une nouvelle transformation est appliquée, réalisée cette fois par un algorithme. Chaque algorithme correspond à une variation. On peut utiliser plusieurs algorithmes, mais chaque chose en son temps.</p>'
++'<p>On peut choisir de définir le nombre de transformations et leurs coefficients dans le fichier de configuration, ou bien de demander à ce que cela soit fait aléatoirement à chaque initialisation de la fractale. Mais avant cela, il faut savoir que les coefficients de probabilité de chaque transformation peuvent être changés par le programme. Que doit-il faire ?</p>'
++'<a href="javascript:repondre(\'\', 401)">Automatique</a> : génère aléatoirement les probabilités non définies explicitement.<br>'
++'<a href="javascript:repondre(\'uniform\', 401)">Uniformiser</a> : force toutes les probabilités à être égales.<br>'
++'<a href="javascript:repondre(\'random\', 401)">Aléatoire</a> : force toutes les probabilités à être générées aléatoirement.<br>'
+		);
+	if(etape == 401 || etape == 402)
+	{
+		var s =
+ '<h2>Flame Algorithm</h2>'
++'<p>Configuration des différentes transformations et leurs coefficients... </p>';
+		if(etape == 401) s +=
+ '<h3>Aléatoires</h3>'
++'<p>Pour des transformations aléatoires, il suffit d\'ajouter une seule ligne au fichier de configuration. Exemples :</p>'
++'<a href="javascript:repondre(\'rand_transform 3 10\', 403)">rand_transform 3 10</a> : entre 3 et 10 transformations aléatoires.<br>'
++'<a href="javascript:repondre(\'rand_transform 4\', 403)">rand_transform 4</a> : exactement 4 transformations aléatoires.<br>'
+		s +=
+ '<h3>Définies</h3>'
++'<p>Pour définir les transformations, il suffit d\'ajouter une ligne par transformation au contenu du fichier de configuration ci-dessous. Exemples :</p>'
++'<a href="javascript:repondre(\'add_flame_transform -0.5 0.33 0.2 -0.1 0.4 -0.05 0.25, 0 1 0.5\', 402)">add_flame_transform -0.5 0.33 0.2 -0.1 0.4 -0.05 0.25, 0 1 0.5</a><br>'
++'<a href="javascript:repondre(\'add_flame_transform -0.5 0.33 0.2 -0.1 0.4 -0.05 0.25, random\', 402)">add_flame_transform -0.5 0.33 0.2 -0.1 0.4 -0.05 0.25, random</a><br>'
++'<a href="javascript:repondre(\'add_flame_transform random, 0 1 0.5\', 402)">add_flame_transform random, 0 1 0.5</a><br>'
++'<a href="javascript:repondre(\'add_flame_transform random, random\', 402)">add_flame_transform random, random</a><br>'
+		if(etape == 402) s += 
+ '<p><a href="javascript:repondre(\'\', 403)">Passer à la suite</a></p>'
+		demander(s);
+	}
+	if(etape == 403 || etape == 404)
+	{
+		var s =
+ '<h2>Flame Algorithm</h2>'
++'<p>Configuration des algorithmes (48 variations)...</p>'
+		if(etape == 403) s +=
+ '<h3>Aléatoires</h3>'
++'<p>Pour des algorithmes aléatoires, il suffit d\'ajouter une seule ligne au fichier de configuration. Exemples :</p>'
++'<a href="javascript:repondre(\'rand_alg 1 4\', 1000)">rand_alg 1 4</a> : entre 1 et 4 algorithmes choisis aléatoirement.<br>'
++'<a href="javascript:repondre(\'rand_alg 2\', 1000)">rand_alg 2</a> : exactement 2 algorithmes choisis aléatoirement.<br>'
+		s += 
+ '<h3>Définis</h3>'
++'<p>Pour choisis les algorithmes à utiliser, il suffit d\'ajouter une ligne par algorithme au contenu du fichier de configuration ci-dessous. Exemples :</p>'
++'<pre>add_algorithm linear\nadd_algorithm random\nadd_algorithm julia</pre>'
++'<p>Cliquer pour ajouter :</p>'
+		if(etape == 404) s += 
+ '<a href="javascript:repondre(\'\', 1000)">Passer à la suite</a><br>'
+		s +=
+ '<a href="javascript:repondre(\'add_algorithm random\', 404)">Random</a> (Variation fixée aléatoirement)<br>'
++'<a href="javascript:repondre(\'add_algorithm linear\', 404)">Linear</a> (Variation 0)<br>'
++'<a href="javascript:repondre(\'add_algorithm sinusoidal\', 404)">Sinusoidal</a> (Variation 1)<br>'
++'<a href="javascript:repondre(\'add_algorithm spherical\', 404)">Spherical</a> (Variation 2)<br>'
++'<a href="javascript:repondre(\'add_algorithm swirl\', 404)">Swirl</a> (Variation 3)<br>'
++'<a href="javascript:repondre(\'add_algorithm horseshoe\', 404)">Horseshoe</a> (Variation 4)<br>'
++'<a href="javascript:repondre(\'add_algorithm polar\', 404)">Polar</a> (Variation 5)<br>'
++'<a href="javascript:repondre(\'add_algorithm handkerchief\', 404)">Handkerchief</a> (Variation 6)<br>'
++'<a href="javascript:repondre(\'add_algorithm heart\', 404)">Heart</a> (Variation 7)<br>'
++'<a href="javascript:repondre(\'add_algorithm disc\', 404)">Disc</a> (Variation 8)<br>'
++'<a href="javascript:repondre(\'add_algorithm spiral\', 404)">Spiral</a> (Variation 9)<br>'
++'<a href="javascript:repondre(\'add_algorithm hyperbolic\', 404)">Hyperbolic</a> (Variation 10)<br>'
++'<a href="javascript:repondre(\'add_algorithm diamond\', 404)">Diamond</a> (Variation 11)<br>'
++'<a href="javascript:repondre(\'add_algorithm ex\', 404)">Ex</a> (Variation 12)<br>'
++'<a href="javascript:repondre(\'add_algorithm julia\', 404)">Julia</a> (Variation 13)<br>'
++'<a href="javascript:repondre(\'add_algorithm bent\', 404)">Bent</a> (Variation 14)<br>'
++'<a href="javascript:repondre(\'add_algorithm waves\', 404)">Waves</a> (Variation 15)<br>'
++'<a href="javascript:repondre(\'add_algorithm fisheye\', 404)">Fisheye</a> (Variation 16)<br>'
++'<a href="javascript:repondre(\'add_algorithm popcorn\', 404)">Popcorn</a> (Variation 17)<br>'
++'<a href="javascript:repondre(\'add_algorithm exponential\', 404)">Exponential</a> (Variation 18)<br>'
++'<a href="javascript:repondre(\'add_algorithm power\', 404)">Power</a> (Variation 19)<br>'
++'<a href="javascript:repondre(\'add_algorithm cosine\', 404)">Cosine</a> (Variation 20)<br>'
++'<a href="javascript:repondre(\'add_algorithm rings\', 404)">Rings</a> (Variation 21)<br>'
++'<a href="javascript:repondre(\'add_algorithm fan\', 404)">Fan</a> (Variation 22)<br>'
++'<a href="javascript:repondre(\'add_algorithm blob\', 404)">Blob</a> (Variation 23)<br>'
++'<a href="javascript:repondre(\'add_algorithm pdj\', 404)">PDJ</a> (Variation 24)<br>'
++'<a href="javascript:repondre(\'add_algorithm fan2\', 404)">Fan2</a> (Variation 25)<br>'
++'<a href="javascript:repondre(\'add_algorithm rings2\', 404)">Rings2</a> (Variation 26)<br>'
++'<a href="javascript:repondre(\'add_algorithm eyefish\', 404)">Eyefish</a> (Variation 27)<br>'
++'<a href="javascript:repondre(\'add_algorithm bubble\', 404)">Bubble</a> (Variation 28)<br>'
++'<a href="javascript:repondre(\'add_algorithm cylinder\', 404)">Cylinder</a> (Variation 29)<br>'
++'<a href="javascript:repondre(\'add_algorithm perspective\', 404)">Perspective</a> (Variation 30)<br>'
++'<a href="javascript:repondre(\'add_algorithm noise\', 404)">Noise</a> (Variation 31)<br>'
++'<a href="javascript:repondre(\'add_algorithm julian\', 404)">JuliaN</a> (Variation 32)<br>'
++'<a href="javascript:repondre(\'add_algorithm juliascope\', 404)">JuliaScope</a> (Variation 33)<br>'
++'<a href="javascript:repondre(\'add_algorithm blur\', 404)">Blur</a> (Variation 34)<br>'
++'<a href="javascript:repondre(\'add_algorithm gaussian\', 404)">Gaussian</a> (Variation 35)<br>'
++'<a href="javascript:repondre(\'add_algorithm radialblur\', 404)">RadialBlur</a> (Variation 36)<br>'
++'<a href="javascript:repondre(\'add_algorithm pie\', 404)">Pie</a> (Variation 37)<br>'
++'<a href="javascript:repondre(\'add_algorithm ngon\', 404)">Ngon</a> (Variation 38)<br>'
++'<a href="javascript:repondre(\'add_algorithm curl\', 404)">Curl</a> (Variation 39)<br>'
++'<a href="javascript:repondre(\'add_algorithm rectangles\', 404)">Rectangles</a> (Variation 40)<br>'
++'<a href="javascript:repondre(\'add_algorithm arch\', 404)">Arch</a> (Variation 41)<br>'
++'<a href="javascript:repondre(\'add_algorithm tangent\', 404)">Tangent</a> (Variation 42)<br>'
++'<a href="javascript:repondre(\'add_algorithm square\', 404)">Square</a> (Variation 43)<br>'
++'<a href="javascript:repondre(\'add_algorithm rays\', 404)">Rays</a> (Variation 44)<br>'
++'<a href="javascript:repondre(\'add_algorithm blade\', 404)">Blade</a> (Variation 45)<br>'
++'<a href="javascript:repondre(\'add_algorithm secant\', 404)">Secant</a> (Variation 46)<br>'
++'<a href="javascript:repondre(\'add_algorithm twintrian\', 404)">Twintrian</a> (Variation 47)<br>'
++'<a href="javascript:repondre(\'add_algorithm cross\', 404)">Cross</a> (Variation 48)<br>'
+		demander(s);
+	}
+	if(etape == 500)
+		demander(
+			'<p>Une liste de fractales est une liste de fichiers de configuration de fractales. Pour cela il faut préciser un emplacement par défault pour ces fichiers (absolu ou relatif au répertoire d\'exécution du programme) :</p>',
+			'base_path ../conf',
+			999
+		);
+	if(etape == 999)
+		demander(
+ '<p>Configuration terminée ! Vous pouvez copier le contenu ci-dessous et l\'enregistrer dans un fichier de configuration à ouvrir avec le programme.</p>'
+		);
+	if(etape == 1000)
+		demander(
+ '<p>Configuration terminée ! Vous pouvez copier le contenu ci-dessous et l\'enregistrer dans un fichier de configuration à ouvrir avec le programme.</p>'
+		);
+};
+
+function repondre(reponse, etape_suivante)
+{
+	document.getElementById("question").innerHTML = "";
+	if(etape == 1)
+		ecrire("type "+(type = reponse));
+	if(etape == 2)
+		largeur = reponse;
+	if(etape == 4)
+		ecrire("size "+largeur+" "+reponse);
+	if(etape == 5)
+		ecrire("scale "+reponse);
+	if(etape == 6)
+		ecrire("num_iter "+reponse);
+	if(etape == 7)
+		position_x = reponse;
+	if(etape == 8)
+		ecrire("position "+position_x+" "+reponse);
+	if(etape == 200)
+		julia_c_x = reponse;
+	if(etape == 201)
+		ecrire("julia.c "+julia_c_x+" "+reponse);
+	if(etape == 300)
+		ecrire(transformations_ifs[reponse]);
+	if(etape == 400 && reponse != '')
+		ecrire("proba_type "+reponse);
+	if(etape_suivante == 402)
+		ecrire(reponse);
+	if(etape_suivante == 403 && reponse != '')
+		ecrire(reponse);
+	if(etape_suivante == 404)
+		ecrire(reponse);
+	if((etape == 403 || etape == 404) && etape_suivante == 1000 && reponse != '')
+		ecrire(reponse);
+	if(etape == 500)
+		ecrire(reponse+series_example);
+	etape = etape_suivante;
+	configurer();
+};
+
+function demander(question, reponse_par_defaut, _etape_suivante)
+{
+	document.getElementById("question").innerHTML = question;
+	if(typeof(reponse_par_defaut) != 'undefined')
+	{
+		document.getElementById("div_reponse").style.visibility = 'visible';
+		document.getElementById("reponse").value = reponse_par_defaut;
+		document.getElementById("reponse").select();
+	}
+	if(typeof(_etape_suivante) != 'undefined')
+	{
+		etape_suivante = _etape_suivante;
+	}
+	else etape_suivante = etape;
+}
+
+function valider()
+{
+	var reponse = document.getElementById("reponse").value;
+	document.getElementById("reponse").value = '';
+	document.getElementById("div_reponse").style.visibility = 'hidden';
+	repondre(reponse, etape_suivante);
+}
+
+function ecrire(ligne)
+{
+	document.getElementById("configuration").innerHTML += ligne+"\n";
+};
+
+</script>
+</head>
+<body onload="configurer();">
+
+<h1>Création du fichier de configuration</h1>
+
+<div id="question"></div>
+<div id="div_reponse" style="visibility: hidden">
+	<input type="text" id="reponse" onkeypress="if(event.code || event.keyCode == 13) valider();">
+	<input type="button" value="Valider" onclick="valider();">
+</div>
+
+<h2>Contenu du fichier de configuration</h2>
+<textarea id="configuration" cols="80" autocomplete="off" rows="20"></textarea>
+
+</body>
+</html>

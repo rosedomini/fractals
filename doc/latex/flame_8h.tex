@@ -1,0 +1,552 @@
+\hypertarget{flame_8h}{\section{\-Référence du fichier flame.\-h}
+\label{flame_8h}\index{flame.\-h@{flame.\-h}}
+}
+{\ttfamily \#include $<$\-S\-D\-L/\-S\-D\-L.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$math.\-h$>$}\*
+{\ttfamily \#include $<$time.\-h$>$}\*
+{\ttfamily \#include \char`\"{}fconfig.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}fthread.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{flame_8h_a7a699b198dedca7b8d6d32e14c4b120b}{flame\-\_\-alg\-\_\-by\-\_\-name} (char $\ast$buf)
+\item 
+void \hyperlink{flame_8h_a8c4013473f631af80a1d633369ca451b}{flame\-\_\-reinit} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+void \hyperlink{flame_8h_aab544b43a768e9fba670900c69047613}{flame\-\_\-init} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+int \hyperlink{flame_8h_a6c95861efb26ad45ce2f64aa5e9a48f0}{draw\-\_\-flame} (void $\ast$data)
+\item 
+void \hyperlink{flame_8h_aeea413fa016d60443e4aba1c50aa6fcb}{flame\-\_\-linear} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ae2ae20d704009c9ee7452684969801ff}{flame\-\_\-sinusoidal} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_afeb279c39bda60c6883cd19ff749b794}{flame\-\_\-spherical} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aafe7f18e2789d10e46fa73b4870bf4cc}{flame\-\_\-swirl} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ada8b862f82c931092db91c210e0e501b}{flame\-\_\-horseshoe} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a66315386e7dccea001f2afeb5e91fff6}{flame\-\_\-polar} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_afba24d1f69dfbeac2f030a762f7db8af}{flame\-\_\-handkerchief} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aaa43a88c06a69988244b7a3a2db2c53d}{flame\-\_\-heart} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a9ec185f34710396753ff80cbb9269fe4}{flame\-\_\-disc} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ad7f6651724a1c7517052764bf3039bec}{flame\-\_\-spiral} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a0fb59d16df043b8d71c5b0051c54667a}{flame\-\_\-hyperbolic} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aa1d1e791e772385c2a320228e80694be}{flame\-\_\-diamond} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_abb89bedfd1830873783212e90f595407}{flame\-\_\-ex} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a3cbc4d6f3647a0a8f379d2404c31e113}{flame\-\_\-julia} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a995e942a1f736678be752802fdee38e9}{flame\-\_\-bent} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aa415f5a29818dda94bc7d0d30a0c1d10}{flame\-\_\-waves} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_af02cb66fab7f22a3452bd178615ce925}{flame\-\_\-fisheye} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a88b97a58a67803aa1f261c521b15f6be}{flame\-\_\-popcorn} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a0ca6c4db6aa9f84d91171f0cee74c25d}{flame\-\_\-exponential} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ad0fd80101afc523f9149c9f1cfea8f53}{flame\-\_\-power} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ac172822efb6b1de8b6ca31211c4c3aad}{flame\-\_\-cosine} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a5de6200f5e633aa60a6812ae96beae25}{flame\-\_\-rings} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_af0dcad385a5401522955a2a47dacdc87}{flame\-\_\-fan} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a42800f114c6865537bd2bf890ea5e975}{flame\-\_\-blob} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ab9bf4be9ea9525b75326e2d6ffec2a66}{flame\-\_\-pdj} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a63cb795948cfc28b4d78cca180307702}{flame\-\_\-fan2} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a547f59e573c88f80f0a3aa32e255fcbc}{flame\-\_\-rings2} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a92c71110e0556f269b8304223f4c378d}{flame\-\_\-eyefish} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_abc7814757cf08041ad60d2dcd62bbe4d}{flame\-\_\-bubble} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a6e88d15d3298b316739d6ce7af1cf253}{flame\-\_\-cylinder} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aaed971974c7b1849bdfd8c2003648b66}{flame\-\_\-perspective} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a90deb3c2cfce897b10c6c87feecd359a}{flame\-\_\-noise} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a35ad8ef6b9b06603d0bae2592aa46a49}{flame\-\_\-julian} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a142e9e1af25048adea7135f618abdbfe}{flame\-\_\-juliascope} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a5c8297ce266603bf17b385c7a61e5414}{flame\-\_\-blur} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a296fa2c867535243d885567f7d509c39}{flame\-\_\-gaussian} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ad0fab89557b242bd0f38a2934dfccc64}{flame\-\_\-radialblur} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a811ae09a9f69bf00c2b06fa03c917e30}{flame\-\_\-pie} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a0ab4b08efa35b44a7720678078103c81}{flame\-\_\-ngon} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ad07535260820eeb985a04ed8b9d87c7b}{flame\-\_\-curl} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a42ffadf7a2de41c4dafef2e58ebc8211}{flame\-\_\-rectangles} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ad1acadcf4046d0580e287ce2b169c33f}{flame\-\_\-arch} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a55a67fefa1015e24248b0535750b8282}{flame\-\_\-tangent} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a88bae70a4f51e887c98fc59704c72753}{flame\-\_\-square} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aa526702a941cf691e73bf9b1655a8dec}{flame\-\_\-rays} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_aa8aaa0a2cb26cae1892c08b44ae7a285}{flame\-\_\-blade} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a02aab76fc085ce628a384b9352a6736f}{flame\-\_\-secant} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_affc7635fe3650337338efa939a6581e3}{flame\-\_\-twintrian} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_ab713c97bdb164c1dd25dccd8967ceb8f}{flame\-\_\-cross} (double $\ast$x, double $\ast$y)
+\item 
+void \hyperlink{flame_8h_a86f2198e66b882d596578a19ca842586}{flame\-\_\-random} (double $\ast$x, double $\ast$y)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{flame_8h_a6c95861efb26ad45ce2f64aa5e9a48f0}{\index{flame.\-h@{flame.\-h}!draw\-\_\-flame@{draw\-\_\-flame}}
+\index{draw\-\_\-flame@{draw\-\_\-flame}!flame.h@{flame.\-h}}
+\subsubsection[{draw\-\_\-flame}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf draw\-\_\-flame} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a6c95861efb26ad45ce2f64aa5e9a48f0}
+\-Fonction gérée par le thread principal permettant de déssiner une fractal de type flamme \hypertarget{flame_8h_a7a699b198dedca7b8d6d32e14c4b120b}{\index{flame.\-h@{flame.\-h}!flame\-\_\-alg\-\_\-by\-\_\-name@{flame\-\_\-alg\-\_\-by\-\_\-name}}
+\index{flame\-\_\-alg\-\_\-by\-\_\-name@{flame\-\_\-alg\-\_\-by\-\_\-name}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-alg\-\_\-by\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf flame\-\_\-alg\-\_\-by\-\_\-name} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a7a699b198dedca7b8d6d32e14c4b120b}
+\hypertarget{flame_8h_ad1acadcf4046d0580e287ce2b169c33f}{\index{flame.\-h@{flame.\-h}!flame\-\_\-arch@{flame\-\_\-arch}}
+\index{flame\-\_\-arch@{flame\-\_\-arch}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-arch}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-arch} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ad1acadcf4046d0580e287ce2b169c33f}
+\hypertarget{flame_8h_a995e942a1f736678be752802fdee38e9}{\index{flame.\-h@{flame.\-h}!flame\-\_\-bent@{flame\-\_\-bent}}
+\index{flame\-\_\-bent@{flame\-\_\-bent}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-bent}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-bent} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a995e942a1f736678be752802fdee38e9}
+\hypertarget{flame_8h_aa8aaa0a2cb26cae1892c08b44ae7a285}{\index{flame.\-h@{flame.\-h}!flame\-\_\-blade@{flame\-\_\-blade}}
+\index{flame\-\_\-blade@{flame\-\_\-blade}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-blade}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-blade} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aa8aaa0a2cb26cae1892c08b44ae7a285}
+\hypertarget{flame_8h_a42800f114c6865537bd2bf890ea5e975}{\index{flame.\-h@{flame.\-h}!flame\-\_\-blob@{flame\-\_\-blob}}
+\index{flame\-\_\-blob@{flame\-\_\-blob}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-blob}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-blob} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a42800f114c6865537bd2bf890ea5e975}
+\hypertarget{flame_8h_a5c8297ce266603bf17b385c7a61e5414}{\index{flame.\-h@{flame.\-h}!flame\-\_\-blur@{flame\-\_\-blur}}
+\index{flame\-\_\-blur@{flame\-\_\-blur}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-blur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-blur} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a5c8297ce266603bf17b385c7a61e5414}
+\hypertarget{flame_8h_abc7814757cf08041ad60d2dcd62bbe4d}{\index{flame.\-h@{flame.\-h}!flame\-\_\-bubble@{flame\-\_\-bubble}}
+\index{flame\-\_\-bubble@{flame\-\_\-bubble}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-bubble}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-bubble} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_abc7814757cf08041ad60d2dcd62bbe4d}
+\hypertarget{flame_8h_ac172822efb6b1de8b6ca31211c4c3aad}{\index{flame.\-h@{flame.\-h}!flame\-\_\-cosine@{flame\-\_\-cosine}}
+\index{flame\-\_\-cosine@{flame\-\_\-cosine}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-cosine}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-cosine} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ac172822efb6b1de8b6ca31211c4c3aad}
+\hypertarget{flame_8h_ab713c97bdb164c1dd25dccd8967ceb8f}{\index{flame.\-h@{flame.\-h}!flame\-\_\-cross@{flame\-\_\-cross}}
+\index{flame\-\_\-cross@{flame\-\_\-cross}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-cross}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-cross} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ab713c97bdb164c1dd25dccd8967ceb8f}
+\hypertarget{flame_8h_ad07535260820eeb985a04ed8b9d87c7b}{\index{flame.\-h@{flame.\-h}!flame\-\_\-curl@{flame\-\_\-curl}}
+\index{flame\-\_\-curl@{flame\-\_\-curl}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-curl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-curl} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ad07535260820eeb985a04ed8b9d87c7b}
+\hypertarget{flame_8h_a6e88d15d3298b316739d6ce7af1cf253}{\index{flame.\-h@{flame.\-h}!flame\-\_\-cylinder@{flame\-\_\-cylinder}}
+\index{flame\-\_\-cylinder@{flame\-\_\-cylinder}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-cylinder}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-cylinder} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a6e88d15d3298b316739d6ce7af1cf253}
+\hypertarget{flame_8h_aa1d1e791e772385c2a320228e80694be}{\index{flame.\-h@{flame.\-h}!flame\-\_\-diamond@{flame\-\_\-diamond}}
+\index{flame\-\_\-diamond@{flame\-\_\-diamond}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-diamond}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-diamond} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aa1d1e791e772385c2a320228e80694be}
+\hypertarget{flame_8h_a9ec185f34710396753ff80cbb9269fe4}{\index{flame.\-h@{flame.\-h}!flame\-\_\-disc@{flame\-\_\-disc}}
+\index{flame\-\_\-disc@{flame\-\_\-disc}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-disc}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-disc} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a9ec185f34710396753ff80cbb9269fe4}
+\hypertarget{flame_8h_abb89bedfd1830873783212e90f595407}{\index{flame.\-h@{flame.\-h}!flame\-\_\-ex@{flame\-\_\-ex}}
+\index{flame\-\_\-ex@{flame\-\_\-ex}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-ex}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-ex} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_abb89bedfd1830873783212e90f595407}
+\hypertarget{flame_8h_a0ca6c4db6aa9f84d91171f0cee74c25d}{\index{flame.\-h@{flame.\-h}!flame\-\_\-exponential@{flame\-\_\-exponential}}
+\index{flame\-\_\-exponential@{flame\-\_\-exponential}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-exponential}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-exponential} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a0ca6c4db6aa9f84d91171f0cee74c25d}
+\hypertarget{flame_8h_a92c71110e0556f269b8304223f4c378d}{\index{flame.\-h@{flame.\-h}!flame\-\_\-eyefish@{flame\-\_\-eyefish}}
+\index{flame\-\_\-eyefish@{flame\-\_\-eyefish}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-eyefish}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-eyefish} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a92c71110e0556f269b8304223f4c378d}
+\hypertarget{flame_8h_af0dcad385a5401522955a2a47dacdc87}{\index{flame.\-h@{flame.\-h}!flame\-\_\-fan@{flame\-\_\-fan}}
+\index{flame\-\_\-fan@{flame\-\_\-fan}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-fan}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-fan} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_af0dcad385a5401522955a2a47dacdc87}
+\hypertarget{flame_8h_a63cb795948cfc28b4d78cca180307702}{\index{flame.\-h@{flame.\-h}!flame\-\_\-fan2@{flame\-\_\-fan2}}
+\index{flame\-\_\-fan2@{flame\-\_\-fan2}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-fan2}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-fan2} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a63cb795948cfc28b4d78cca180307702}
+\hypertarget{flame_8h_af02cb66fab7f22a3452bd178615ce925}{\index{flame.\-h@{flame.\-h}!flame\-\_\-fisheye@{flame\-\_\-fisheye}}
+\index{flame\-\_\-fisheye@{flame\-\_\-fisheye}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-fisheye}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-fisheye} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_af02cb66fab7f22a3452bd178615ce925}
+\hypertarget{flame_8h_a296fa2c867535243d885567f7d509c39}{\index{flame.\-h@{flame.\-h}!flame\-\_\-gaussian@{flame\-\_\-gaussian}}
+\index{flame\-\_\-gaussian@{flame\-\_\-gaussian}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-gaussian}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-gaussian} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a296fa2c867535243d885567f7d509c39}
+\hypertarget{flame_8h_afba24d1f69dfbeac2f030a762f7db8af}{\index{flame.\-h@{flame.\-h}!flame\-\_\-handkerchief@{flame\-\_\-handkerchief}}
+\index{flame\-\_\-handkerchief@{flame\-\_\-handkerchief}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-handkerchief}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-handkerchief} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_afba24d1f69dfbeac2f030a762f7db8af}
+\hypertarget{flame_8h_aaa43a88c06a69988244b7a3a2db2c53d}{\index{flame.\-h@{flame.\-h}!flame\-\_\-heart@{flame\-\_\-heart}}
+\index{flame\-\_\-heart@{flame\-\_\-heart}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-heart}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-heart} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aaa43a88c06a69988244b7a3a2db2c53d}
+\hypertarget{flame_8h_ada8b862f82c931092db91c210e0e501b}{\index{flame.\-h@{flame.\-h}!flame\-\_\-horseshoe@{flame\-\_\-horseshoe}}
+\index{flame\-\_\-horseshoe@{flame\-\_\-horseshoe}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-horseshoe}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-horseshoe} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ada8b862f82c931092db91c210e0e501b}
+\hypertarget{flame_8h_a0fb59d16df043b8d71c5b0051c54667a}{\index{flame.\-h@{flame.\-h}!flame\-\_\-hyperbolic@{flame\-\_\-hyperbolic}}
+\index{flame\-\_\-hyperbolic@{flame\-\_\-hyperbolic}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-hyperbolic}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-hyperbolic} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a0fb59d16df043b8d71c5b0051c54667a}
+\hypertarget{flame_8h_aab544b43a768e9fba670900c69047613}{\index{flame.\-h@{flame.\-h}!flame\-\_\-init@{flame\-\_\-init}}
+\index{flame\-\_\-init@{flame\-\_\-init}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-init} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aab544b43a768e9fba670900c69047613}
+\-Initialise la fractale flamme et ses coefficients aléatoires \hypertarget{flame_8h_a3cbc4d6f3647a0a8f379d2404c31e113}{\index{flame.\-h@{flame.\-h}!flame\-\_\-julia@{flame\-\_\-julia}}
+\index{flame\-\_\-julia@{flame\-\_\-julia}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-julia}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-julia} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a3cbc4d6f3647a0a8f379d2404c31e113}
+\hypertarget{flame_8h_a35ad8ef6b9b06603d0bae2592aa46a49}{\index{flame.\-h@{flame.\-h}!flame\-\_\-julian@{flame\-\_\-julian}}
+\index{flame\-\_\-julian@{flame\-\_\-julian}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-julian}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-julian} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a35ad8ef6b9b06603d0bae2592aa46a49}
+\hypertarget{flame_8h_a142e9e1af25048adea7135f618abdbfe}{\index{flame.\-h@{flame.\-h}!flame\-\_\-juliascope@{flame\-\_\-juliascope}}
+\index{flame\-\_\-juliascope@{flame\-\_\-juliascope}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-juliascope}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-juliascope} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a142e9e1af25048adea7135f618abdbfe}
+\hypertarget{flame_8h_aeea413fa016d60443e4aba1c50aa6fcb}{\index{flame.\-h@{flame.\-h}!flame\-\_\-linear@{flame\-\_\-linear}}
+\index{flame\-\_\-linear@{flame\-\_\-linear}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-linear}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-linear} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aeea413fa016d60443e4aba1c50aa6fcb}
+\hypertarget{flame_8h_a0ab4b08efa35b44a7720678078103c81}{\index{flame.\-h@{flame.\-h}!flame\-\_\-ngon@{flame\-\_\-ngon}}
+\index{flame\-\_\-ngon@{flame\-\_\-ngon}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-ngon}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-ngon} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a0ab4b08efa35b44a7720678078103c81}
+\hypertarget{flame_8h_a90deb3c2cfce897b10c6c87feecd359a}{\index{flame.\-h@{flame.\-h}!flame\-\_\-noise@{flame\-\_\-noise}}
+\index{flame\-\_\-noise@{flame\-\_\-noise}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-noise}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-noise} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a90deb3c2cfce897b10c6c87feecd359a}
+\hypertarget{flame_8h_ab9bf4be9ea9525b75326e2d6ffec2a66}{\index{flame.\-h@{flame.\-h}!flame\-\_\-pdj@{flame\-\_\-pdj}}
+\index{flame\-\_\-pdj@{flame\-\_\-pdj}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-pdj}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-pdj} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ab9bf4be9ea9525b75326e2d6ffec2a66}
+\hypertarget{flame_8h_aaed971974c7b1849bdfd8c2003648b66}{\index{flame.\-h@{flame.\-h}!flame\-\_\-perspective@{flame\-\_\-perspective}}
+\index{flame\-\_\-perspective@{flame\-\_\-perspective}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-perspective}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-perspective} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aaed971974c7b1849bdfd8c2003648b66}
+\hypertarget{flame_8h_a811ae09a9f69bf00c2b06fa03c917e30}{\index{flame.\-h@{flame.\-h}!flame\-\_\-pie@{flame\-\_\-pie}}
+\index{flame\-\_\-pie@{flame\-\_\-pie}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-pie}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-pie} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a811ae09a9f69bf00c2b06fa03c917e30}
+\hypertarget{flame_8h_a66315386e7dccea001f2afeb5e91fff6}{\index{flame.\-h@{flame.\-h}!flame\-\_\-polar@{flame\-\_\-polar}}
+\index{flame\-\_\-polar@{flame\-\_\-polar}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-polar}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-polar} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a66315386e7dccea001f2afeb5e91fff6}
+\hypertarget{flame_8h_a88b97a58a67803aa1f261c521b15f6be}{\index{flame.\-h@{flame.\-h}!flame\-\_\-popcorn@{flame\-\_\-popcorn}}
+\index{flame\-\_\-popcorn@{flame\-\_\-popcorn}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-popcorn}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-popcorn} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a88b97a58a67803aa1f261c521b15f6be}
+\hypertarget{flame_8h_ad0fd80101afc523f9149c9f1cfea8f53}{\index{flame.\-h@{flame.\-h}!flame\-\_\-power@{flame\-\_\-power}}
+\index{flame\-\_\-power@{flame\-\_\-power}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-power}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-power} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ad0fd80101afc523f9149c9f1cfea8f53}
+\hypertarget{flame_8h_ad0fab89557b242bd0f38a2934dfccc64}{\index{flame.\-h@{flame.\-h}!flame\-\_\-radialblur@{flame\-\_\-radialblur}}
+\index{flame\-\_\-radialblur@{flame\-\_\-radialblur}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-radialblur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-radialblur} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ad0fab89557b242bd0f38a2934dfccc64}
+\hypertarget{flame_8h_a86f2198e66b882d596578a19ca842586}{\index{flame.\-h@{flame.\-h}!flame\-\_\-random@{flame\-\_\-random}}
+\index{flame\-\_\-random@{flame\-\_\-random}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-random}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-random} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a86f2198e66b882d596578a19ca842586}
+\hypertarget{flame_8h_aa526702a941cf691e73bf9b1655a8dec}{\index{flame.\-h@{flame.\-h}!flame\-\_\-rays@{flame\-\_\-rays}}
+\index{flame\-\_\-rays@{flame\-\_\-rays}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-rays}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-rays} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aa526702a941cf691e73bf9b1655a8dec}
+\hypertarget{flame_8h_a42ffadf7a2de41c4dafef2e58ebc8211}{\index{flame.\-h@{flame.\-h}!flame\-\_\-rectangles@{flame\-\_\-rectangles}}
+\index{flame\-\_\-rectangles@{flame\-\_\-rectangles}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-rectangles}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-rectangles} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a42ffadf7a2de41c4dafef2e58ebc8211}
+\hypertarget{flame_8h_a8c4013473f631af80a1d633369ca451b}{\index{flame.\-h@{flame.\-h}!flame\-\_\-reinit@{flame\-\_\-reinit}}
+\index{flame\-\_\-reinit@{flame\-\_\-reinit}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-reinit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-reinit} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a8c4013473f631af80a1d633369ca451b}
+\-Génère à nouveau les coefficients de la fractale \hypertarget{flame_8h_a5de6200f5e633aa60a6812ae96beae25}{\index{flame.\-h@{flame.\-h}!flame\-\_\-rings@{flame\-\_\-rings}}
+\index{flame\-\_\-rings@{flame\-\_\-rings}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-rings}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-rings} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a5de6200f5e633aa60a6812ae96beae25}
+\hypertarget{flame_8h_a547f59e573c88f80f0a3aa32e255fcbc}{\index{flame.\-h@{flame.\-h}!flame\-\_\-rings2@{flame\-\_\-rings2}}
+\index{flame\-\_\-rings2@{flame\-\_\-rings2}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-rings2}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-rings2} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a547f59e573c88f80f0a3aa32e255fcbc}
+\hypertarget{flame_8h_a02aab76fc085ce628a384b9352a6736f}{\index{flame.\-h@{flame.\-h}!flame\-\_\-secant@{flame\-\_\-secant}}
+\index{flame\-\_\-secant@{flame\-\_\-secant}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-secant}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-secant} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a02aab76fc085ce628a384b9352a6736f}
+\hypertarget{flame_8h_ae2ae20d704009c9ee7452684969801ff}{\index{flame.\-h@{flame.\-h}!flame\-\_\-sinusoidal@{flame\-\_\-sinusoidal}}
+\index{flame\-\_\-sinusoidal@{flame\-\_\-sinusoidal}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-sinusoidal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-sinusoidal} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ae2ae20d704009c9ee7452684969801ff}
+\hypertarget{flame_8h_afeb279c39bda60c6883cd19ff749b794}{\index{flame.\-h@{flame.\-h}!flame\-\_\-spherical@{flame\-\_\-spherical}}
+\index{flame\-\_\-spherical@{flame\-\_\-spherical}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-spherical}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-spherical} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_afeb279c39bda60c6883cd19ff749b794}
+\hypertarget{flame_8h_ad7f6651724a1c7517052764bf3039bec}{\index{flame.\-h@{flame.\-h}!flame\-\_\-spiral@{flame\-\_\-spiral}}
+\index{flame\-\_\-spiral@{flame\-\_\-spiral}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-spiral}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-spiral} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_ad7f6651724a1c7517052764bf3039bec}
+\hypertarget{flame_8h_a88bae70a4f51e887c98fc59704c72753}{\index{flame.\-h@{flame.\-h}!flame\-\_\-square@{flame\-\_\-square}}
+\index{flame\-\_\-square@{flame\-\_\-square}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-square}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-square} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a88bae70a4f51e887c98fc59704c72753}
+\hypertarget{flame_8h_aafe7f18e2789d10e46fa73b4870bf4cc}{\index{flame.\-h@{flame.\-h}!flame\-\_\-swirl@{flame\-\_\-swirl}}
+\index{flame\-\_\-swirl@{flame\-\_\-swirl}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-swirl}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-swirl} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aafe7f18e2789d10e46fa73b4870bf4cc}
+\hypertarget{flame_8h_a55a67fefa1015e24248b0535750b8282}{\index{flame.\-h@{flame.\-h}!flame\-\_\-tangent@{flame\-\_\-tangent}}
+\index{flame\-\_\-tangent@{flame\-\_\-tangent}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-tangent}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-tangent} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_a55a67fefa1015e24248b0535750b8282}
+\hypertarget{flame_8h_affc7635fe3650337338efa939a6581e3}{\index{flame.\-h@{flame.\-h}!flame\-\_\-twintrian@{flame\-\_\-twintrian}}
+\index{flame\-\_\-twintrian@{flame\-\_\-twintrian}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-twintrian}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-twintrian} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_affc7635fe3650337338efa939a6581e3}
+\hypertarget{flame_8h_aa415f5a29818dda94bc7d0d30a0c1d10}{\index{flame.\-h@{flame.\-h}!flame\-\_\-waves@{flame\-\_\-waves}}
+\index{flame\-\_\-waves@{flame\-\_\-waves}!flame.h@{flame.\-h}}
+\subsubsection[{flame\-\_\-waves}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf flame\-\_\-waves} (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{x, }
+\item[{double $\ast$}]{y}
+\end{DoxyParamCaption}
+)}}\label{flame_8h_aa415f5a29818dda94bc7d0d30a0c1d10}

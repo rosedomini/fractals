@@ -1,0 +1,1597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fractales: Référence du fichier flame.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Fractales
+   &#160;<span id="projectnumber">v0.5</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier flame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SDL/SDL.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="fconfig_8h_source.html">fconfig.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="fthread_8h_source.html">fthread.h</a>&quot;</code><br/>
+</div>
+<p><a href="flame_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a7a699b198dedca7b8d6d32e14c4b120b">flame_alg_by_name</a> (char *buf)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a8c4013473f631af80a1d633369ca451b">flame_reinit</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aab544b43a768e9fba670900c69047613">flame_init</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a6c95861efb26ad45ce2f64aa5e9a48f0">draw_flame</a> (void *data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aeea413fa016d60443e4aba1c50aa6fcb">flame_linear</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ae2ae20d704009c9ee7452684969801ff">flame_sinusoidal</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#afeb279c39bda60c6883cd19ff749b794">flame_spherical</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aafe7f18e2789d10e46fa73b4870bf4cc">flame_swirl</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ada8b862f82c931092db91c210e0e501b">flame_horseshoe</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a66315386e7dccea001f2afeb5e91fff6">flame_polar</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#afba24d1f69dfbeac2f030a762f7db8af">flame_handkerchief</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aaa43a88c06a69988244b7a3a2db2c53d">flame_heart</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a9ec185f34710396753ff80cbb9269fe4">flame_disc</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ad7f6651724a1c7517052764bf3039bec">flame_spiral</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a0fb59d16df043b8d71c5b0051c54667a">flame_hyperbolic</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aa1d1e791e772385c2a320228e80694be">flame_diamond</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#abb89bedfd1830873783212e90f595407">flame_ex</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a3cbc4d6f3647a0a8f379d2404c31e113">flame_julia</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a995e942a1f736678be752802fdee38e9">flame_bent</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aa415f5a29818dda94bc7d0d30a0c1d10">flame_waves</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#af02cb66fab7f22a3452bd178615ce925">flame_fisheye</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a88b97a58a67803aa1f261c521b15f6be">flame_popcorn</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a0ca6c4db6aa9f84d91171f0cee74c25d">flame_exponential</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ad0fd80101afc523f9149c9f1cfea8f53">flame_power</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ac172822efb6b1de8b6ca31211c4c3aad">flame_cosine</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a5de6200f5e633aa60a6812ae96beae25">flame_rings</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#af0dcad385a5401522955a2a47dacdc87">flame_fan</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a42800f114c6865537bd2bf890ea5e975">flame_blob</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ab9bf4be9ea9525b75326e2d6ffec2a66">flame_pdj</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a63cb795948cfc28b4d78cca180307702">flame_fan2</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a547f59e573c88f80f0a3aa32e255fcbc">flame_rings2</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a92c71110e0556f269b8304223f4c378d">flame_eyefish</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#abc7814757cf08041ad60d2dcd62bbe4d">flame_bubble</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a6e88d15d3298b316739d6ce7af1cf253">flame_cylinder</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aaed971974c7b1849bdfd8c2003648b66">flame_perspective</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a90deb3c2cfce897b10c6c87feecd359a">flame_noise</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a35ad8ef6b9b06603d0bae2592aa46a49">flame_julian</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a142e9e1af25048adea7135f618abdbfe">flame_juliascope</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a5c8297ce266603bf17b385c7a61e5414">flame_blur</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a296fa2c867535243d885567f7d509c39">flame_gaussian</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ad0fab89557b242bd0f38a2934dfccc64">flame_radialblur</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a811ae09a9f69bf00c2b06fa03c917e30">flame_pie</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a0ab4b08efa35b44a7720678078103c81">flame_ngon</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ad07535260820eeb985a04ed8b9d87c7b">flame_curl</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a42ffadf7a2de41c4dafef2e58ebc8211">flame_rectangles</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ad1acadcf4046d0580e287ce2b169c33f">flame_arch</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a55a67fefa1015e24248b0535750b8282">flame_tangent</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a88bae70a4f51e887c98fc59704c72753">flame_square</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aa526702a941cf691e73bf9b1655a8dec">flame_rays</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#aa8aaa0a2cb26cae1892c08b44ae7a285">flame_blade</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a02aab76fc085ce628a384b9352a6736f">flame_secant</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#affc7635fe3650337338efa939a6581e3">flame_twintrian</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#ab713c97bdb164c1dd25dccd8967ceb8f">flame_cross</a> (double *x, double *y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flame_8h.html#a86f2198e66b882d596578a19ca842586">flame_random</a> (double *x, double *y)</td></tr>
+</table>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a6c95861efb26ad45ce2f64aa5e9a48f0"></a><!-- doxytag: member="flame.h::draw_flame" ref="a6c95861efb26ad45ce2f64aa5e9a48f0" args="(void *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="flame_8h.html#a6c95861efb26ad45ce2f64aa5e9a48f0">draw_flame</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Fonction gérée par le thread principal permettant de déssiner une fractal de type flamme </p>
+
+</div>
+</div>
+<a class="anchor" id="a7a699b198dedca7b8d6d32e14c4b120b"></a><!-- doxytag: member="flame.h::flame_alg_by_name" ref="a7a699b198dedca7b8d6d32e14c4b120b" args="(char *buf)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="flame_8h.html#a7a699b198dedca7b8d6d32e14c4b120b">flame_alg_by_name</a> </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad1acadcf4046d0580e287ce2b169c33f"></a><!-- doxytag: member="flame.h::flame_arch" ref="ad1acadcf4046d0580e287ce2b169c33f" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ad1acadcf4046d0580e287ce2b169c33f">flame_arch</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a995e942a1f736678be752802fdee38e9"></a><!-- doxytag: member="flame.h::flame_bent" ref="a995e942a1f736678be752802fdee38e9" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a995e942a1f736678be752802fdee38e9">flame_bent</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8aaa0a2cb26cae1892c08b44ae7a285"></a><!-- doxytag: member="flame.h::flame_blade" ref="aa8aaa0a2cb26cae1892c08b44ae7a285" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aa8aaa0a2cb26cae1892c08b44ae7a285">flame_blade</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42800f114c6865537bd2bf890ea5e975"></a><!-- doxytag: member="flame.h::flame_blob" ref="a42800f114c6865537bd2bf890ea5e975" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a42800f114c6865537bd2bf890ea5e975">flame_blob</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5c8297ce266603bf17b385c7a61e5414"></a><!-- doxytag: member="flame.h::flame_blur" ref="a5c8297ce266603bf17b385c7a61e5414" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a5c8297ce266603bf17b385c7a61e5414">flame_blur</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc7814757cf08041ad60d2dcd62bbe4d"></a><!-- doxytag: member="flame.h::flame_bubble" ref="abc7814757cf08041ad60d2dcd62bbe4d" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#abc7814757cf08041ad60d2dcd62bbe4d">flame_bubble</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac172822efb6b1de8b6ca31211c4c3aad"></a><!-- doxytag: member="flame.h::flame_cosine" ref="ac172822efb6b1de8b6ca31211c4c3aad" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ac172822efb6b1de8b6ca31211c4c3aad">flame_cosine</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab713c97bdb164c1dd25dccd8967ceb8f"></a><!-- doxytag: member="flame.h::flame_cross" ref="ab713c97bdb164c1dd25dccd8967ceb8f" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ab713c97bdb164c1dd25dccd8967ceb8f">flame_cross</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad07535260820eeb985a04ed8b9d87c7b"></a><!-- doxytag: member="flame.h::flame_curl" ref="ad07535260820eeb985a04ed8b9d87c7b" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ad07535260820eeb985a04ed8b9d87c7b">flame_curl</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e88d15d3298b316739d6ce7af1cf253"></a><!-- doxytag: member="flame.h::flame_cylinder" ref="a6e88d15d3298b316739d6ce7af1cf253" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a6e88d15d3298b316739d6ce7af1cf253">flame_cylinder</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1d1e791e772385c2a320228e80694be"></a><!-- doxytag: member="flame.h::flame_diamond" ref="aa1d1e791e772385c2a320228e80694be" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aa1d1e791e772385c2a320228e80694be">flame_diamond</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ec185f34710396753ff80cbb9269fe4"></a><!-- doxytag: member="flame.h::flame_disc" ref="a9ec185f34710396753ff80cbb9269fe4" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a9ec185f34710396753ff80cbb9269fe4">flame_disc</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb89bedfd1830873783212e90f595407"></a><!-- doxytag: member="flame.h::flame_ex" ref="abb89bedfd1830873783212e90f595407" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#abb89bedfd1830873783212e90f595407">flame_ex</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ca6c4db6aa9f84d91171f0cee74c25d"></a><!-- doxytag: member="flame.h::flame_exponential" ref="a0ca6c4db6aa9f84d91171f0cee74c25d" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a0ca6c4db6aa9f84d91171f0cee74c25d">flame_exponential</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a92c71110e0556f269b8304223f4c378d"></a><!-- doxytag: member="flame.h::flame_eyefish" ref="a92c71110e0556f269b8304223f4c378d" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a92c71110e0556f269b8304223f4c378d">flame_eyefish</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af0dcad385a5401522955a2a47dacdc87"></a><!-- doxytag: member="flame.h::flame_fan" ref="af0dcad385a5401522955a2a47dacdc87" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#af0dcad385a5401522955a2a47dacdc87">flame_fan</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63cb795948cfc28b4d78cca180307702"></a><!-- doxytag: member="flame.h::flame_fan2" ref="a63cb795948cfc28b4d78cca180307702" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a63cb795948cfc28b4d78cca180307702">flame_fan2</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af02cb66fab7f22a3452bd178615ce925"></a><!-- doxytag: member="flame.h::flame_fisheye" ref="af02cb66fab7f22a3452bd178615ce925" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#af02cb66fab7f22a3452bd178615ce925">flame_fisheye</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a296fa2c867535243d885567f7d509c39"></a><!-- doxytag: member="flame.h::flame_gaussian" ref="a296fa2c867535243d885567f7d509c39" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a296fa2c867535243d885567f7d509c39">flame_gaussian</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afba24d1f69dfbeac2f030a762f7db8af"></a><!-- doxytag: member="flame.h::flame_handkerchief" ref="afba24d1f69dfbeac2f030a762f7db8af" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#afba24d1f69dfbeac2f030a762f7db8af">flame_handkerchief</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa43a88c06a69988244b7a3a2db2c53d"></a><!-- doxytag: member="flame.h::flame_heart" ref="aaa43a88c06a69988244b7a3a2db2c53d" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aaa43a88c06a69988244b7a3a2db2c53d">flame_heart</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ada8b862f82c931092db91c210e0e501b"></a><!-- doxytag: member="flame.h::flame_horseshoe" ref="ada8b862f82c931092db91c210e0e501b" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ada8b862f82c931092db91c210e0e501b">flame_horseshoe</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0fb59d16df043b8d71c5b0051c54667a"></a><!-- doxytag: member="flame.h::flame_hyperbolic" ref="a0fb59d16df043b8d71c5b0051c54667a" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a0fb59d16df043b8d71c5b0051c54667a">flame_hyperbolic</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aab544b43a768e9fba670900c69047613"></a><!-- doxytag: member="flame.h::flame_init" ref="aab544b43a768e9fba670900c69047613" args="(fractal_t *f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aab544b43a768e9fba670900c69047613">flame_init</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initialise la fractale flamme et ses coefficients aléatoires </p>
+
+</div>
+</div>
+<a class="anchor" id="a3cbc4d6f3647a0a8f379d2404c31e113"></a><!-- doxytag: member="flame.h::flame_julia" ref="a3cbc4d6f3647a0a8f379d2404c31e113" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a3cbc4d6f3647a0a8f379d2404c31e113">flame_julia</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a35ad8ef6b9b06603d0bae2592aa46a49"></a><!-- doxytag: member="flame.h::flame_julian" ref="a35ad8ef6b9b06603d0bae2592aa46a49" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a35ad8ef6b9b06603d0bae2592aa46a49">flame_julian</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a142e9e1af25048adea7135f618abdbfe"></a><!-- doxytag: member="flame.h::flame_juliascope" ref="a142e9e1af25048adea7135f618abdbfe" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a142e9e1af25048adea7135f618abdbfe">flame_juliascope</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aeea413fa016d60443e4aba1c50aa6fcb"></a><!-- doxytag: member="flame.h::flame_linear" ref="aeea413fa016d60443e4aba1c50aa6fcb" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aeea413fa016d60443e4aba1c50aa6fcb">flame_linear</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0ab4b08efa35b44a7720678078103c81"></a><!-- doxytag: member="flame.h::flame_ngon" ref="a0ab4b08efa35b44a7720678078103c81" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a0ab4b08efa35b44a7720678078103c81">flame_ngon</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a90deb3c2cfce897b10c6c87feecd359a"></a><!-- doxytag: member="flame.h::flame_noise" ref="a90deb3c2cfce897b10c6c87feecd359a" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a90deb3c2cfce897b10c6c87feecd359a">flame_noise</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab9bf4be9ea9525b75326e2d6ffec2a66"></a><!-- doxytag: member="flame.h::flame_pdj" ref="ab9bf4be9ea9525b75326e2d6ffec2a66" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ab9bf4be9ea9525b75326e2d6ffec2a66">flame_pdj</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaed971974c7b1849bdfd8c2003648b66"></a><!-- doxytag: member="flame.h::flame_perspective" ref="aaed971974c7b1849bdfd8c2003648b66" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aaed971974c7b1849bdfd8c2003648b66">flame_perspective</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a811ae09a9f69bf00c2b06fa03c917e30"></a><!-- doxytag: member="flame.h::flame_pie" ref="a811ae09a9f69bf00c2b06fa03c917e30" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a811ae09a9f69bf00c2b06fa03c917e30">flame_pie</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a66315386e7dccea001f2afeb5e91fff6"></a><!-- doxytag: member="flame.h::flame_polar" ref="a66315386e7dccea001f2afeb5e91fff6" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a66315386e7dccea001f2afeb5e91fff6">flame_polar</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88b97a58a67803aa1f261c521b15f6be"></a><!-- doxytag: member="flame.h::flame_popcorn" ref="a88b97a58a67803aa1f261c521b15f6be" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a88b97a58a67803aa1f261c521b15f6be">flame_popcorn</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad0fd80101afc523f9149c9f1cfea8f53"></a><!-- doxytag: member="flame.h::flame_power" ref="ad0fd80101afc523f9149c9f1cfea8f53" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ad0fd80101afc523f9149c9f1cfea8f53">flame_power</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad0fab89557b242bd0f38a2934dfccc64"></a><!-- doxytag: member="flame.h::flame_radialblur" ref="ad0fab89557b242bd0f38a2934dfccc64" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ad0fab89557b242bd0f38a2934dfccc64">flame_radialblur</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a86f2198e66b882d596578a19ca842586"></a><!-- doxytag: member="flame.h::flame_random" ref="a86f2198e66b882d596578a19ca842586" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a86f2198e66b882d596578a19ca842586">flame_random</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa526702a941cf691e73bf9b1655a8dec"></a><!-- doxytag: member="flame.h::flame_rays" ref="aa526702a941cf691e73bf9b1655a8dec" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aa526702a941cf691e73bf9b1655a8dec">flame_rays</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42ffadf7a2de41c4dafef2e58ebc8211"></a><!-- doxytag: member="flame.h::flame_rectangles" ref="a42ffadf7a2de41c4dafef2e58ebc8211" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a42ffadf7a2de41c4dafef2e58ebc8211">flame_rectangles</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c4013473f631af80a1d633369ca451b"></a><!-- doxytag: member="flame.h::flame_reinit" ref="a8c4013473f631af80a1d633369ca451b" args="(fractal_t *f)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a8c4013473f631af80a1d633369ca451b">flame_reinit</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Génère à nouveau les coefficients de la fractale </p>
+
+</div>
+</div>
+<a class="anchor" id="a5de6200f5e633aa60a6812ae96beae25"></a><!-- doxytag: member="flame.h::flame_rings" ref="a5de6200f5e633aa60a6812ae96beae25" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a5de6200f5e633aa60a6812ae96beae25">flame_rings</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a547f59e573c88f80f0a3aa32e255fcbc"></a><!-- doxytag: member="flame.h::flame_rings2" ref="a547f59e573c88f80f0a3aa32e255fcbc" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a547f59e573c88f80f0a3aa32e255fcbc">flame_rings2</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a02aab76fc085ce628a384b9352a6736f"></a><!-- doxytag: member="flame.h::flame_secant" ref="a02aab76fc085ce628a384b9352a6736f" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a02aab76fc085ce628a384b9352a6736f">flame_secant</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2ae20d704009c9ee7452684969801ff"></a><!-- doxytag: member="flame.h::flame_sinusoidal" ref="ae2ae20d704009c9ee7452684969801ff" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ae2ae20d704009c9ee7452684969801ff">flame_sinusoidal</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afeb279c39bda60c6883cd19ff749b794"></a><!-- doxytag: member="flame.h::flame_spherical" ref="afeb279c39bda60c6883cd19ff749b794" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#afeb279c39bda60c6883cd19ff749b794">flame_spherical</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad7f6651724a1c7517052764bf3039bec"></a><!-- doxytag: member="flame.h::flame_spiral" ref="ad7f6651724a1c7517052764bf3039bec" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#ad7f6651724a1c7517052764bf3039bec">flame_spiral</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88bae70a4f51e887c98fc59704c72753"></a><!-- doxytag: member="flame.h::flame_square" ref="a88bae70a4f51e887c98fc59704c72753" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a88bae70a4f51e887c98fc59704c72753">flame_square</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aafe7f18e2789d10e46fa73b4870bf4cc"></a><!-- doxytag: member="flame.h::flame_swirl" ref="aafe7f18e2789d10e46fa73b4870bf4cc" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aafe7f18e2789d10e46fa73b4870bf4cc">flame_swirl</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55a67fefa1015e24248b0535750b8282"></a><!-- doxytag: member="flame.h::flame_tangent" ref="a55a67fefa1015e24248b0535750b8282" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#a55a67fefa1015e24248b0535750b8282">flame_tangent</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affc7635fe3650337338efa939a6581e3"></a><!-- doxytag: member="flame.h::flame_twintrian" ref="affc7635fe3650337338efa939a6581e3" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#affc7635fe3650337338efa939a6581e3">flame_twintrian</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa415f5a29818dda94bc7d0d30a0c1d10"></a><!-- doxytag: member="flame.h::flame_waves" ref="aa415f5a29818dda94bc7d0d30a0c1d10" args="(double *x, double *y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="flame_8h.html#aa415f5a29818dda94bc7d0d30a0c1d10">flame_waves</a> </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Juin 10 2012 15:26:06 pour Fractales par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

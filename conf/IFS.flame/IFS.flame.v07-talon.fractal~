@@ -1,0 +1,9 @@
+type Flame
+size 1200 675
+scale 1.777766
+num_iter 8000000
+position 0.105419 -0.077730
+add_flame_transform  0.7 0.2 0 -0.2 0.7 1.0 0.5, random
+add_flame_transform  0 -0.6 1.0 0.6 0 -0.6 0.5, random
+add_algorithm linear
+

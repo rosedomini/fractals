@@ -1,0 +1,9 @@
+type IFS
+size 1200 675
+scale 1.0000000000
+num_iter 0
+position 0.0000000000 0.0000000000
+add_transform  0.5 0 0 0 0.5 0 0.3333333333
+add_transform  0.5 0 0 0 0.5 0.5 0.3333333333
+add_transform  0.5 0 0.5 0 0.5 0.5 0.3333333333
+

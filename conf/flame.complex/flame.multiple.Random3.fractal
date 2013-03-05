@@ -1,0 +1,8 @@
+type Flame
+size 1200 675
+scale 0.33
+num_iter 0
+position 0.0 0.0
+proba_type random
+rand_transform 1 30
+add_algorithm 1 30

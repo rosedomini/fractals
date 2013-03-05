@@ -1,0 +1,10 @@
+type series
+base_path ../conf/IFS.flame
+IFS.flame.v01-Sierpinski-triangle.fractal
+IFS.flame.v02-Sierpinski-triangle-slant.fractal
+IFS.flame.v03-Dragon.fractal
+IFS.flame.v04-Fern.fractal
+IFS.flame.v05-Fern-2.fractal
+IFS.flame.v06-tree.fractal
+IFS.flame.v07-talon.fractal
+IFS.flame.v08-floor.fractal

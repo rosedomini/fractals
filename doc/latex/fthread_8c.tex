@@ -1,0 +1,114 @@
+\hypertarget{fthread_8c}{\section{\-Référence du fichier fthread.\-c}
+\label{fthread_8c}\index{fthread.\-c@{fthread.\-c}}
+}
+{\ttfamily \#include \char`\"{}fthread.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fthread_8c_a961923977ee40ab965184884927269cc}{fthread\-\_\-draw} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$s)
+\item 
+void \hyperlink{fthread_8c_ad01c2362ecc46ef9e0e64d64eaa99f28}{fthread\-\_\-stop} ()
+\item 
+void \hyperlink{fthread_8c_a702e9ae941799d38812122195b2b4344}{fthread\-\_\-wait} ()
+\item 
+void \hyperlink{fthread_8c_aac9670da9c939697bb932159811160f8}{fthread\-\_\-free} ()
+\item 
+void \hyperlink{fthread_8c_af375b1075f8b80cb231927acc38cd559}{fpthread\-\_\-draw} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$s)
+\item 
+void \hyperlink{fthread_8c_a2111bb6ce6225c4c9973bc9209957946}{fpthread\-\_\-stop} ()
+\item 
+void \hyperlink{fthread_8c_a9643a8101433cc19f8c1aa522dde5b54}{fpthread\-\_\-wait} ()
+\item 
+void \hyperlink{fthread_8c_aebae6f94d9eff018c28bda981bd6ba7b}{fpthread\-\_\-free} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structfthread__t}{fthread\-\_\-t} \hyperlink{fthread_8c_a73dcedd5eb3a6ac4c44ad9ecee5fb1ae}{fthread} = \{\-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, 0, 0, 0\}
+\item 
+\hyperlink{structfthread__t}{fthread\-\_\-t} \hyperlink{fthread_8c_a92d80ecbfa1686e52748f47c64a0cf48}{fpthread} = \{\-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, 0, 0, 0\}
+\item 
+int($\ast$ \hyperlink{fthread_8c_acdf2e27e42356fc18942f74e38ab3b29}{fthread\-\_\-fun\-\_\-list} \mbox{[}4\mbox{]})(void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fthread_8c_af375b1075f8b80cb231927acc38cd559}{\index{fthread.\-c@{fthread.\-c}!fpthread\-\_\-draw@{fpthread\-\_\-draw}}
+\index{fpthread\-\_\-draw@{fpthread\-\_\-draw}!fthread.c@{fthread.\-c}}
+\subsubsection[{fpthread\-\_\-draw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fpthread\-\_\-draw} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_af375b1075f8b80cb231927acc38cd559}
+\hypertarget{fthread_8c_aebae6f94d9eff018c28bda981bd6ba7b}{\index{fthread.\-c@{fthread.\-c}!fpthread\-\_\-free@{fpthread\-\_\-free}}
+\index{fpthread\-\_\-free@{fpthread\-\_\-free}!fthread.c@{fthread.\-c}}
+\subsubsection[{fpthread\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fpthread\-\_\-free} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_aebae6f94d9eff018c28bda981bd6ba7b}
+\hypertarget{fthread_8c_a2111bb6ce6225c4c9973bc9209957946}{\index{fthread.\-c@{fthread.\-c}!fpthread\-\_\-stop@{fpthread\-\_\-stop}}
+\index{fpthread\-\_\-stop@{fpthread\-\_\-stop}!fthread.c@{fthread.\-c}}
+\subsubsection[{fpthread\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fpthread\-\_\-stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_a2111bb6ce6225c4c9973bc9209957946}
+\hypertarget{fthread_8c_a9643a8101433cc19f8c1aa522dde5b54}{\index{fthread.\-c@{fthread.\-c}!fpthread\-\_\-wait@{fpthread\-\_\-wait}}
+\index{fpthread\-\_\-wait@{fpthread\-\_\-wait}!fthread.c@{fthread.\-c}}
+\subsubsection[{fpthread\-\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fpthread\-\_\-wait} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_a9643a8101433cc19f8c1aa522dde5b54}
+\hypertarget{fthread_8c_a961923977ee40ab965184884927269cc}{\index{fthread.\-c@{fthread.\-c}!fthread\-\_\-draw@{fthread\-\_\-draw}}
+\index{fthread\-\_\-draw@{fthread\-\_\-draw}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread\-\_\-draw}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fthread\-\_\-draw} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_a961923977ee40ab965184884927269cc}
+\-Initialise le thread principal avec la fonction permettant de dessiner sa fractale sur sa surface \hypertarget{fthread_8c_aac9670da9c939697bb932159811160f8}{\index{fthread.\-c@{fthread.\-c}!fthread\-\_\-free@{fthread\-\_\-free}}
+\index{fthread\-\_\-free@{fthread\-\_\-free}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fthread\-\_\-free} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_aac9670da9c939697bb932159811160f8}
+\hypertarget{fthread_8c_ad01c2362ecc46ef9e0e64d64eaa99f28}{\index{fthread.\-c@{fthread.\-c}!fthread\-\_\-stop@{fthread\-\_\-stop}}
+\index{fthread\-\_\-stop@{fthread\-\_\-stop}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread\-\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fthread\-\_\-stop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_ad01c2362ecc46ef9e0e64d64eaa99f28}
+\-Demande l'interruption du thread (lors d'un zoom par exemple) \hypertarget{fthread_8c_a702e9ae941799d38812122195b2b4344}{\index{fthread.\-c@{fthread.\-c}!fthread\-\_\-wait@{fthread\-\_\-wait}}
+\index{fthread\-\_\-wait@{fthread\-\_\-wait}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread\-\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf fthread\-\_\-wait} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fthread_8c_a702e9ae941799d38812122195b2b4344}
+\-Souvent appelée après \hyperlink{fthread_8c_ad01c2362ecc46ef9e0e64d64eaa99f28}{fthread\-\_\-stop()}, permet de rejoindre (attendre) que le thread quitte sa fonction et se ferme. 
+
+\subsection{\-Documentation des variables}
+\hypertarget{fthread_8c_a92d80ecbfa1686e52748f47c64a0cf48}{\index{fthread.\-c@{fthread.\-c}!fpthread@{fpthread}}
+\index{fpthread@{fpthread}!fthread.c@{fthread.\-c}}
+\subsubsection[{fpthread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fthread\-\_\-t} {\bf fpthread} = \{\-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, 0, 0, 0\}}}\label{fthread_8c_a92d80ecbfa1686e52748f47c64a0cf48}
+\hypertarget{fthread_8c_a73dcedd5eb3a6ac4c44ad9ecee5fb1ae}{\index{fthread.\-c@{fthread.\-c}!fthread@{fthread}}
+\index{fthread@{fthread}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fthread\-\_\-t} {\bf fthread} = \{\-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, \-N\-U\-L\-L, 0, 0, 0\}}}\label{fthread_8c_a73dcedd5eb3a6ac4c44ad9ecee5fb1ae}
+\hypertarget{fthread_8c_acdf2e27e42356fc18942f74e38ab3b29}{\index{fthread.\-c@{fthread.\-c}!fthread\-\_\-fun\-\_\-list@{fthread\-\_\-fun\-\_\-list}}
+\index{fthread\-\_\-fun\-\_\-list@{fthread\-\_\-fun\-\_\-list}!fthread.c@{fthread.\-c}}
+\subsubsection[{fthread\-\_\-fun\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}int($\ast$ {\bf fthread\-\_\-fun\-\_\-list}\mbox{[}4\mbox{]})(void $\ast$)}}\label{fthread_8c_acdf2e27e42356fc18942f74e38ab3b29}
+{\bfseries \-Valeur initiale \-:}
+\begin{DoxyCode}
+ {
+    draw_escape_time,
+    draw_escape_time,
+    draw_ifs,
+    draw_flame
+}
+\end{DoxyCode}

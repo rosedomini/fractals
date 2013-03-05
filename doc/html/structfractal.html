@@ -1,0 +1,747 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fractales: Référence de la structure fractal</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Fractales
+   &#160;<span id="projectnumber">v0.5</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li><a href="classes.html"><span>Index&#160;des&#160;structures&#160;de&#160;données</span></a></li>
+      <li><a href="functions.html"><span>Champs&#160;de&#160;donnée</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Champs de données</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la structure fractal</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="fractal" -->
+<p><code>#include &lt;<a class="el" href="fconfig_8h_source.html">fconfig.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Champs de données</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848b">FRACTAL_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#af8297a3673f15a8aa61272bdc0377277">type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#a2cbfae43b5e12a3c427c241a46145a31">width</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#a626e83cacaf19a85207e16fef9b3ff3d">height</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#a524c6cac28c27976fe7b528733ee73cb">scale</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#a71301ffefb1b8cb6c949575fb36788dd">iter</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structR2vec.html">R2vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">position</a></td></tr>
+<tr><td class="memItemLeft" >union {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structfractal.html">fractal</a> *&#160;&#160;&#160;<a class="el" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">julia</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#a6fcb083ec5b53d1f1ef8faf808370bb8">mbrot</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structR2vec.html">R2vec</a>&#160;&#160;&#160;<a class="el" href="structfractal.html#ae5d135f6f99883eba1e2fea9047791f6">c</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="structfractal.html">fractal</a> *&#160;&#160;&#160;<a class="el" href="structfractal.html#a7c67058fed930d6a3f3500e170cb5fd0">mbrot</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#acfb4375b60967279197211d47eed0b0b">julia</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">num_tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <b>ifs_tr</b> {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;union {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a> [7]</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a9f41ac4812a14dde576142eaba71141f">xx</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a5f558e90d4bc7b85f758e2f4e7b76fff">xy</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a25f9bab7277ce8cb9272a6e1ba1695f8">x</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#aa52f4f35e4bd516179706f318397218a">yx</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#abbf9466acf8986903f74754be308eb36">yy</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a4bd6ee4742f683f13141f31c2d3799b7">y</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a1de23626083977b508881c41a4122b4e">proba</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#ae239bfe9dc0e33b2ff7a615fff6104e4">tr</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#aa5cabd8d230694e71c055bdffb4031de">ifs</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;enum <a class="el" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977">FLAME_PROBA_TYPE</a>&#160;&#160;&#160;<a class="el" href="structfractal.html#a9b098f5eee05e57395a2f389b76c5fd2">proba_type</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#aad5ae2034ecfc02aadbaed943874ae5e">min_num_tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#a7f9433a0d1498384124c12e68b02935f">max_num_tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">num_tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <b>flame_tr</b> {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structfractal.html#aae0e0d9ca8a4c89eb27abe85a3b7577c">rand_col</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<a class="el" href="structfractal.html#a955d2d4ebadac5d75dbeff34da5fce5c">rand_tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;union {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a> [10]</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;struct {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a9f41ac4812a14dde576142eaba71141f">xx</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a5f558e90d4bc7b85f758e2f4e7b76fff">xy</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a25f9bab7277ce8cb9272a6e1ba1695f8">x</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#aa52f4f35e4bd516179706f318397218a">yx</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#abbf9466acf8986903f74754be308eb36">yy</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a4bd6ee4742f683f13141f31c2d3799b7">y</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a1de23626083977b508881c41a4122b4e">proba</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a8857f2ca6e663d4f4ab3e5adbaf4e754">r</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a374d90c27c06107482bba4ee7ada55da">g</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="structfractal.html#a0a85246deca0ebcb11e689009da9aeb0">b</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#a45a93c39e3799fa37101b4125a3d60a6">tr</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#a652c1e196aac08e7eec76ce1227eabb8">min_num_alg</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#a23841183bcd072030d0c0ff578fa7b5f">max_num_alg</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#ac81d19a3ae4242701ac2625d3a231f38">num_alg</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int *&#160;&#160;&#160;<a class="el" href="structfractal.html#aa05f91d00df1a44d26b3202e31f92f7d">alg_id_list</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int *&#160;&#160;&#160;<a class="el" href="structfractal.html#a05967489e9dede83bae6bae463eaec7b">alg_id_list2</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="structfractal.html#a770c93bc56d64afc5efca2d0656705c9">current_iter</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <b>flame_dot_t</b> {</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structR2vec.html">R2vec</a>&#160;&#160;&#160;<a class="el" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">position</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Uint8&#160;&#160;&#160;<a class="el" href="structfractal.html#a034aa6fa38b6fc624492780aae4f5cd1">color</a> [3]</td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#a6f7fe414337c558f2e1777893e2151b6">dots</a></td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;Uint8&#160;&#160;&#160;<a class="el" href="structfractal.html#ab39f039db5c5ec9e5065093683f39a36">current_color</a> [3]</td></tr>
+<tr><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="structR2vec.html">R2vec</a>&#160;&#160;&#160;<a class="el" href="structfractal.html#a70078b8c8918be78879323adf35e36c4">current_position</a></td></tr>
+<tr><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structfractal.html#a0429a28ac6af0cba0dace7328b2116d6">flame</a></td></tr>
+<tr><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfractal.html#aaf3b25a8725d05106ece6bc318fb8620">param</a></td></tr>
+</table>
+<hr/><h2>Documentation des champs</h2>
+<a class="anchor" id="aa05f91d00df1a44d26b3202e31f92f7d"></a><!-- doxytag: member="fractal::alg_id_list" ref="aa05f91d00df1a44d26b3202e31f92f7d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int* <a class="el" href="structfractal.html#aa05f91d00df1a44d26b3202e31f92f7d">fractal::alg_id_list</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a05967489e9dede83bae6bae463eaec7b"></a><!-- doxytag: member="fractal::alg_id_list2" ref="a05967489e9dede83bae6bae463eaec7b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int* <a class="el" href="structfractal.html#a05967489e9dede83bae6bae463eaec7b">fractal::alg_id_list2</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a85246deca0ebcb11e689009da9aeb0"></a><!-- doxytag: member="fractal::b" ref="a0a85246deca0ebcb11e689009da9aeb0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a0a85246deca0ebcb11e689009da9aeb0">fractal::b</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae5d135f6f99883eba1e2fea9047791f6"></a><!-- doxytag: member="fractal::c" ref="ae5d135f6f99883eba1e2fea9047791f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structR2vec.html">R2vec</a> <a class="el" href="structfractal.html#ae5d135f6f99883eba1e2fea9047791f6">fractal::c</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a034aa6fa38b6fc624492780aae4f5cd1"></a><!-- doxytag: member="fractal::color" ref="a034aa6fa38b6fc624492780aae4f5cd1" args="[3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint8 <a class="el" href="structfractal.html#a034aa6fa38b6fc624492780aae4f5cd1">fractal::color</a>[3]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab39f039db5c5ec9e5065093683f39a36"></a><!-- doxytag: member="fractal::current_color" ref="ab39f039db5c5ec9e5065093683f39a36" args="[3]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint8 <a class="el" href="structfractal.html#ab39f039db5c5ec9e5065093683f39a36">fractal::current_color</a>[3]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a770c93bc56d64afc5efca2d0656705c9"></a><!-- doxytag: member="fractal::current_iter" ref="a770c93bc56d64afc5efca2d0656705c9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a770c93bc56d64afc5efca2d0656705c9">fractal::current_iter</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70078b8c8918be78879323adf35e36c4"></a><!-- doxytag: member="fractal::current_position" ref="a70078b8c8918be78879323adf35e36c4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structR2vec.html">R2vec</a> <a class="el" href="structfractal.html#a70078b8c8918be78879323adf35e36c4">fractal::current_position</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6f7fe414337c558f2e1777893e2151b6"></a><!-- doxytag: member="fractal::dots" ref="a6f7fe414337c558f2e1777893e2151b6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... } ::<a class="el" href="fconfig_8h.html#a58108310a0f59b637b3f226348927c2f">flame_dot_t</a>*  <a class="el" href="structfractal.html#a6f7fe414337c558f2e1777893e2151b6">fractal::dots</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0429a28ac6af0cba0dace7328b2116d6"></a><!-- doxytag: member="fractal::flame" ref="a0429a28ac6af0cba0dace7328b2116d6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   <a class="el" href="structfractal.html#a0429a28ac6af0cba0dace7328b2116d6">fractal::flame</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a374d90c27c06107482bba4ee7ada55da"></a><!-- doxytag: member="fractal::g" ref="a374d90c27c06107482bba4ee7ada55da" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a374d90c27c06107482bba4ee7ada55da">fractal::g</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a626e83cacaf19a85207e16fef9b3ff3d"></a><!-- doxytag: member="fractal::height" ref="a626e83cacaf19a85207e16fef9b3ff3d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a626e83cacaf19a85207e16fef9b3ff3d">fractal::height</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5cabd8d230694e71c055bdffb4031de"></a><!-- doxytag: member="fractal::ifs" ref="aa5cabd8d230694e71c055bdffb4031de" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   <a class="el" href="structfractal.html#aa5cabd8d230694e71c055bdffb4031de">fractal::ifs</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a71301ffefb1b8cb6c949575fb36788dd"></a><!-- doxytag: member="fractal::iter" ref="a71301ffefb1b8cb6c949575fb36788dd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a71301ffefb1b8cb6c949575fb36788dd">fractal::iter</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a189b545deaac65ca9c6ea04f7312a3f1"></a><!-- doxytag: member="fractal::julia" ref="a189b545deaac65ca9c6ea04f7312a3f1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structfractal.html">fractal</a>* <a class="el" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">fractal::julia</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acfb4375b60967279197211d47eed0b0b"></a><!-- doxytag: member="fractal::julia" ref="acfb4375b60967279197211d47eed0b0b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   <a class="el" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">fractal::julia</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a23841183bcd072030d0c0ff578fa7b5f"></a><!-- doxytag: member="fractal::max_num_alg" ref="a23841183bcd072030d0c0ff578fa7b5f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a23841183bcd072030d0c0ff578fa7b5f">fractal::max_num_alg</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7f9433a0d1498384124c12e68b02935f"></a><!-- doxytag: member="fractal::max_num_tr" ref="a7f9433a0d1498384124c12e68b02935f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a7f9433a0d1498384124c12e68b02935f">fractal::max_num_tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fcb083ec5b53d1f1ef8faf808370bb8"></a><!-- doxytag: member="fractal::mbrot" ref="a6fcb083ec5b53d1f1ef8faf808370bb8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }   <a class="el" href="structfractal.html#a6fcb083ec5b53d1f1ef8faf808370bb8">fractal::mbrot</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c67058fed930d6a3f3500e170cb5fd0"></a><!-- doxytag: member="fractal::mbrot" ref="a7c67058fed930d6a3f3500e170cb5fd0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structfractal.html">fractal</a>* <a class="el" href="structfractal.html#a6fcb083ec5b53d1f1ef8faf808370bb8">fractal::mbrot</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a652c1e196aac08e7eec76ce1227eabb8"></a><!-- doxytag: member="fractal::min_num_alg" ref="a652c1e196aac08e7eec76ce1227eabb8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a652c1e196aac08e7eec76ce1227eabb8">fractal::min_num_alg</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aad5ae2034ecfc02aadbaed943874ae5e"></a><!-- doxytag: member="fractal::min_num_tr" ref="aad5ae2034ecfc02aadbaed943874ae5e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#aad5ae2034ecfc02aadbaed943874ae5e">fractal::min_num_tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac81d19a3ae4242701ac2625d3a231f38"></a><!-- doxytag: member="fractal::num_alg" ref="ac81d19a3ae4242701ac2625d3a231f38" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#ac81d19a3ae4242701ac2625d3a231f38">fractal::num_alg</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba2914c84dcc1a96c49e4b91aade9d7f"></a><!-- doxytag: member="fractal::num_tr" ref="aba2914c84dcc1a96c49e4b91aade9d7f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">fractal::num_tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaf3b25a8725d05106ece6bc318fb8620"></a><!-- doxytag: member="fractal::param" ref="aaf3b25a8725d05106ece6bc318fb8620" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   <a class="el" href="structfractal.html#aaf3b25a8725d05106ece6bc318fb8620">fractal::param</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a272b847ecd0537826d7ecb8e9ca3e4d5"></a><!-- doxytag: member="fractal::position" ref="a272b847ecd0537826d7ecb8e9ca3e4d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structR2vec.html">R2vec</a> <a class="el" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">fractal::position</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1de23626083977b508881c41a4122b4e"></a><!-- doxytag: member="fractal::proba" ref="a1de23626083977b508881c41a4122b4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a1de23626083977b508881c41a4122b4e">fractal::proba</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b098f5eee05e57395a2f389b76c5fd2"></a><!-- doxytag: member="fractal::proba_type" ref="a9b098f5eee05e57395a2f389b76c5fd2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977">FLAME_PROBA_TYPE</a> <a class="el" href="structfractal.html#a9b098f5eee05e57395a2f389b76c5fd2">fractal::proba_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8857f2ca6e663d4f4ab3e5adbaf4e754"></a><!-- doxytag: member="fractal::r" ref="a8857f2ca6e663d4f4ab3e5adbaf4e754" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a8857f2ca6e663d4f4ab3e5adbaf4e754">fractal::r</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae0e0d9ca8a4c89eb27abe85a3b7577c"></a><!-- doxytag: member="fractal::rand_col" ref="aae0e0d9ca8a4c89eb27abe85a3b7577c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structfractal.html#aae0e0d9ca8a4c89eb27abe85a3b7577c">fractal::rand_col</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a955d2d4ebadac5d75dbeff34da5fce5c"></a><!-- doxytag: member="fractal::rand_tr" ref="a955d2d4ebadac5d75dbeff34da5fce5c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structfractal.html#a955d2d4ebadac5d75dbeff34da5fce5c">fractal::rand_tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a524c6cac28c27976fe7b528733ee73cb"></a><!-- doxytag: member="fractal::scale" ref="a524c6cac28c27976fe7b528733ee73cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a524c6cac28c27976fe7b528733ee73cb">fractal::scale</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2bb7ce1b69821aa883daf27d16df4ba5"></a><!-- doxytag: member="fractal::tr" ref="a2bb7ce1b69821aa883daf27d16df4ba5" args="[7]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">fractal::tr</a>[10]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae239bfe9dc0e33b2ff7a615fff6104e4"></a><!-- doxytag: member="fractal::tr" ref="ae239bfe9dc0e33b2ff7a615fff6104e4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... } ::ifs_tr*  <a class="el" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">fractal::tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45a93c39e3799fa37101b4125a3d60a6"></a><!-- doxytag: member="fractal::tr" ref="a45a93c39e3799fa37101b4125a3d60a6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... } ::flame_tr*  <a class="el" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">fractal::tr</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8297a3673f15a8aa61272bdc0377277"></a><!-- doxytag: member="fractal::type" ref="af8297a3673f15a8aa61272bdc0377277" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848b">FRACTAL_TYPE</a> <a class="el" href="structfractal.html#af8297a3673f15a8aa61272bdc0377277">fractal::type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2cbfae43b5e12a3c427c241a46145a31"></a><!-- doxytag: member="fractal::width" ref="a2cbfae43b5e12a3c427c241a46145a31" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="structfractal.html#a2cbfae43b5e12a3c427c241a46145a31">fractal::width</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a25f9bab7277ce8cb9272a6e1ba1695f8"></a><!-- doxytag: member="fractal::x" ref="a25f9bab7277ce8cb9272a6e1ba1695f8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a25f9bab7277ce8cb9272a6e1ba1695f8">fractal::x</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f41ac4812a14dde576142eaba71141f"></a><!-- doxytag: member="fractal::xx" ref="a9f41ac4812a14dde576142eaba71141f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a9f41ac4812a14dde576142eaba71141f">fractal::xx</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f558e90d4bc7b85f758e2f4e7b76fff"></a><!-- doxytag: member="fractal::xy" ref="a5f558e90d4bc7b85f758e2f4e7b76fff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a5f558e90d4bc7b85f758e2f4e7b76fff">fractal::xy</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bd6ee4742f683f13141f31c2d3799b7"></a><!-- doxytag: member="fractal::y" ref="a4bd6ee4742f683f13141f31c2d3799b7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#a4bd6ee4742f683f13141f31c2d3799b7">fractal::y</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa52f4f35e4bd516179706f318397218a"></a><!-- doxytag: member="fractal::yx" ref="aa52f4f35e4bd516179706f318397218a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#aa52f4f35e4bd516179706f318397218a">fractal::yx</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abbf9466acf8986903f74754be308eb36"></a><!-- doxytag: member="fractal::yy" ref="abbf9466acf8986903f74754be308eb36" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structfractal.html#abbf9466acf8986903f74754be308eb36">fractal::yy</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette structure a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="fconfig_8h_source.html">fconfig.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Juin 10 2012 15:26:06 pour Fractales par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

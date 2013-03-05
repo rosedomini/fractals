@@ -1,0 +1,4 @@
+type series
+base_path ../conf/escape-time
+Julia.fractal
+Mandelbrot.fractal

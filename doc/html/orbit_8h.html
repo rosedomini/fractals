@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fractales: Référence du fichier orbit.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Fractales
+   &#160;<span id="projectnumber">v0.5</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier orbit.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;SDL/SDL.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_thread.h&gt;</code><br/>
+<code>#include &lt;SDL/SDL_mutex.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="fconfig_8h_source.html">fconfig.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="main_8h_source.html">main.h</a>&quot;</code><br/>
+</div>
+<p><a href="orbit_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#acf80e1b8b238750eac8f09f7104b9ebe">update_julia_constant</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *mbrot, SDL_Surface *screen)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structR2vec.html">R2vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a27cd5fe89c42bac4c7144ef0da83c88b">surface_px2complex</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f, SDL_Surface *s, Uint16 x, Uint16 y)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a12e750b467d7ffe697e9f5a99605717c">update_julia_preview</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *mbrot, SDL_Surface *screen)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a803bb04efe80cc62ae4b247426028973">draw_escape_time_no_thread</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f, SDL_Surface *s)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#abc754a365b87edaf2a5b9206871afde6">jpt_func</a> (void *data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a18390e73ca32f5d775401e25697dc44f">draw_escape_time</a> (void *data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a1690b47db3f2678b46fc2f305039e670">iterate_orbit_fractal</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f, const double x0, const double y0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#af06c8be10c5dd9c88788b06f8ea0aedb">init_orbit_colors</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a728cc257c7bfc0f583a241a6c3bed52e">orbit_fractal_position_color</a> (<a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *f, SDL_Surface *s, const double x, const double y)</td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#ae82b0d2b34c082b04ba36975ea917f6e">julia_preview_mouse_x</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Uint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#acd7d8e74aec530d380d02a3c725d6a25">julia_preview_mouse_y</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="orbit_8h.html#a405cce1d97df4ebfbf6319fa856f0b8a">orbit_c</a> [768]</td></tr>
+</table>
+<hr/><h2>Documentation des fonctions</h2>
+<a class="anchor" id="a18390e73ca32f5d775401e25697dc44f"></a><!-- doxytag: member="orbit.h::draw_escape_time" ref="a18390e73ca32f5d775401e25697dc44f" args="(void *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="orbit_8h.html#a18390e73ca32f5d775401e25697dc44f">draw_escape_time</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Ici on va dessiner une fractale de Mandelbrot ou de Julia sur une surface. Gérée par un thread </p>
+
+</div>
+</div>
+<a class="anchor" id="a803bb04efe80cc62ae4b247426028973"></a><!-- doxytag: member="orbit.h::draw_escape_time_no_thread" ref="a803bb04efe80cc62ae4b247426028973" args="(fractal_t *f, SDL_Surface *s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="orbit_8h.html#a803bb04efe80cc62ae4b247426028973">draw_escape_time_no_thread</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initialise et effectue le lancement du dessin de l'aperçu (Julia)</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>fractale de Julia </td></tr>
+    <tr><td class="paramname">s</td><td>surface où déssiner </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af06c8be10c5dd9c88788b06f8ea0aedb"></a><!-- doxytag: member="orbit.h::init_orbit_colors" ref="af06c8be10c5dd9c88788b06f8ea0aedb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="orbit_8h.html#af06c8be10c5dd9c88788b06f8ea0aedb">init_orbit_colors</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Stocke en mémoire les couleurs calculée pour les ensembles de Mandelbrot ou Julia </p>
+
+</div>
+</div>
+<a class="anchor" id="a1690b47db3f2678b46fc2f305039e670"></a><!-- doxytag: member="orbit.h::iterate_orbit_fractal" ref="a1690b47db3f2678b46fc2f305039e670" args="(fractal_t *f, const double x0, const double y0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="orbit_8h.html#a1690b47db3f2678b46fc2f305039e670">iterate_orbit_fractal</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>La présence d'un point dans la fractale doit se ressentir dans son graphe </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ensemble de Mandelbrot ou de Julia </td></tr>
+    <tr><td class="paramname">x0</td><td>position sur l'axe réel du point </td></tr>
+    <tr><td class="paramname">y0</td><td>position sur l'axe imaginaire du point </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>entier entre 0 et 767 déterminant la couleur du point </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abc754a365b87edaf2a5b9206871afde6"></a><!-- doxytag: member="orbit.h::jpt_func" ref="abc754a365b87edaf2a5b9206871afde6" args="(void *data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="orbit_8h.html#abc754a365b87edaf2a5b9206871afde6">jpt_func</a> </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Permet de mettre à jour l'aperçu de Julia (appelée lorsqu'on déplace la souris) Gérée par un thread </p>
+
+</div>
+</div>
+<a class="anchor" id="a728cc257c7bfc0f583a241a6c3bed52e"></a><!-- doxytag: member="orbit.h::orbit_fractal_position_color" ref="a728cc257c7bfc0f583a241a6c3bed52e" args="(fractal_t *f, SDL_Surface *s, const double x, const double y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 <a class="el" href="orbit_8h.html#a728cc257c7bfc0f583a241a6c3bed52e">orbit_fractal_position_color</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>On défini ici les niveaux de rouge, vert et bleu à un certain point On veux que la somme des trois niveaux soit proportionnelle au facteur de présence du point dans la fractale On veux donc satisfaire une équation de la forme R+V+B = P On défini un ordre de priorité pour les couleurs : vert, rouge, bleu </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>couleur du point </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a27cd5fe89c42bac4c7144ef0da83c88b"></a><!-- doxytag: member="orbit.h::surface_px2complex" ref="a27cd5fe89c42bac4c7144ef0da83c88b" args="(fractal_t *f, SDL_Surface *s, Uint16 x, Uint16 y)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structR2vec.html">R2vec</a> <a class="el" href="orbit_8h.html#a27cd5fe89c42bac4c7144ef0da83c88b">surface_px2complex</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uint16&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Uint16&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Converti les coordonées d'un pixel d'une surface en nombre complexe </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ensemble de Julia ou Mandelbrot </td></tr>
+    <tr><td class="paramname">s</td><td>surface de dessin </td></tr>
+    <tr><td class="paramname">x</td><td>coordonnée du pixel de gauche à droite </td></tr>
+    <tr><td class="paramname">y</td><td>coordonnée du pixel de haut en bas </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>position correspondante (de la fractale) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf80e1b8b238750eac8f09f7104b9ebe"></a><!-- doxytag: member="orbit.h::update_julia_constant" ref="acf80e1b8b238750eac8f09f7104b9ebe" args="(fractal_t *mbrot, SDL_Surface *screen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="orbit_8h.html#acf80e1b8b238750eac8f09f7104b9ebe">update_julia_constant</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>mbrot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>screen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Met à jour la constante de Julia en fonction de la position de la souris</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ensemble de Mandelbrot </td></tr>
+    <tr><td class="paramname">screen</td><td>l'écran </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a12e750b467d7ffe697e9f5a99605717c"></a><!-- doxytag: member="orbit.h::update_julia_preview" ref="a12e750b467d7ffe697e9f5a99605717c" args="(fractal_t *mbrot, SDL_Surface *screen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="orbit_8h.html#a12e750b467d7ffe697e9f5a99605717c">update_julia_preview</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">fractal_t</a> *&#160;</td>
+          <td class="paramname"><em>mbrot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Surface *&#160;</td>
+          <td class="paramname"><em>screen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Met à jour l'aperçu de la fractale de Julia correspondant à l'emplacement de la souris sur l'ensemble de Mandelbrot</p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>ensemble de Mandelbrot </td></tr>
+    <tr><td class="paramname">screen</td><td>l'écran </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des variables</h2>
+<a class="anchor" id="ae82b0d2b34c082b04ba36975ea917f6e"></a><!-- doxytag: member="orbit.h::julia_preview_mouse_x" ref="ae82b0d2b34c082b04ba36975ea917f6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint16 <a class="el" href="orbit_8h.html#ae82b0d2b34c082b04ba36975ea917f6e">julia_preview_mouse_x</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd7d8e74aec530d380d02a3c725d6a25"></a><!-- doxytag: member="orbit.h::julia_preview_mouse_y" ref="acd7d8e74aec530d380d02a3c725d6a25" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint16 <a class="el" href="orbit_8h.html#acd7d8e74aec530d380d02a3c725d6a25">julia_preview_mouse_y</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a405cce1d97df4ebfbf6319fa856f0b8a"></a><!-- doxytag: member="orbit.h::orbit_c" ref="a405cce1d97df4ebfbf6319fa856f0b8a" args="[768]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Uint32 <a class="el" href="orbit_8h.html#a405cce1d97df4ebfbf6319fa856f0b8a">orbit_c</a>[768]</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Juin 10 2012 15:26:06 pour Fractales par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+\hypertarget{orbit_8c}{\section{\-Référence du fichier orbit.\-c}
+\label{orbit_8c}\index{orbit.\-c@{orbit.\-c}}
+}
+{\ttfamily \#include \char`\"{}orbit.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{orbit_8c_a12e750b467d7ffe697e9f5a99605717c}{update\-\_\-julia\-\_\-preview} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$mbrot, \-S\-D\-L\-\_\-\-Surface $\ast$screen)
+\item 
+void \hyperlink{orbit_8c_a803bb04efe80cc62ae4b247426028973}{draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$s)
+\item 
+void \hyperlink{orbit_8c_acf80e1b8b238750eac8f09f7104b9ebe}{update\-\_\-julia\-\_\-constant} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$mbrot, \-S\-D\-L\-\_\-\-Surface $\ast$screen)
+\item 
+\hyperlink{structR2vec}{\-R2vec} \hyperlink{orbit_8c_a27cd5fe89c42bac4c7144ef0da83c88b}{surface\-\_\-px2complex} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$s, \-Uint16 x, \-Uint16 y)
+\item 
+int \hyperlink{orbit_8c_abc754a365b87edaf2a5b9206871afde6}{jpt\-\_\-func} (void $\ast$data)
+\item 
+int \hyperlink{orbit_8c_a18390e73ca32f5d775401e25697dc44f}{draw\-\_\-escape\-\_\-time} (void $\ast$data)
+\item 
+unsigned int \hyperlink{orbit_8c_a1690b47db3f2678b46fc2f305039e670}{iterate\-\_\-orbit\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, const double x0, const double y0)
+\item 
+void \hyperlink{orbit_8c_af06c8be10c5dd9c88788b06f8ea0aedb}{init\-\_\-orbit\-\_\-colors} ()
+\item 
+\-Uint32 \hyperlink{orbit_8c_a728cc257c7bfc0f583a241a6c3bed52e}{orbit\-\_\-fractal\-\_\-position\-\_\-color} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f, \-S\-D\-L\-\_\-\-Surface $\ast$s, const double x, const double y)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\-Uint16 \hyperlink{orbit_8c_ae82b0d2b34c082b04ba36975ea917f6e}{julia\-\_\-preview\-\_\-mouse\-\_\-x} = 0
+\item 
+\-Uint16 \hyperlink{orbit_8c_acd7d8e74aec530d380d02a3c725d6a25}{julia\-\_\-preview\-\_\-mouse\-\_\-y} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{orbit_8c_a18390e73ca32f5d775401e25697dc44f}{\index{orbit.\-c@{orbit.\-c}!draw\-\_\-escape\-\_\-time@{draw\-\_\-escape\-\_\-time}}
+\index{draw\-\_\-escape\-\_\-time@{draw\-\_\-escape\-\_\-time}!orbit.c@{orbit.\-c}}
+\subsubsection[{draw\-\_\-escape\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf draw\-\_\-escape\-\_\-time} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a18390e73ca32f5d775401e25697dc44f}
+\-Ici on va dessiner une fractale de \-Mandelbrot ou de \-Julia sur une surface. \-Gérée par un thread \hypertarget{orbit_8c_a803bb04efe80cc62ae4b247426028973}{\index{orbit.\-c@{orbit.\-c}!draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread@{draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread}}
+\index{draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread@{draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread}!orbit.c@{orbit.\-c}}
+\subsubsection[{draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf draw\-\_\-escape\-\_\-time\-\_\-no\-\_\-thread} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a803bb04efe80cc62ae4b247426028973}
+\-Initialise et effectue le lancement du dessin de l'aperçu (\-Julia)
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & fractale de \-Julia \\
+\hline
+{\em s} & surface où déssiner \\
+\hline
+\end{DoxyParams}
+\hypertarget{orbit_8c_af06c8be10c5dd9c88788b06f8ea0aedb}{\index{orbit.\-c@{orbit.\-c}!init\-\_\-orbit\-\_\-colors@{init\-\_\-orbit\-\_\-colors}}
+\index{init\-\_\-orbit\-\_\-colors@{init\-\_\-orbit\-\_\-colors}!orbit.c@{orbit.\-c}}
+\subsubsection[{init\-\_\-orbit\-\_\-colors}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf init\-\_\-orbit\-\_\-colors} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_af06c8be10c5dd9c88788b06f8ea0aedb}
+\-Stocke en mémoire les couleurs calculée pour les ensembles de \-Mandelbrot ou \-Julia \hypertarget{orbit_8c_a1690b47db3f2678b46fc2f305039e670}{\index{orbit.\-c@{orbit.\-c}!iterate\-\_\-orbit\-\_\-fractal@{iterate\-\_\-orbit\-\_\-fractal}}
+\index{iterate\-\_\-orbit\-\_\-fractal@{iterate\-\_\-orbit\-\_\-fractal}!orbit.c@{orbit.\-c}}
+\subsubsection[{iterate\-\_\-orbit\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf iterate\-\_\-orbit\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{const double}]{x0, }
+\item[{const double}]{y0}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a1690b47db3f2678b46fc2f305039e670}
+\-La présence d'un point dans la fractale doit se ressentir dans son graphe 
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & ensemble de \-Mandelbrot ou de \-Julia \\
+\hline
+{\em x0} & position sur l'axe réel du point \\
+\hline
+{\em y0} & position sur l'axe imaginaire du point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+entier entre 0 et 767 déterminant la couleur du point 
+\end{DoxyReturn}
+\hypertarget{orbit_8c_abc754a365b87edaf2a5b9206871afde6}{\index{orbit.\-c@{orbit.\-c}!jpt\-\_\-func@{jpt\-\_\-func}}
+\index{jpt\-\_\-func@{jpt\-\_\-func}!orbit.c@{orbit.\-c}}
+\subsubsection[{jpt\-\_\-func}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf jpt\-\_\-func} (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_abc754a365b87edaf2a5b9206871afde6}
+\-Permet de mettre à jour l'aperçu de \-Julia (appelée lorsqu'on déplace la souris) \-Gérée par un thread \hypertarget{orbit_8c_a728cc257c7bfc0f583a241a6c3bed52e}{\index{orbit.\-c@{orbit.\-c}!orbit\-\_\-fractal\-\_\-position\-\_\-color@{orbit\-\_\-fractal\-\_\-position\-\_\-color}}
+\index{orbit\-\_\-fractal\-\_\-position\-\_\-color@{orbit\-\_\-fractal\-\_\-position\-\_\-color}!orbit.c@{orbit.\-c}}
+\subsubsection[{orbit\-\_\-fractal\-\_\-position\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}\-Uint32 {\bf orbit\-\_\-fractal\-\_\-position\-\_\-color} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{s, }
+\item[{const double}]{x, }
+\item[{const double}]{y}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a728cc257c7bfc0f583a241a6c3bed52e}
+\-On défini ici les niveaux de rouge, vert et bleu à un certain point \-On veux que la somme des trois niveaux soit proportionnelle au facteur de présence du point dans la fractale \-On veux donc satisfaire une équation de la forme \-R+\-V+\-B = \-P \-On défini un ordre de priorité pour les couleurs \-: vert, rouge, bleu \begin{DoxyReturn}{\-Renvoie}
+couleur du point 
+\end{DoxyReturn}
+\hypertarget{orbit_8c_a27cd5fe89c42bac4c7144ef0da83c88b}{\index{orbit.\-c@{orbit.\-c}!surface\-\_\-px2complex@{surface\-\_\-px2complex}}
+\index{surface\-\_\-px2complex@{surface\-\_\-px2complex}!orbit.c@{orbit.\-c}}
+\subsubsection[{surface\-\_\-px2complex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-R2vec} {\bf surface\-\_\-px2complex} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{s, }
+\item[{\-Uint16}]{x, }
+\item[{\-Uint16}]{y}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a27cd5fe89c42bac4c7144ef0da83c88b}
+\-Converti les coordonées d'un pixel d'une surface en nombre complexe 
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & ensemble de \-Julia ou \-Mandelbrot \\
+\hline
+{\em s} & surface de dessin \\
+\hline
+{\em x} & coordonnée du pixel de gauche à droite \\
+\hline
+{\em y} & coordonnée du pixel de haut en bas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+position correspondante (de la fractale) 
+\end{DoxyReturn}
+\hypertarget{orbit_8c_acf80e1b8b238750eac8f09f7104b9ebe}{\index{orbit.\-c@{orbit.\-c}!update\-\_\-julia\-\_\-constant@{update\-\_\-julia\-\_\-constant}}
+\index{update\-\_\-julia\-\_\-constant@{update\-\_\-julia\-\_\-constant}!orbit.c@{orbit.\-c}}
+\subsubsection[{update\-\_\-julia\-\_\-constant}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf update\-\_\-julia\-\_\-constant} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{mbrot, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_acf80e1b8b238750eac8f09f7104b9ebe}
+\-Met à jour la constante de \-Julia en fonction de la position de la souris
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & ensemble de \-Mandelbrot \\
+\hline
+{\em screen} & l'écran \\
+\hline
+\end{DoxyParams}
+\hypertarget{orbit_8c_a12e750b467d7ffe697e9f5a99605717c}{\index{orbit.\-c@{orbit.\-c}!update\-\_\-julia\-\_\-preview@{update\-\_\-julia\-\_\-preview}}
+\index{update\-\_\-julia\-\_\-preview@{update\-\_\-julia\-\_\-preview}!orbit.c@{orbit.\-c}}
+\subsubsection[{update\-\_\-julia\-\_\-preview}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf update\-\_\-julia\-\_\-preview} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{mbrot, }
+\item[{\-S\-D\-L\-\_\-\-Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}}\label{orbit_8c_a12e750b467d7ffe697e9f5a99605717c}
+\-Met à jour l'aperçu de la fractale de \-Julia correspondant à l'emplacement de la souris sur l'ensemble de \-Mandelbrot
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em f} & ensemble de \-Mandelbrot \\
+\hline
+{\em screen} & l'écran \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des variables}
+\hypertarget{orbit_8c_ae82b0d2b34c082b04ba36975ea917f6e}{\index{orbit.\-c@{orbit.\-c}!julia\-\_\-preview\-\_\-mouse\-\_\-x@{julia\-\_\-preview\-\_\-mouse\-\_\-x}}
+\index{julia\-\_\-preview\-\_\-mouse\-\_\-x@{julia\-\_\-preview\-\_\-mouse\-\_\-x}!orbit.c@{orbit.\-c}}
+\subsubsection[{julia\-\_\-preview\-\_\-mouse\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}\-Uint16 {\bf julia\-\_\-preview\-\_\-mouse\-\_\-x} = 0}}\label{orbit_8c_ae82b0d2b34c082b04ba36975ea917f6e}
+\hypertarget{orbit_8c_acd7d8e74aec530d380d02a3c725d6a25}{\index{orbit.\-c@{orbit.\-c}!julia\-\_\-preview\-\_\-mouse\-\_\-y@{julia\-\_\-preview\-\_\-mouse\-\_\-y}}
+\index{julia\-\_\-preview\-\_\-mouse\-\_\-y@{julia\-\_\-preview\-\_\-mouse\-\_\-y}!orbit.c@{orbit.\-c}}
+\subsubsection[{julia\-\_\-preview\-\_\-mouse\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}\-Uint16 {\bf julia\-\_\-preview\-\_\-mouse\-\_\-y} = 0}}\label{orbit_8c_acd7d8e74aec530d380d02a3c725d6a25}

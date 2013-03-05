@@ -1,0 +1,121 @@
+\hypertarget{fconfig_8c}{\section{\-Référence du fichier fconfig.\-c}
+\label{fconfig_8c}\index{fconfig.\-c@{fconfig.\-c}}
+}
+{\ttfamily \#include \char`\"{}fconfig.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}flame.\-h\char`\"{}}\*
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{fconfig_8c_a7daa4b80f88216f9d99b26a4cb3b26b5}{load\-\_\-fractal\-\_\-config} (int argc, char $\ast$$\ast$argv)
+\item 
+void \hyperlink{fconfig_8c_a132b46c0f124fd4dca3e4249f5fe9c9d}{strdown} (char $\ast$s, int b, int e)
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$ \hyperlink{fconfig_8c_a8c25726160a2d9250d485f69b81e3900}{current\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8c_adcacd1b901292f08d57007a4925b9915}{set\-\_\-current\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+void \hyperlink{fconfig_8c_a15d9e165a957ba7381a3d5fb4a23001c}{previous\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8c_a4892de3eddc7602bcd7830e12e8115bd}{next\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8c_ac08466112f1042d1569276e6327664be}{add\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+void \hyperlink{fconfig_8c_a91c02c5532e9aaf4eda5a56654611d9e}{free\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$ \hyperlink{fconfig_8c_af4d425715063587bd2506464488f2be7}{current\-\_\-fractal\-\_\-system} = \-N\-U\-L\-L
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$$\ast$ \hyperlink{fconfig_8c_a295f131c17d7b13165462eca36b85d9c}{fractal\-\_\-list} = \-N\-U\-L\-L
+\item 
+int \hyperlink{fconfig_8c_a2b4dc7edc80842aca23a3510764bdbcb}{fractal\-\_\-list\-\_\-size} = 0
+\item 
+int \hyperlink{fconfig_8c_ae590cba0730153ad4341f35c488fca42}{current\-\_\-fractal\-\_\-index} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fconfig_8c_ac08466112f1042d1569276e6327664be}{\index{fconfig.\-c@{fconfig.\-c}!add\-\_\-fractal@{add\-\_\-fractal}}
+\index{add\-\_\-fractal@{add\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{add\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf add\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_ac08466112f1042d1569276e6327664be}
+\-Ajoute une fractale à la liste principale des fractales \hypertarget{fconfig_8c_a8c25726160a2d9250d485f69b81e3900}{\index{fconfig.\-c@{fconfig.\-c}!current\-\_\-fractal@{current\-\_\-fractal}}
+\index{current\-\_\-fractal@{current\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{current\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$ {\bf current\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a8c25726160a2d9250d485f69b81e3900}
+\-Fractale qui est le centre d'intérêt du moment du programme \hypertarget{fconfig_8c_a91c02c5532e9aaf4eda5a56654611d9e}{\index{fconfig.\-c@{fconfig.\-c}!free\-\_\-fractal@{free\-\_\-fractal}}
+\index{free\-\_\-fractal@{free\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{free\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf free\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a91c02c5532e9aaf4eda5a56654611d9e}
+\-Libère toute la mémoire utilisée par la fractale \hypertarget{fconfig_8c_a7daa4b80f88216f9d99b26a4cb3b26b5}{\index{fconfig.\-c@{fconfig.\-c}!load\-\_\-fractal\-\_\-config@{load\-\_\-fractal\-\_\-config}}
+\index{load\-\_\-fractal\-\_\-config@{load\-\_\-fractal\-\_\-config}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{load\-\_\-fractal\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf load\-\_\-fractal\-\_\-config} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a7daa4b80f88216f9d99b26a4cb3b26b5}
+\-Ajoute une fractale à la liste principale des fractales, d'après l'emplacement d'un fichier de configuration \-Cette fonction est récursive si le fichier de configuration est une liste de fichiers de configuration \hypertarget{fconfig_8c_a4892de3eddc7602bcd7830e12e8115bd}{\index{fconfig.\-c@{fconfig.\-c}!next\-\_\-fractal@{next\-\_\-fractal}}
+\index{next\-\_\-fractal@{next\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{next\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf next\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a4892de3eddc7602bcd7830e12e8115bd}
+\-Passe le focus à la fractale suivante (dans la liste principale des fractales) \-Après la dernière vient la première \hypertarget{fconfig_8c_a15d9e165a957ba7381a3d5fb4a23001c}{\index{fconfig.\-c@{fconfig.\-c}!previous\-\_\-fractal@{previous\-\_\-fractal}}
+\index{previous\-\_\-fractal@{previous\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{previous\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf previous\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a15d9e165a957ba7381a3d5fb4a23001c}
+\-Passe le focus à la fractale précédente (dans la liste principale des fractales) \-Avant la première vient la dernière \hypertarget{fconfig_8c_adcacd1b901292f08d57007a4925b9915}{\index{fconfig.\-c@{fconfig.\-c}!set\-\_\-current\-\_\-fractal@{set\-\_\-current\-\_\-fractal}}
+\index{set\-\_\-current\-\_\-fractal@{set\-\_\-current\-\_\-fractal}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{set\-\_\-current\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf set\-\_\-current\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_adcacd1b901292f08d57007a4925b9915}
+\hypertarget{fconfig_8c_a132b46c0f124fd4dca3e4249f5fe9c9d}{\index{fconfig.\-c@{fconfig.\-c}!strdown@{strdown}}
+\index{strdown@{strdown}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{strdown}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf strdown} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s, }
+\item[{int}]{b, }
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8c_a132b46c0f124fd4dca3e4249f5fe9c9d}
+\-Diminue la casse sur une partie de la chaîne 
+\begin{DoxyParams}{\-Paramètres}
+{\em s} & chaîne à transformer \\
+\hline
+{\em b} & début de la substitution (\-Comme dans le language \-Ruby \-: 0 pour le début de la chaîne, -\/1 pour la fin, n pour le nième, -\/n-\/1 pour le nième depuis la fin) \\
+\hline
+{\em e} & fin de la substitution (sa valeur dans l'index de la chaîne doit être supérieure) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des variables}
+\hypertarget{fconfig_8c_ae590cba0730153ad4341f35c488fca42}{\index{fconfig.\-c@{fconfig.\-c}!current\-\_\-fractal\-\_\-index@{current\-\_\-fractal\-\_\-index}}
+\index{current\-\_\-fractal\-\_\-index@{current\-\_\-fractal\-\_\-index}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{current\-\_\-fractal\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf current\-\_\-fractal\-\_\-index} = 0}}\label{fconfig_8c_ae590cba0730153ad4341f35c488fca42}
+\hypertarget{fconfig_8c_af4d425715063587bd2506464488f2be7}{\index{fconfig.\-c@{fconfig.\-c}!current\-\_\-fractal\-\_\-system@{current\-\_\-fractal\-\_\-system}}
+\index{current\-\_\-fractal\-\_\-system@{current\-\_\-fractal\-\_\-system}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{current\-\_\-fractal\-\_\-system}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$ {\bf current\-\_\-fractal\-\_\-system} = \-N\-U\-L\-L}}\label{fconfig_8c_af4d425715063587bd2506464488f2be7}
+\hypertarget{fconfig_8c_a295f131c17d7b13165462eca36b85d9c}{\index{fconfig.\-c@{fconfig.\-c}!fractal\-\_\-list@{fractal\-\_\-list}}
+\index{fractal\-\_\-list@{fractal\-\_\-list}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{fractal\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$$\ast$ {\bf fractal\-\_\-list} = \-N\-U\-L\-L}}\label{fconfig_8c_a295f131c17d7b13165462eca36b85d9c}
+\hypertarget{fconfig_8c_a2b4dc7edc80842aca23a3510764bdbcb}{\index{fconfig.\-c@{fconfig.\-c}!fractal\-\_\-list\-\_\-size@{fractal\-\_\-list\-\_\-size}}
+\index{fractal\-\_\-list\-\_\-size@{fractal\-\_\-list\-\_\-size}!fconfig.c@{fconfig.\-c}}
+\subsubsection[{fractal\-\_\-list\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf fractal\-\_\-list\-\_\-size} = 0}}\label{fconfig_8c_a2b4dc7edc80842aca23a3510764bdbcb}

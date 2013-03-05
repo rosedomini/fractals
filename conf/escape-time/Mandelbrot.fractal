@@ -1,0 +1,5 @@
+type Mandelbrot
+size 1200 675
+scale 1.0000000000
+num_iter 255
+position -0.7000000000 0.0000000000

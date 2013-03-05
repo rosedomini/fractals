@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fractales:  Fichier source de flame.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Fractales
+   &#160;<span id="projectnumber">v0.5</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">flame.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="flame_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FLAME_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FLAME_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;math.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;time.h&gt;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="fconfig_8h.html">fconfig.h</a>&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;<a class="code" href="fthread_8h.html">fthread.h</a>&quot;</span>
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keywordtype">int</span> <a class="code" href="flame_8c.html#a7a699b198dedca7b8d6d32e14c4b120b">flame_alg_by_name</a>(<span class="keywordtype">char</span>* buf);
+<a name="l00013"></a>00013 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a8c4013473f631af80a1d633369ca451b">flame_reinit</a>(<a class="code" href="structfractal.html">fractal_t</a>* f);
+<a name="l00014"></a>00014 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aab544b43a768e9fba670900c69047613">flame_init</a>(<a class="code" href="structfractal.html">fractal_t</a>* f);
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="keywordtype">int</span> <a class="code" href="flame_8c.html#a6c95861efb26ad45ce2f64aa5e9a48f0">draw_flame</a>(<span class="keywordtype">void</span>* data);
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aeea413fa016d60443e4aba1c50aa6fcb">flame_linear</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Linear       (Variation 0)</span>
+<a name="l00019"></a>00019 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ae2ae20d704009c9ee7452684969801ff">flame_sinusoidal</a>  (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Sinusoidal   (Variation 1)</span>
+<a name="l00020"></a>00020 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#afeb279c39bda60c6883cd19ff749b794">flame_spherical</a>   (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Spherical    (Variation 2)</span>
+<a name="l00021"></a>00021 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aafe7f18e2789d10e46fa73b4870bf4cc">flame_swirl</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Swirl        (Variation 3)</span>
+<a name="l00022"></a>00022 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ada8b862f82c931092db91c210e0e501b">flame_horseshoe</a>   (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Horseshoe    (Variation 4)</span>
+<a name="l00023"></a>00023 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a66315386e7dccea001f2afeb5e91fff6">flame_polar</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Polar        (Variation 5)</span>
+<a name="l00024"></a>00024 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#afba24d1f69dfbeac2f030a762f7db8af">flame_handkerchief</a>(<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Handkerchief (Variation 6)</span>
+<a name="l00025"></a>00025 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aaa43a88c06a69988244b7a3a2db2c53d">flame_heart</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Heart        (Variation 7)</span>
+<a name="l00026"></a>00026 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a9ec185f34710396753ff80cbb9269fe4">flame_disc</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Disc         (Variation 8)</span>
+<a name="l00027"></a>00027 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ad7f6651724a1c7517052764bf3039bec">flame_spiral</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Spiral       (Variation 9)</span>
+<a name="l00028"></a>00028 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a0fb59d16df043b8d71c5b0051c54667a">flame_hyperbolic</a>  (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Hyperbolic   (Variation 10)</span>
+<a name="l00029"></a>00029 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aa1d1e791e772385c2a320228e80694be">flame_diamond</a>     (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Diamond      (Variation 11)</span>
+<a name="l00030"></a>00030 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#abb89bedfd1830873783212e90f595407">flame_ex</a>          (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Ex           (Variation 12)</span>
+<a name="l00031"></a>00031 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a3cbc4d6f3647a0a8f379d2404c31e113">flame_julia</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Julia        (Variation 13)</span>
+<a name="l00032"></a>00032 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a995e942a1f736678be752802fdee38e9">flame_bent</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Bent         (Variation 14)</span>
+<a name="l00033"></a>00033 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aa415f5a29818dda94bc7d0d30a0c1d10">flame_waves</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Waves        (Variation 15)</span>
+<a name="l00034"></a>00034 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#af02cb66fab7f22a3452bd178615ce925">flame_fisheye</a>     (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Fisheye      (Variation 16)</span>
+<a name="l00035"></a>00035 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a88b97a58a67803aa1f261c521b15f6be">flame_popcorn</a>     (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Popcorn      (Variation 17)</span>
+<a name="l00036"></a>00036 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a0ca6c4db6aa9f84d91171f0cee74c25d">flame_exponential</a> (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Exponential  (Variation 18)</span>
+<a name="l00037"></a>00037 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ad0fd80101afc523f9149c9f1cfea8f53">flame_power</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Power        (Variation 19)</span>
+<a name="l00038"></a>00038 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ac172822efb6b1de8b6ca31211c4c3aad">flame_cosine</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Cosine       (Variation 20)</span>
+<a name="l00039"></a>00039 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a5de6200f5e633aa60a6812ae96beae25">flame_rings</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Rings        (Variation 21)</span>
+<a name="l00040"></a>00040 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#af0dcad385a5401522955a2a47dacdc87">flame_fan</a>         (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Fan          (Variation 22)</span>
+<a name="l00041"></a>00041 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a42800f114c6865537bd2bf890ea5e975">flame_blob</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Blob         (Variation 23)</span>
+<a name="l00042"></a>00042 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ab9bf4be9ea9525b75326e2d6ffec2a66">flame_pdj</a>         (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// PDJ          (Variation 24)</span>
+<a name="l00043"></a>00043 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a63cb795948cfc28b4d78cca180307702">flame_fan2</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Fan2         (Variation 25)</span>
+<a name="l00044"></a>00044 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a547f59e573c88f80f0a3aa32e255fcbc">flame_rings2</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Rings2       (Variation 26)</span>
+<a name="l00045"></a>00045 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a92c71110e0556f269b8304223f4c378d">flame_eyefish</a>     (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Eyefish      (Variation 27)</span>
+<a name="l00046"></a>00046 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#abc7814757cf08041ad60d2dcd62bbe4d">flame_bubble</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Bubble       (Variation 28)</span>
+<a name="l00047"></a>00047 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a6e88d15d3298b316739d6ce7af1cf253">flame_cylinder</a>    (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Cylinder     (Variation 29)</span>
+<a name="l00048"></a>00048 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aaed971974c7b1849bdfd8c2003648b66">flame_perspective</a> (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Perspective  (Variation 30)</span>
+<a name="l00049"></a>00049 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a90deb3c2cfce897b10c6c87feecd359a">flame_noise</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Noise        (Variation 31)</span>
+<a name="l00050"></a>00050 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a35ad8ef6b9b06603d0bae2592aa46a49">flame_julian</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// JuliaN       (Variation 32)</span>
+<a name="l00051"></a>00051 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a142e9e1af25048adea7135f618abdbfe">flame_juliascope</a>  (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// JuliaScope   (Variation 33)</span>
+<a name="l00052"></a>00052 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a5c8297ce266603bf17b385c7a61e5414">flame_blur</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Blur         (Variation 34)</span>
+<a name="l00053"></a>00053 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a296fa2c867535243d885567f7d509c39">flame_gaussian</a>    (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Gaussian     (Variation 35)</span>
+<a name="l00054"></a>00054 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ad0fab89557b242bd0f38a2934dfccc64">flame_radialblur</a>  (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// RadialBlur   (Variation 36)</span>
+<a name="l00055"></a>00055 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a811ae09a9f69bf00c2b06fa03c917e30">flame_pie</a>         (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Pie          (Variation 37)</span>
+<a name="l00056"></a>00056 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a0ab4b08efa35b44a7720678078103c81">flame_ngon</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Ngon         (Variation 38)</span>
+<a name="l00057"></a>00057 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ad07535260820eeb985a04ed8b9d87c7b">flame_curl</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Curl         (Variation 39)</span>
+<a name="l00058"></a>00058 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a42ffadf7a2de41c4dafef2e58ebc8211">flame_rectangles</a>  (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Rectangles   (Variation 40)</span>
+<a name="l00059"></a>00059 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ad1acadcf4046d0580e287ce2b169c33f">flame_arch</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Arch         (Variation 41)</span>
+<a name="l00060"></a>00060 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a55a67fefa1015e24248b0535750b8282">flame_tangent</a>     (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Tangent      (Variation 42)</span>
+<a name="l00061"></a>00061 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a88bae70a4f51e887c98fc59704c72753">flame_square</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Square       (Variation 43)</span>
+<a name="l00062"></a>00062 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aa526702a941cf691e73bf9b1655a8dec">flame_rays</a>        (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Rays         (Variation 44)</span>
+<a name="l00063"></a>00063 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#aa8aaa0a2cb26cae1892c08b44ae7a285">flame_blade</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Blade        (Variation 45)</span>
+<a name="l00064"></a>00064 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a02aab76fc085ce628a384b9352a6736f">flame_secant</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Secant       (Variation 46)</span>
+<a name="l00065"></a>00065 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#affc7635fe3650337338efa939a6581e3">flame_twintrian</a>   (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Twintrian    (Variation 47)</span>
+<a name="l00066"></a>00066 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#ab713c97bdb164c1dd25dccd8967ceb8f">flame_cross</a>       (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Cross        (Variation 48)</span>
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="keywordtype">void</span> <a class="code" href="flame_8c.html#a86f2198e66b882d596578a19ca842586">flame_random</a>      (<span class="keywordtype">double</span>* x, <span class="keywordtype">double</span>* y); <span class="comment">// Random       (Random variation)</span>
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 <span class="preprocessor">#endif // FLAME_H_INCLUDED</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Juin 10 2012 15:26:06 pour Fractales par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+\hypertarget{fconfig_8h}{\section{\-Référence du fichier fconfig.\-h}
+\label{fconfig_8h}\index{fconfig.\-h@{fconfig.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include $<$ctype.\-h$>$}\*
+{\ttfamily \#include $<$math.\-h$>$}\*
+{\ttfamily \#include $<$\-S\-D\-L/\-S\-D\-L.\-h$>$}\*
+{\ttfamily \#include \char`\"{}def.\-h\char`\"{}}\*
+\subsection*{\-Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structR2vec}{\-R2vec}
+\item 
+struct \hyperlink{structfractal}{fractal}
+\end{DoxyCompactItemize}
+\subsection*{\-Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{fconfig_8h_a52a2985432a7b8ab11755010eb4b8bf3}{\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M}~8
+\item 
+\#define \hyperlink{fconfig_8h_a9ef715076be976296525abd176ef93fc}{\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E}~0
+\item 
+\#define \hyperlink{fconfig_8h_a92bd2db8af515e4bde049fd6cc22f3b2}{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E}~1
+\item 
+\#define \hyperlink{fconfig_8h_a746d29663bbe92a4ae6fb825d10b6ee9}{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E}~2
+\item 
+\#define \hyperlink{fconfig_8h_a0e490fdf5d9a26aac0d260de11830a32}{\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R}~3
+\item 
+\#define \hyperlink{fconfig_8h_a660cb8a45bb3271c27f01a2387f87be0}{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N}~4
+\item 
+\#define \hyperlink{fconfig_8h_a747f28eb83d9f40caced27a5f410954f}{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M}~5
+\item 
+\#define \hyperlink{fconfig_8h_a70606fe5b594c05c65758d6d1dd51006}{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G}~6
+\item 
+\#define \hyperlink{fconfig_8h_ac52d21e4a2933ea21fab834870ba39ca}{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}~7
+\end{DoxyCompactItemize}
+\subsection*{\-Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848b}{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E} \hyperlink{fconfig_8h_a8892749f2016bdc07bf86a91a91988b8}{fractal\-\_\-type\-\_\-t}
+\item 
+typedef enum \hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977}{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E} \hyperlink{fconfig_8h_ae3d8d8c5b8af8c5433bf99838c90330a}{proba\-\_\-type\-\_\-t}
+\item 
+typedef struct \hyperlink{structfractal}{fractal} \hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t}
+\item 
+typedef struct ifs\-\_\-tr \hyperlink{fconfig_8h_a79c1dc8a2c52306a7f4d86e8746d6c50}{ifs\-\_\-tr\-\_\-t}
+\item 
+typedef struct flame\-\_\-tr \hyperlink{fconfig_8h_a2804f98e9f7dda3d03b71ff67328e9fa}{flame\-\_\-tr\-\_\-t}
+\item 
+typedef struct \hyperlink{fconfig_8h_a58108310a0f59b637b3f226348927c2f}{flame\-\_\-dot\-\_\-t} \hyperlink{fconfig_8h_a58108310a0f59b637b3f226348927c2f}{flame\-\_\-dot\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848b}{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E} \{ \*
+\hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9cb56f2cd8edaa8402b2d43e7ff9d399}{ft\-\_\-mandelbrot}, 
+\hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848bac9a1fa13790f1c1427e847d0c7f72fd1}{ft\-\_\-julia}, 
+\hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9c6c216923499a228ad3382b3cbdb7bb}{ft\-\_\-ifs}, 
+\hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848baf3263b40bb6f5f5e42fe4cfd525c3751}{ft\-\_\-flame}, 
+\*
+\hyperlink{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba6a261edaa50c8243bf32890fdd5094a5}{ft\-\_\-unknown}
+ \}
+\item 
+enum \hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977}{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E} \{ \hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977a61b138c65cd5f1eb75042fe809f32bd2}{fpt\-\_\-set}, 
+\hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977a8214ec05442091db0c92968681cfd1a1}{fpt\-\_\-uniform}, 
+\hyperlink{fconfig_8h_a3c25bb20d74e8283df9f607029400977a1a8345922b9119eeb0239d1bb7334b44}{fpt\-\_\-random}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{fconfig_8h_a7daa4b80f88216f9d99b26a4cb3b26b5}{load\-\_\-fractal\-\_\-config} (int argc, char $\ast$$\ast$argv)
+\item 
+void \hyperlink{fconfig_8h_a132b46c0f124fd4dca3e4249f5fe9c9d}{strdown} (char $\ast$s, int b, int e)
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$ \hyperlink{fconfig_8h_a8c25726160a2d9250d485f69b81e3900}{current\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8h_adcacd1b901292f08d57007a4925b9915}{set\-\_\-current\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+void \hyperlink{fconfig_8h_a15d9e165a957ba7381a3d5fb4a23001c}{previous\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8h_a4892de3eddc7602bcd7830e12e8115bd}{next\-\_\-fractal} ()
+\item 
+void \hyperlink{fconfig_8h_ac08466112f1042d1569276e6327664be}{add\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\item 
+void \hyperlink{fconfig_8h_a91c02c5532e9aaf4eda5a56654611d9e}{free\-\_\-fractal} (\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$f)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$ \hyperlink{fconfig_8h_af4d425715063587bd2506464488f2be7}{current\-\_\-fractal\-\_\-system}
+\item 
+\hyperlink{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{fractal\-\_\-t} $\ast$$\ast$ \hyperlink{fconfig_8h_a295f131c17d7b13165462eca36b85d9c}{fractal\-\_\-list}
+\item 
+int \hyperlink{fconfig_8h_a2b4dc7edc80842aca23a3510764bdbcb}{fractal\-\_\-list\-\_\-size}
+\item 
+int \hyperlink{fconfig_8h_ae590cba0730153ad4341f35c488fca42}{current\-\_\-fractal\-\_\-index}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des macros}
+\hypertarget{fconfig_8h_a52a2985432a7b8ab11755010eb4b8bf3}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M@{\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M}}
+\index{\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M@{\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-N\-U\-M\-\_\-\-P\-A\-R\-A\-M}~8}}\label{fconfig_8h_a52a2985432a7b8ab11755010eb4b8bf3}
+\hypertarget{fconfig_8h_a0e490fdf5d9a26aac0d260de11830a32}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R@{\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R@{\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-N\-U\-M\-\_\-\-I\-T\-E\-R}~3}}\label{fconfig_8h_a0e490fdf5d9a26aac0d260de11830a32}
+\hypertarget{fconfig_8h_a660cb8a45bb3271c27f01a2387f87be0}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N@{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N@{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-P\-O\-S\-I\-T\-I\-O\-N}~4}}\label{fconfig_8h_a660cb8a45bb3271c27f01a2387f87be0}
+\hypertarget{fconfig_8h_ac52d21e4a2933ea21fab834870ba39ca}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}~7}}\label{fconfig_8h_ac52d21e4a2933ea21fab834870ba39ca}
+\hypertarget{fconfig_8h_a70606fe5b594c05c65758d6d1dd51006}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G@{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G@{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-A\-L\-G}~6}}\label{fconfig_8h_a70606fe5b594c05c65758d6d1dd51006}
+\hypertarget{fconfig_8h_a747f28eb83d9f40caced27a5f410954f}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M@{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M@{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-R\-A\-N\-D\-\_\-\-T\-R\-A\-N\-S\-F\-O\-R\-M}~5}}\label{fconfig_8h_a747f28eb83d9f40caced27a5f410954f}
+\hypertarget{fconfig_8h_a746d29663bbe92a4ae6fb825d10b6ee9}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-S\-C\-A\-L\-E}~2}}\label{fconfig_8h_a746d29663bbe92a4ae6fb825d10b6ee9}
+\hypertarget{fconfig_8h_a92bd2db8af515e4bde049fd6cc22f3b2}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-S\-I\-Z\-E}~1}}\label{fconfig_8h_a92bd2db8af515e4bde049fd6cc22f3b2}
+\hypertarget{fconfig_8h_a9ef715076be976296525abd176ef93fc}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E@{\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-P\-A\-R\-A\-M\-\_\-\-T\-Y\-P\-E}~0}}\label{fconfig_8h_a9ef715076be976296525abd176ef93fc}
+
+
+\subsection{\-Documentation des définitions de type}
+\hypertarget{fconfig_8h_a58108310a0f59b637b3f226348927c2f}{\index{fconfig.\-h@{fconfig.\-h}!flame\-\_\-dot\-\_\-t@{flame\-\_\-dot\-\_\-t}}
+\index{flame\-\_\-dot\-\_\-t@{flame\-\_\-dot\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{flame\-\_\-dot\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf flame\-\_\-dot\-\_\-t} {\bf flame\-\_\-dot\-\_\-t}}}\label{fconfig_8h_a58108310a0f59b637b3f226348927c2f}
+\hypertarget{fconfig_8h_a2804f98e9f7dda3d03b71ff67328e9fa}{\index{fconfig.\-h@{fconfig.\-h}!flame\-\_\-tr\-\_\-t@{flame\-\_\-tr\-\_\-t}}
+\index{flame\-\_\-tr\-\_\-t@{flame\-\_\-tr\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{flame\-\_\-tr\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct flame\-\_\-tr {\bf flame\-\_\-tr\-\_\-t}}}\label{fconfig_8h_a2804f98e9f7dda3d03b71ff67328e9fa}
+\hypertarget{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}{\index{fconfig.\-h@{fconfig.\-h}!fractal\-\_\-t@{fractal\-\_\-t}}
+\index{fractal\-\_\-t@{fractal\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{fractal\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf fractal} {\bf fractal\-\_\-t}}}\label{fconfig_8h_a34e2540dddf3af178196811c6a45cbe0}
+\hypertarget{fconfig_8h_a8892749f2016bdc07bf86a91a91988b8}{\index{fconfig.\-h@{fconfig.\-h}!fractal\-\_\-type\-\_\-t@{fractal\-\_\-type\-\_\-t}}
+\index{fractal\-\_\-type\-\_\-t@{fractal\-\_\-type\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{fractal\-\_\-type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E}  {\bf fractal\-\_\-type\-\_\-t}}}\label{fconfig_8h_a8892749f2016bdc07bf86a91a91988b8}
+\hypertarget{fconfig_8h_a79c1dc8a2c52306a7f4d86e8746d6c50}{\index{fconfig.\-h@{fconfig.\-h}!ifs\-\_\-tr\-\_\-t@{ifs\-\_\-tr\-\_\-t}}
+\index{ifs\-\_\-tr\-\_\-t@{ifs\-\_\-tr\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{ifs\-\_\-tr\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct ifs\-\_\-tr {\bf ifs\-\_\-tr\-\_\-t}}}\label{fconfig_8h_a79c1dc8a2c52306a7f4d86e8746d6c50}
+\hypertarget{fconfig_8h_ae3d8d8c5b8af8c5433bf99838c90330a}{\index{fconfig.\-h@{fconfig.\-h}!proba\-\_\-type\-\_\-t@{proba\-\_\-type\-\_\-t}}
+\index{proba\-\_\-type\-\_\-t@{proba\-\_\-type\-\_\-t}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{proba\-\_\-type\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf \-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}  {\bf proba\-\_\-type\-\_\-t}}}\label{fconfig_8h_ae3d8d8c5b8af8c5433bf99838c90330a}
+
+
+\subsection{\-Documentation du type de l'énumération}
+\hypertarget{fconfig_8h_a3c25bb20d74e8283df9f607029400977}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E@{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E@{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-F\-L\-A\-M\-E\-\_\-\-P\-R\-O\-B\-A\-\_\-\-T\-Y\-P\-E}}}\label{fconfig_8h_a3c25bb20d74e8283df9f607029400977}
+\begin{Desc}
+\item[\-Valeurs énumérées\-: ]\par
+\begin{description}
+\index{fpt\-\_\-set@{fpt\-\_\-set}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!fpt\-\_\-set@{fpt\-\_\-set}}\item[{\em 
+\hypertarget{fconfig_8h_a3c25bb20d74e8283df9f607029400977a61b138c65cd5f1eb75042fe809f32bd2}{fpt\-\_\-set}\label{fconfig_8h_a3c25bb20d74e8283df9f607029400977a61b138c65cd5f1eb75042fe809f32bd2}
+}]\index{fpt\-\_\-uniform@{fpt\-\_\-uniform}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!fpt\-\_\-uniform@{fpt\-\_\-uniform}}\item[{\em 
+\hypertarget{fconfig_8h_a3c25bb20d74e8283df9f607029400977a8214ec05442091db0c92968681cfd1a1}{fpt\-\_\-uniform}\label{fconfig_8h_a3c25bb20d74e8283df9f607029400977a8214ec05442091db0c92968681cfd1a1}
+}]\index{fpt\-\_\-random@{fpt\-\_\-random}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!fpt\-\_\-random@{fpt\-\_\-random}}\item[{\em 
+\hypertarget{fconfig_8h_a3c25bb20d74e8283df9f607029400977a1a8345922b9119eeb0239d1bb7334b44}{fpt\-\_\-random}\label{fconfig_8h_a3c25bb20d74e8283df9f607029400977a1a8345922b9119eeb0239d1bb7334b44}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848b}{\index{fconfig.\-h@{fconfig.\-h}!\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E@{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E}}
+\index{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E@{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{\-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-F\-R\-A\-C\-T\-A\-L\-\_\-\-T\-Y\-P\-E}}}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848b}
+\begin{Desc}
+\item[\-Valeurs énumérées\-: ]\par
+\begin{description}
+\index{ft\-\_\-mandelbrot@{ft\-\_\-mandelbrot}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!ft\-\_\-mandelbrot@{ft\-\_\-mandelbrot}}\item[{\em 
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9cb56f2cd8edaa8402b2d43e7ff9d399}{ft\-\_\-mandelbrot}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9cb56f2cd8edaa8402b2d43e7ff9d399}
+}]\index{ft\-\_\-julia@{ft\-\_\-julia}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!ft\-\_\-julia@{ft\-\_\-julia}}\item[{\em 
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848bac9a1fa13790f1c1427e847d0c7f72fd1}{ft\-\_\-julia}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848bac9a1fa13790f1c1427e847d0c7f72fd1}
+}]\index{ft\-\_\-ifs@{ft\-\_\-ifs}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!ft\-\_\-ifs@{ft\-\_\-ifs}}\item[{\em 
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9c6c216923499a228ad3382b3cbdb7bb}{ft\-\_\-ifs}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba9c6c216923499a228ad3382b3cbdb7bb}
+}]\index{ft\-\_\-flame@{ft\-\_\-flame}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!ft\-\_\-flame@{ft\-\_\-flame}}\item[{\em 
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848baf3263b40bb6f5f5e42fe4cfd525c3751}{ft\-\_\-flame}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848baf3263b40bb6f5f5e42fe4cfd525c3751}
+}]\index{ft\-\_\-unknown@{ft\-\_\-unknown}!fconfig.\-h@{fconfig.\-h}}\index{fconfig.\-h@{fconfig.\-h}!ft\-\_\-unknown@{ft\-\_\-unknown}}\item[{\em 
+\hypertarget{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba6a261edaa50c8243bf32890fdd5094a5}{ft\-\_\-unknown}\label{fconfig_8h_a26fc00c42acd082d3815249ab72e848ba6a261edaa50c8243bf32890fdd5094a5}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{\-Documentation des fonctions}
+\hypertarget{fconfig_8h_ac08466112f1042d1569276e6327664be}{\index{fconfig.\-h@{fconfig.\-h}!add\-\_\-fractal@{add\-\_\-fractal}}
+\index{add\-\_\-fractal@{add\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{add\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf add\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_ac08466112f1042d1569276e6327664be}
+\-Ajoute une fractale à la liste principale des fractales \hypertarget{fconfig_8h_a8c25726160a2d9250d485f69b81e3900}{\index{fconfig.\-h@{fconfig.\-h}!current\-\_\-fractal@{current\-\_\-fractal}}
+\index{current\-\_\-fractal@{current\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{current\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$ {\bf current\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a8c25726160a2d9250d485f69b81e3900}
+\-Fractale qui est le centre d'intérêt du moment du programme \hypertarget{fconfig_8h_a91c02c5532e9aaf4eda5a56654611d9e}{\index{fconfig.\-h@{fconfig.\-h}!free\-\_\-fractal@{free\-\_\-fractal}}
+\index{free\-\_\-fractal@{free\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{free\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf free\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a91c02c5532e9aaf4eda5a56654611d9e}
+\-Libère toute la mémoire utilisée par la fractale \hypertarget{fconfig_8h_a7daa4b80f88216f9d99b26a4cb3b26b5}{\index{fconfig.\-h@{fconfig.\-h}!load\-\_\-fractal\-\_\-config@{load\-\_\-fractal\-\_\-config}}
+\index{load\-\_\-fractal\-\_\-config@{load\-\_\-fractal\-\_\-config}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{load\-\_\-fractal\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf load\-\_\-fractal\-\_\-config} (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a7daa4b80f88216f9d99b26a4cb3b26b5}
+\-Ajoute une fractale à la liste principale des fractales, d'après l'emplacement d'un fichier de configuration \-Cette fonction est récursive si le fichier de configuration est une liste de fichiers de configuration \hypertarget{fconfig_8h_a4892de3eddc7602bcd7830e12e8115bd}{\index{fconfig.\-h@{fconfig.\-h}!next\-\_\-fractal@{next\-\_\-fractal}}
+\index{next\-\_\-fractal@{next\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{next\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf next\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a4892de3eddc7602bcd7830e12e8115bd}
+\-Passe le focus à la fractale suivante (dans la liste principale des fractales) \-Après la dernière vient la première \hypertarget{fconfig_8h_a15d9e165a957ba7381a3d5fb4a23001c}{\index{fconfig.\-h@{fconfig.\-h}!previous\-\_\-fractal@{previous\-\_\-fractal}}
+\index{previous\-\_\-fractal@{previous\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{previous\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf previous\-\_\-fractal} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a15d9e165a957ba7381a3d5fb4a23001c}
+\-Passe le focus à la fractale précédente (dans la liste principale des fractales) \-Avant la première vient la dernière \hypertarget{fconfig_8h_adcacd1b901292f08d57007a4925b9915}{\index{fconfig.\-h@{fconfig.\-h}!set\-\_\-current\-\_\-fractal@{set\-\_\-current\-\_\-fractal}}
+\index{set\-\_\-current\-\_\-fractal@{set\-\_\-current\-\_\-fractal}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{set\-\_\-current\-\_\-fractal}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf set\-\_\-current\-\_\-fractal} (
+\begin{DoxyParamCaption}
+\item[{{\bf fractal\-\_\-t} $\ast$}]{f}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_adcacd1b901292f08d57007a4925b9915}
+\hypertarget{fconfig_8h_a132b46c0f124fd4dca3e4249f5fe9c9d}{\index{fconfig.\-h@{fconfig.\-h}!strdown@{strdown}}
+\index{strdown@{strdown}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{strdown}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf strdown} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s, }
+\item[{int}]{b, }
+\item[{int}]{e}
+\end{DoxyParamCaption}
+)}}\label{fconfig_8h_a132b46c0f124fd4dca3e4249f5fe9c9d}
+\-Diminue la casse sur une partie de la chaîne 
+\begin{DoxyParams}{\-Paramètres}
+{\em s} & chaîne à transformer \\
+\hline
+{\em b} & début de la substitution (\-Comme dans le language \-Ruby \-: 0 pour le début de la chaîne, -\/1 pour la fin, n pour le nième, -\/n-\/1 pour le nième depuis la fin) \\
+\hline
+{\em e} & fin de la substitution (sa valeur dans l'index de la chaîne doit être supérieure) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des variables}
+\hypertarget{fconfig_8h_ae590cba0730153ad4341f35c488fca42}{\index{fconfig.\-h@{fconfig.\-h}!current\-\_\-fractal\-\_\-index@{current\-\_\-fractal\-\_\-index}}
+\index{current\-\_\-fractal\-\_\-index@{current\-\_\-fractal\-\_\-index}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{current\-\_\-fractal\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf current\-\_\-fractal\-\_\-index}}}\label{fconfig_8h_ae590cba0730153ad4341f35c488fca42}
+\hypertarget{fconfig_8h_af4d425715063587bd2506464488f2be7}{\index{fconfig.\-h@{fconfig.\-h}!current\-\_\-fractal\-\_\-system@{current\-\_\-fractal\-\_\-system}}
+\index{current\-\_\-fractal\-\_\-system@{current\-\_\-fractal\-\_\-system}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{current\-\_\-fractal\-\_\-system}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$ {\bf current\-\_\-fractal\-\_\-system}}}\label{fconfig_8h_af4d425715063587bd2506464488f2be7}
+\hypertarget{fconfig_8h_a295f131c17d7b13165462eca36b85d9c}{\index{fconfig.\-h@{fconfig.\-h}!fractal\-\_\-list@{fractal\-\_\-list}}
+\index{fractal\-\_\-list@{fractal\-\_\-list}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{fractal\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fractal\-\_\-t}$\ast$$\ast$ {\bf fractal\-\_\-list}}}\label{fconfig_8h_a295f131c17d7b13165462eca36b85d9c}
+\hypertarget{fconfig_8h_a2b4dc7edc80842aca23a3510764bdbcb}{\index{fconfig.\-h@{fconfig.\-h}!fractal\-\_\-list\-\_\-size@{fractal\-\_\-list\-\_\-size}}
+\index{fractal\-\_\-list\-\_\-size@{fractal\-\_\-list\-\_\-size}!fconfig.h@{fconfig.\-h}}
+\subsubsection[{fractal\-\_\-list\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf fractal\-\_\-list\-\_\-size}}}\label{fconfig_8h_a2b4dc7edc80842aca23a3510764bdbcb}

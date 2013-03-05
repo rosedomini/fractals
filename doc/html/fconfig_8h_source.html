@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Fractales:  Fichier source de fconfig.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Fractales
+   &#160;<span id="projectnumber">v0.5</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">fconfig.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fconfig_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef FCONFIG_H_INCLUDED</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define FCONFIG_H_INCLUDED</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdio.h&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;string.h&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;ctype.h&gt;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;math.h&gt;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 <span class="preprocessor">#include &lt;SDL/SDL.h&gt;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;<a class="code" href="def_8h.html">def.h</a>&quot;</span>
+<a name="l00012"></a>00012 
+<a name="l00013"></a><a class="code" href="fconfig_8h.html#a52a2985432a7b8ab11755010eb4b8bf3">00013</a> <span class="preprocessor">#define FNUM_PARAM 8</span>
+<a name="l00014"></a><a class="code" href="fconfig_8h.html#a9ef715076be976296525abd176ef93fc">00014</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_TYPE 0</span>
+<a name="l00015"></a><a class="code" href="fconfig_8h.html#a92bd2db8af515e4bde049fd6cc22f3b2">00015</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_SIZE 1</span>
+<a name="l00016"></a><a class="code" href="fconfig_8h.html#a746d29663bbe92a4ae6fb825d10b6ee9">00016</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_SCALE 2</span>
+<a name="l00017"></a><a class="code" href="fconfig_8h.html#a0e490fdf5d9a26aac0d260de11830a32">00017</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_NUM_ITER 3</span>
+<a name="l00018"></a><a class="code" href="fconfig_8h.html#a660cb8a45bb3271c27f01a2387f87be0">00018</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_POSITION 4</span>
+<a name="l00019"></a><a class="code" href="fconfig_8h.html#a747f28eb83d9f40caced27a5f410954f">00019</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_RAND_TRANSFORM 5</span>
+<a name="l00020"></a><a class="code" href="fconfig_8h.html#a70606fe5b594c05c65758d6d1dd51006">00020</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_RAND_ALG 6</span>
+<a name="l00021"></a><a class="code" href="fconfig_8h.html#ac52d21e4a2933ea21fab834870ba39ca">00021</a> <span class="preprocessor"></span><span class="preprocessor">#define FPARAM_PROBA_TYPE 7</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00023"></a>00023 <span class="comment">/*</span>
+<a name="l00024"></a>00024 <span class="comment">on défini un vecteur du plan (R2) des réels</span>
+<a name="l00025"></a>00025 <span class="comment">*/</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="structR2vec.html">00027</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a><a class="code" href="structR2vec.html#acda9b7268208078fa00bbed94ccb4484">00029</a>     <span class="keywordtype">double</span> x, <a class="code" href="structR2vec.html#acda9b7268208078fa00bbed94ccb4484">y</a>;
+<a name="l00030"></a>00030 } <a class="code" href="structR2vec.html">R2vec</a>;
+<a name="l00031"></a>00031 
+<a name="l00032"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848b">00032</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848b">FRACTAL_TYPE</a>
+<a name="l00033"></a>00033 {
+<a name="l00034"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba9cb56f2cd8edaa8402b2d43e7ff9d399">00034</a>     <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba9cb56f2cd8edaa8402b2d43e7ff9d399">ft_mandelbrot</a>,
+<a name="l00035"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848bac9a1fa13790f1c1427e847d0c7f72fd1">00035</a>     <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848bac9a1fa13790f1c1427e847d0c7f72fd1">ft_julia</a>,
+<a name="l00036"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba9c6c216923499a228ad3382b3cbdb7bb">00036</a>     <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba9c6c216923499a228ad3382b3cbdb7bb">ft_ifs</a>,
+<a name="l00037"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848baf3263b40bb6f5f5e42fe4cfd525c3751">00037</a>     <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848baf3263b40bb6f5f5e42fe4cfd525c3751">ft_flame</a>,
+<a name="l00038"></a><a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba6a261edaa50c8243bf32890fdd5094a5">00038</a>     <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848ba6a261edaa50c8243bf32890fdd5094a5">ft_unknown</a>
+<a name="l00039"></a>00039 } <a class="code" href="fconfig_8h.html#a8892749f2016bdc07bf86a91a91988b8">fractal_type_t</a>;
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977">00041</a> <span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977">FLAME_PROBA_TYPE</a>
+<a name="l00042"></a>00042 {
+<a name="l00043"></a><a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a61b138c65cd5f1eb75042fe809f32bd2">00043</a>     <a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a61b138c65cd5f1eb75042fe809f32bd2">fpt_set</a>,
+<a name="l00044"></a><a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a8214ec05442091db0c92968681cfd1a1">00044</a>     <a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a8214ec05442091db0c92968681cfd1a1">fpt_uniform</a>,
+<a name="l00045"></a><a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a1a8345922b9119eeb0239d1bb7334b44">00045</a>     <a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977a1a8345922b9119eeb0239d1bb7334b44">fpt_random</a>
+<a name="l00046"></a>00046 } <a class="code" href="fconfig_8h.html#ae3d8d8c5b8af8c5433bf99838c90330a">proba_type_t</a>;
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="comment">/*</span>
+<a name="l00049"></a>00049 <span class="comment">Le type de la fractale retournée par current_fractal() et celui de la fractale affichée en grand sur l&#39;écran.</span>
+<a name="l00050"></a>00050 <span class="comment">Si ce type est Mandelbrot, une miniature de la fractale de Julia correspondant à l&#39;emplacement de la souris.</span>
+<a name="l00051"></a>00051 <span class="comment">Un clique permet d&#39;afficher la fractale de Julia en grand.</span>
+<a name="l00052"></a>00052 <span class="comment">*/</span>
+<a name="l00053"></a><a class="code" href="structfractal.html">00053</a> <span class="keyword">struct </span><a class="code" href="structfractal.html">fractal</a>
+<a name="l00054"></a>00054 {
+<a name="l00055"></a><a class="code" href="structfractal.html#af8297a3673f15a8aa61272bdc0377277">00055</a>     <span class="keyword">enum</span> <a class="code" href="fconfig_8h.html#a26fc00c42acd082d3815249ab72e848b">FRACTAL_TYPE</a> <a class="code" href="structfractal.html#af8297a3673f15a8aa61272bdc0377277">type</a>; <span class="comment">// le type de fractale</span>
+<a name="l00056"></a><a class="code" href="structfractal.html#a2cbfae43b5e12a3c427c241a46145a31">00056</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a2cbfae43b5e12a3c427c241a46145a31">width</a>, <a class="code" href="structfractal.html#a626e83cacaf19a85207e16fef9b3ff3d">height</a>; <span class="comment">// dimensions d&#39;affichage en pixels</span>
+<a name="l00057"></a><a class="code" href="structfractal.html#a524c6cac28c27976fe7b528733ee73cb">00057</a>     <span class="keywordtype">double</span> <a class="code" href="structfractal.html#a524c6cac28c27976fe7b528733ee73cb">scale</a>; <span class="comment">// l&#39;échelle d&#39;affichage (ou zoom)</span>
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059     <span class="comment">/*</span>
+<a name="l00060"></a>00060 <span class="comment">    le nombre maximum d&#39;itérations par pixel pour les fractales à temps d&#39;échappement</span>
+<a name="l00061"></a>00061 <span class="comment">    ou bien le nombre d&#39;itérations pour les IFS</span>
+<a name="l00062"></a>00062 <span class="comment">    */</span>
+<a name="l00063"></a><a class="code" href="structfractal.html#a71301ffefb1b8cb6c949575fb36788dd">00063</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a71301ffefb1b8cb6c949575fb36788dd">iter</a>;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065     <span class="comment">/*</span>
+<a name="l00066"></a>00066 <span class="comment">    le décalage de la caméra par rapport à l&#39;origine</span>
+<a name="l00067"></a>00067 <span class="comment">    */</span>
+<a name="l00068"></a><a class="code" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">00068</a>     <a class="code" href="structR2vec.html">R2vec</a> <a class="code" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">position</a>;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070     <span class="comment">/*</span>
+<a name="l00071"></a>00071 <span class="comment">    paramètres de la fractale (dépend de son type)</span>
+<a name="l00072"></a>00072 <span class="comment">    */</span>
+<a name="l00073"></a>00073     <span class="keyword">union</span>
+<a name="l00074"></a>00074     {
+<a name="l00075"></a>00075         <span class="comment">/*</span>
+<a name="l00076"></a>00076 <span class="comment">        pour l&#39;ensemble de Mandelbrot</span>
+<a name="l00077"></a>00077 <span class="comment">        */</span>
+<a name="l00078"></a>00078         <span class="keyword">struct</span>
+<a name="l00079"></a>00079         {
+<a name="l00080"></a>00080             <span class="comment">/*</span>
+<a name="l00081"></a>00081 <span class="comment">            un lien vers la fractale de Julia dont la constante correspond à l&#39;emplacement de la souris sur l&#39;ensemble de Mandelbrot</span>
+<a name="l00082"></a>00082 <span class="comment">            ce lien doit être défini et réciproque :</span>
+<a name="l00083"></a>00083 <span class="comment">                mbrot_set-&gt;param.mbrot.julia-&gt;param.julia.mbrot == mbrot_set</span>
+<a name="l00084"></a>00084 <span class="comment">            */</span>
+<a name="l00085"></a><a class="code" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">00085</a>             <span class="keyword">struct </span><a class="code" href="structfractal.html">fractal</a>* <a class="code" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">julia</a>;
+<a name="l00086"></a>00086         } <a class="code" href="structfractal.html#a6fcb083ec5b53d1f1ef8faf808370bb8">mbrot</a>;
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088         <span class="comment">/*</span>
+<a name="l00089"></a>00089 <span class="comment">        pour une fractale de Julia</span>
+<a name="l00090"></a>00090 <span class="comment">        */</span>
+<a name="l00091"></a>00091         <span class="keyword">struct</span>
+<a name="l00092"></a>00092         {
+<a name="l00093"></a>00093             <span class="comment">/*</span>
+<a name="l00094"></a>00094 <span class="comment">            constante de Julia</span>
+<a name="l00095"></a>00095 <span class="comment">            */</span>
+<a name="l00096"></a><a class="code" href="structfractal.html#ae5d135f6f99883eba1e2fea9047791f6">00096</a>             <a class="code" href="structR2vec.html">R2vec</a> <a class="code" href="structfractal.html#ae5d135f6f99883eba1e2fea9047791f6">c</a>;
+<a name="l00097"></a>00097 
+<a name="l00098"></a><a class="code" href="structfractal.html#a7c67058fed930d6a3f3500e170cb5fd0">00098</a>             <span class="keyword">struct </span><a class="code" href="structfractal.html">fractal</a>* <a class="code" href="structfractal.html#a7c67058fed930d6a3f3500e170cb5fd0">mbrot</a>; <span class="comment">// le lien réciproque vers l&#39;ensemble de Mandelbrot</span>
+<a name="l00099"></a>00099         } <a class="code" href="structfractal.html#a189b545deaac65ca9c6ea04f7312a3f1">julia</a>;
+<a name="l00100"></a>00100 
+<a name="l00101"></a>00101         <span class="comment">/*</span>
+<a name="l00102"></a>00102 <span class="comment">        pour toutes les IFS (Iterated Function System)</span>
+<a name="l00103"></a>00103 <span class="comment">        */</span>
+<a name="l00104"></a>00104         <span class="keyword">struct</span>
+<a name="l00105"></a>00105         {
+<a name="l00106"></a><a class="code" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">00106</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">num_tr</a>; <span class="comment">// nombre de transformations</span>
+<a name="l00107"></a>00107             <span class="keyword">struct </span>ifs_tr
+<a name="l00108"></a>00108             {
+<a name="l00109"></a>00109                 <span class="keyword">union </span><span class="comment">// permet de d&#39;utilise un tableau à la place de la structure</span>
+<a name="l00110"></a>00110                 {
+<a name="l00111"></a><a class="code" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">00111</a>                     <span class="keywordtype">double</span> <a class="code" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a>[7];
+<a name="l00112"></a>00112                     <span class="keyword">struct</span>
+<a name="l00113"></a>00113                     {
+<a name="l00114"></a><a class="code" href="structfractal.html#abbf9466acf8986903f74754be308eb36">00114</a>                         <span class="keywordtype">double</span> <a class="code" href="structfractal.html#a9f41ac4812a14dde576142eaba71141f">xx</a>, <a class="code" href="structfractal.html#a5f558e90d4bc7b85f758e2f4e7b76fff">xy</a>, <a class="code" href="structfractal.html#a25f9bab7277ce8cb9272a6e1ba1695f8">x</a>, <a class="code" href="structfractal.html#aa52f4f35e4bd516179706f318397218a">yx</a>, <a class="code" href="structfractal.html#abbf9466acf8986903f74754be308eb36">yy</a>, <a class="code" href="structfractal.html#a4bd6ee4742f683f13141f31c2d3799b7">y</a>, <a class="code" href="structfractal.html#a1de23626083977b508881c41a4122b4e">proba</a>;
+<a name="l00115"></a>00115                     };
+<a name="l00116"></a>00116                 };
+<a name="l00117"></a>00117             }* <a class="code" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a>; <span class="comment">// liste des transformations</span>
+<a name="l00118"></a>00118         } <a class="code" href="structfractal.html#aa5cabd8d230694e71c055bdffb4031de">ifs</a>;
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120         <span class="keyword">struct</span>
+<a name="l00121"></a>00121         {
+<a name="l00122"></a><a class="code" href="structfractal.html#a9b098f5eee05e57395a2f389b76c5fd2">00122</a>             <span class="keyword">enum</span> <a class="code" href="fconfig_8h.html#a3c25bb20d74e8283df9f607029400977">FLAME_PROBA_TYPE</a> <a class="code" href="structfractal.html#a9b098f5eee05e57395a2f389b76c5fd2">proba_type</a>;
+<a name="l00123"></a><a class="code" href="structfractal.html#aad5ae2034ecfc02aadbaed943874ae5e">00123</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#aad5ae2034ecfc02aadbaed943874ae5e">min_num_tr</a>; <span class="comment">// min et max peuvent être égaux</span>
+<a name="l00124"></a><a class="code" href="structfractal.html#a7f9433a0d1498384124c12e68b02935f">00124</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a7f9433a0d1498384124c12e68b02935f">max_num_tr</a>; <span class="comment">// à utiliser pour l&#39;allocation mémoire</span>
+<a name="l00125"></a>00125             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#aba2914c84dcc1a96c49e4b91aade9d7f">num_tr</a>; <span class="comment">// choisi aléatoirement entre min et max (à chaque génération)</span>
+<a name="l00126"></a>00126             <span class="keyword">struct </span>flame_tr
+<a name="l00127"></a>00127             {
+<a name="l00128"></a><a class="code" href="structfractal.html#aae0e0d9ca8a4c89eb27abe85a3b7577c">00128</a>                 <span class="keywordtype">int</span> <a class="code" href="structfractal.html#aae0e0d9ca8a4c89eb27abe85a3b7577c">rand_col</a>; <span class="comment">// est-ce que les coefficients initiaux des couleurs doivent être générés aléatoirement ?</span>
+<a name="l00129"></a><a class="code" href="structfractal.html#a955d2d4ebadac5d75dbeff34da5fce5c">00129</a>                 <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a955d2d4ebadac5d75dbeff34da5fce5c">rand_tr</a>; <span class="comment">// et pour les coefficients de la transformation ?</span>
+<a name="l00130"></a>00130                 <span class="keyword">union</span>
+<a name="l00131"></a>00131                 {
+<a name="l00132"></a>00132                     <span class="keywordtype">double</span> <a class="code" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a>[10];
+<a name="l00133"></a>00133                     <span class="keyword">struct</span>
+<a name="l00134"></a>00134                     {
+<a name="l00135"></a><a class="code" href="structfractal.html#a8857f2ca6e663d4f4ab3e5adbaf4e754">00135</a>                         <span class="keywordtype">double</span> <a class="code" href="structfractal.html#a9f41ac4812a14dde576142eaba71141f">xx</a>, <a class="code" href="structfractal.html#a5f558e90d4bc7b85f758e2f4e7b76fff">xy</a>, <a class="code" href="structfractal.html#a25f9bab7277ce8cb9272a6e1ba1695f8">x</a>, <a class="code" href="structfractal.html#aa52f4f35e4bd516179706f318397218a">yx</a>, <a class="code" href="structfractal.html#abbf9466acf8986903f74754be308eb36">yy</a>, <a class="code" href="structfractal.html#a4bd6ee4742f683f13141f31c2d3799b7">y</a>, <a class="code" href="structfractal.html#a1de23626083977b508881c41a4122b4e">proba</a>, <a class="code" href="structfractal.html#a8857f2ca6e663d4f4ab3e5adbaf4e754">r</a>, <a class="code" href="structfractal.html#a374d90c27c06107482bba4ee7ada55da">g</a>, <a class="code" href="structfractal.html#a0a85246deca0ebcb11e689009da9aeb0">b</a>;
+<a name="l00136"></a>00136                     };
+<a name="l00137"></a>00137                 };
+<a name="l00138"></a>00138             }* <a class="code" href="structfractal.html#a2bb7ce1b69821aa883daf27d16df4ba5">tr</a>;
+<a name="l00139"></a><a class="code" href="structfractal.html#ac81d19a3ae4242701ac2625d3a231f38">00139</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a652c1e196aac08e7eec76ce1227eabb8">min_num_alg</a>, <a class="code" href="structfractal.html#a23841183bcd072030d0c0ff578fa7b5f">max_num_alg</a>, <a class="code" href="structfractal.html#ac81d19a3ae4242701ac2625d3a231f38">num_alg</a>;
+<a name="l00140"></a><a class="code" href="structfractal.html#aa05f91d00df1a44d26b3202e31f92f7d">00140</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *<a class="code" href="structfractal.html#aa05f91d00df1a44d26b3202e31f92f7d">alg_id_list</a>; <span class="comment">// liste des identifiants des algorithmes à utiliser</span>
+<a name="l00141"></a><a class="code" href="structfractal.html#a05967489e9dede83bae6bae463eaec7b">00141</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *<a class="code" href="structfractal.html#a05967489e9dede83bae6bae463eaec7b">alg_id_list2</a>; <span class="comment">// ne contient pas l&#39;idendifiant aléatoire</span>
+<a name="l00142"></a><a class="code" href="structfractal.html#a770c93bc56d64afc5efca2d0656705c9">00142</a>             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structfractal.html#a770c93bc56d64afc5efca2d0656705c9">current_iter</a>; <span class="comment">// iteration en cours</span>
+<a name="l00143"></a>00143             <span class="keyword">struct </span><a class="code" href="fconfig_8h.html#a58108310a0f59b637b3f226348927c2f">flame_dot_t</a>
+<a name="l00144"></a>00144             {
+<a name="l00145"></a>00145                 <a class="code" href="structR2vec.html">R2vec</a> <a class="code" href="structfractal.html#a272b847ecd0537826d7ecb8e9ca3e4d5">position</a>;
+<a name="l00146"></a><a class="code" href="structfractal.html#a034aa6fa38b6fc624492780aae4f5cd1">00146</a>                 Uint8 <a class="code" href="structfractal.html#a034aa6fa38b6fc624492780aae4f5cd1">color</a>[3];
+<a name="l00147"></a>00147             }* <a class="code" href="structfractal.html#a6f7fe414337c558f2e1777893e2151b6">dots</a>; <span class="comment">// sauvegarde des données sur les points générés</span>
+<a name="l00148"></a><a class="code" href="structfractal.html#ab39f039db5c5ec9e5065093683f39a36">00148</a>             Uint8 <a class="code" href="structfractal.html#ab39f039db5c5ec9e5065093683f39a36">current_color</a>[3];
+<a name="l00149"></a><a class="code" href="structfractal.html#a70078b8c8918be78879323adf35e36c4">00149</a>             <a class="code" href="structR2vec.html">R2vec</a> <a class="code" href="structfractal.html#a70078b8c8918be78879323adf35e36c4">current_position</a>;
+<a name="l00150"></a>00150         } <a class="code" href="structfractal.html#a0429a28ac6af0cba0dace7328b2116d6">flame</a>;
+<a name="l00151"></a>00151     } <a class="code" href="structfractal.html#aaf3b25a8725d05106ece6bc318fb8620">param</a>;
+<a name="l00152"></a>00152 };
+<a name="l00153"></a>00153 
+<a name="l00154"></a><a class="code" href="fconfig_8h.html#a34e2540dddf3af178196811c6a45cbe0">00154</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structfractal.html">fractal</a> <a class="code" href="structfractal.html">fractal_t</a>;
+<a name="l00155"></a><a class="code" href="fconfig_8h.html#a79c1dc8a2c52306a7f4d86e8746d6c50">00155</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>ifs_tr <a class="code" href="fconfig_8h.html#a79c1dc8a2c52306a7f4d86e8746d6c50">ifs_tr_t</a>;
+<a name="l00156"></a><a class="code" href="fconfig_8h.html#a2804f98e9f7dda3d03b71ff67328e9fa">00156</a> <span class="keyword">typedef</span> <span class="keyword">struct </span>flame_tr <a class="code" href="fconfig_8h.html#a2804f98e9f7dda3d03b71ff67328e9fa">flame_tr_t</a>;
+<a name="l00157"></a><a class="code" href="fconfig_8h.html#a58108310a0f59b637b3f226348927c2f">00157</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="fconfig_8h.html#a58108310a0f59b637b3f226348927c2f">flame_dot_t</a> <a class="code" href="fconfig_8h.html#a58108310a0f59b637b3f226348927c2f">flame_dot_t</a>;
+<a name="l00158"></a>00158 
+<a name="l00159"></a>00159 <span class="keywordtype">int</span> <a class="code" href="fconfig_8c.html#a7daa4b80f88216f9d99b26a4cb3b26b5">load_fractal_config</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv);
+<a name="l00160"></a>00160 
+<a name="l00161"></a>00161 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#a132b46c0f124fd4dca3e4249f5fe9c9d">strdown</a>(<span class="keywordtype">char</span>* s, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> e);
+<a name="l00162"></a>00162 
+<a name="l00163"></a>00163 <span class="keyword">extern</span> <a class="code" href="structfractal.html">fractal_t</a>* <a class="code" href="fconfig_8c.html#af4d425715063587bd2506464488f2be7">current_fractal_system</a>;
+<a name="l00164"></a>00164 
+<a name="l00165"></a>00165 <a class="code" href="structfractal.html">fractal_t</a>* <a class="code" href="fconfig_8c.html#a8c25726160a2d9250d485f69b81e3900">current_fractal</a>();
+<a name="l00166"></a>00166 
+<a name="l00167"></a>00167 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#adcacd1b901292f08d57007a4925b9915">set_current_fractal</a>(<a class="code" href="structfractal.html">fractal_t</a>* f);
+<a name="l00168"></a>00168 
+<a name="l00169"></a>00169 <span class="keyword">extern</span> <a class="code" href="structfractal.html">fractal_t</a>** <a class="code" href="fconfig_8c.html#a295f131c17d7b13165462eca36b85d9c">fractal_list</a>;
+<a name="l00170"></a>00170 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="fconfig_8c.html#a2b4dc7edc80842aca23a3510764bdbcb">fractal_list_size</a>;
+<a name="l00171"></a>00171 <span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="fconfig_8c.html#ae590cba0730153ad4341f35c488fca42">current_fractal_index</a>;
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#a15d9e165a957ba7381a3d5fb4a23001c">previous_fractal</a>();
+<a name="l00174"></a>00174 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#a4892de3eddc7602bcd7830e12e8115bd">next_fractal</a>();
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#ac08466112f1042d1569276e6327664be">add_fractal</a>(<a class="code" href="structfractal.html">fractal_t</a>* f);
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178 <span class="keywordtype">void</span> <a class="code" href="fconfig_8c.html#a91c02c5532e9aaf4eda5a56654611d9e">free_fractal</a>(<a class="code" href="structfractal.html">fractal_t</a>* f);
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180 <span class="preprocessor">#endif // FCONFIG_H_INCLUDED</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche Juin 10 2012 15:26:06 pour Fractales par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
